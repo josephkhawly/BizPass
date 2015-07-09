@@ -13,6 +13,7 @@
 		243607EF1B4F004D00049811 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 243607EE1B4F004D00049811 /* Images.xcassets */; };
 		243607F21B4F004D00049811 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 243607F01B4F004D00049811 /* LaunchScreen.xib */; };
 		243607FE1B4F004D00049811 /* BizPassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243607FD1B4F004D00049811 /* BizPassTests.swift */; };
+		243608081B4F005C00049811 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 243608071B4F005C00049811 /* PassKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,8 @@
 		243607F71B4F004D00049811 /* BizPassTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BizPassTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		243607FC1B4F004D00049811 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		243607FD1B4F004D00049811 /* BizPassTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BizPassTests.swift; sourceTree = "<group>"; };
+		243608071B4F005C00049811 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
+		243608091B4F005C00049811 /* BizPass.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = BizPass.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				243608081B4F005C00049811 /* PassKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +63,7 @@
 		243607D91B4F004D00049811 = {
 			isa = PBXGroup;
 			children = (
+				243608071B4F005C00049811 /* PassKit.framework */,
 				243607E41B4F004D00049811 /* BizPass */,
 				243607FA1B4F004D00049811 /* BizPassTests */,
 				243607E31B4F004D00049811 /* Products */,
@@ -77,6 +82,7 @@
 		243607E41B4F004D00049811 /* BizPass */ = {
 			isa = PBXGroup;
 			children = (
+				243608091B4F005C00049811 /* BizPass.entitlements */,
 				243607E71B4F004D00049811 /* AppDelegate.swift */,
 				243607E91B4F004D00049811 /* ViewController.swift */,
 				243607EB1B4F004D00049811 /* Main.storyboard */,
@@ -161,6 +167,12 @@
 				TargetAttributes = {
 					243607E11B4F004D00049811 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 9E3D2F34QQ;
+						SystemCapabilities = {
+							com.apple.Passbook = {
+								enabled = 1;
+							};
+						};
 					};
 					243607F61B4F004D00049811 = {
 						CreatedOnToolsVersion = 6.4;
@@ -342,9 +354,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BizPass/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -352,9 +369,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BizPass/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
