@@ -13,7 +13,7 @@ import PassKit
         Classes: PKPassLibrary, PKAddPassesViewController
         Methods: isPassLibraryAvailable() -> Bool
                     passes() -> [PKPass]
-                    passWithPassTypeIdentifier(identifier: String, serialNumber: String)->PKPAss?
+                    passWithPassTypeIdentifier(identifier: String, serialNumber: String)->PKPass?
                     addPasses(...)
                     canAddPasses()
                     init(pass)
