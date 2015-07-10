@@ -3,6 +3,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="SF-UI-Text-Light.otf">
@@ -27,37 +28,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dB4-Ym-iGt">
-                                <rect key="frame" x="155" y="185" width="97" height="30"/>
-                                <color key="textColor" red="1" green="1" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI Text" pointSize="20"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TfY-Wz-hBG">
-                                <rect key="frame" x="348" y="185" width="97" height="30"/>
-                                <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI Text" pointSize="20"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Website" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DBc-fx-yZT">
-                                <rect key="frame" x="348" y="249" width="97" height="30"/>
-                                <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI Text" pointSize="20"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gUK-58-r3M">
-                                <rect key="frame" x="155" y="249" width="97" height="30"/>
-                                <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI Text" pointSize="20"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Twitter" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Hs-2h-ycc">
-                                <rect key="frame" x="348" y="313" width="97" height="30"/>
-                                <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI Text" pointSize="20"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Facebook" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xeX-qY-Bbl">
-                                <rect key="frame" x="155" y="313" width="97" height="30"/>
-                                <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI Text" pointSize="20"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ea8-9P-5cn">
                                 <rect key="frame" x="260" y="28" width="100" height="100"/>
                                 <constraints>
@@ -66,10 +36,74 @@
                                     <constraint firstAttribute="width" constant="100" id="v9B-do-rDA"/>
                                 </constraints>
                             </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TfY-Wz-hBG">
+                                <rect key="frame" x="467" y="185" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="NqY-7W-uCz"/>
+                                    <constraint firstAttribute="height" constant="30" id="nGV-eg-G8u"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI Text" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Website" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DBc-fx-yZT">
+                                <rect key="frame" x="467" y="249" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ZgO-LZ-lIq"/>
+                                    <constraint firstAttribute="width" constant="97" id="bPA-TY-rvX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI Text" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gUK-58-r3M">
+                                <rect key="frame" x="36" y="249" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ZJ9-K1-Yyf"/>
+                                    <constraint firstAttribute="width" constant="97" id="jBG-Nd-N14"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI Text" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Twitter" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Hs-2h-ycc">
+                                <rect key="frame" x="467" y="313" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="UH8-2x-8FU"/>
+                                    <constraint firstAttribute="height" constant="30" id="ogy-8X-xfB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI Text" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Facebook" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xeX-qY-Bbl">
+                                <rect key="frame" x="36" y="313" width="97" height="30"/>
+                                <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI Text" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dB4-Ym-iGt">
+                                <rect key="frame" x="36" y="185" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="TFB-qD-kP9"/>
+                                    <constraint firstAttribute="height" constant="30" id="oEk-hi-yme"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="1" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI Text" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.29411764709999999" green="0.68627450980000004" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="DBc-fx-yZT" firstAttribute="top" secondItem="TfY-Wz-hBG" secondAttribute="bottom" constant="34" id="Acn-5i-NnO"/>
+                            <constraint firstItem="gUK-58-r3M" firstAttribute="top" secondItem="dB4-Ym-iGt" secondAttribute="bottom" constant="34" id="GvZ-Tw-loi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DBc-fx-yZT" secondAttribute="trailing" constant="20" id="Iqg-in-UHm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9Hs-2h-ycc" secondAttribute="trailing" constant="20" id="TkB-ww-DdZ"/>
                             <constraint firstItem="Ea8-9P-5cn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="bNH-cp-SU5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TfY-Wz-hBG" secondAttribute="trailing" constant="20" id="cHF-l6-Hmm"/>
+                            <constraint firstItem="dB4-Ym-iGt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="165" id="eyD-ee-G4g"/>
+                            <constraint firstItem="9Hs-2h-ycc" firstAttribute="top" secondItem="DBc-fx-yZT" secondAttribute="bottom" constant="34" id="fHu-ir-IqY"/>
+                            <constraint firstItem="dB4-Ym-iGt" firstAttribute="top" secondItem="Ea8-9P-5cn" secondAttribute="bottom" constant="57" id="iZb-jW-6ta"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9Hs-2h-ycc" secondAttribute="bottom" constant="257" id="ixu-pM-ll9"/>
+                            <constraint firstItem="dB4-Ym-iGt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="p2f-bP-9L2"/>
+                            <constraint firstItem="9Hs-2h-ycc" firstAttribute="top" secondItem="DBc-fx-yZT" secondAttribute="bottom" constant="34" id="pvL-0e-VUZ"/>
+                            <constraint firstItem="TfY-Wz-hBG" firstAttribute="top" secondItem="Ea8-9P-5cn" secondAttribute="bottom" constant="57" id="qEP-5K-8xt"/>
+                            <constraint firstItem="DBc-fx-yZT" firstAttribute="leading" secondItem="gUK-58-r3M" secondAttribute="trailing" constant="334" id="tbl-lc-p8c"/>
                             <constraint firstItem="Ea8-9P-5cn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="10" id="zyk-4V-MRQ"/>
                         </constraints>
                     </view>
