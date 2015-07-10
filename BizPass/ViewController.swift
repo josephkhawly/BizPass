@@ -32,9 +32,14 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
+        //Set the font for each text field
         nameField.font = UIFont(name: "SF UI Text Light", size: 20)
+        titleField.font = UIFont(name: "SF UI Text Light", size: 20)
+        emailField.font = UIFont(name: "SF UI Text Light", size: 20)
+        companyField.font = UIFont(name: "SF UI Text Light", size: 20)
+        facebookField.font = UIFont(name: "SF UI Text Light", size: 20)
+        twitterField.font = UIFont(name: "SF UI Text Light", size: 20)
     }
 
     override func didReceiveMemoryWarning() {
