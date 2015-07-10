@@ -36,7 +36,7 @@
                                     <constraint firstAttribute="width" constant="100" id="v9B-do-rDA"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Website" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DBc-fx-yZT">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Company" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DBc-fx-yZT">
                                 <rect key="frame" x="467" y="249" width="97" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="ZgO-LZ-lIq"/>
@@ -94,16 +94,12 @@
                         </subviews>
                         <color key="backgroundColor" red="0.29411764709999999" green="0.68627450980000004" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="dB4-Ym-iGt" firstAttribute="top" secondItem="Ea8-9P-5cn" secondAttribute="bottom" constant="57" id="7Zu-w9-qY3"/>
-                            <constraint firstItem="TfY-Wz-hBG" firstAttribute="top" secondItem="Ea8-9P-5cn" secondAttribute="bottom" constant="57" id="84P-UP-AbG"/>
-                            <constraint firstItem="TfY-Wz-hBG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="165" id="A5h-w2-Hi8"/>
                             <constraint firstItem="DBc-fx-yZT" firstAttribute="top" secondItem="TfY-Wz-hBG" secondAttribute="bottom" constant="34" id="Acn-5i-NnO"/>
                             <constraint firstItem="gUK-58-r3M" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="FBx-B7-jIF"/>
                             <constraint firstItem="xeX-qY-Bbl" firstAttribute="top" secondItem="gUK-58-r3M" secondAttribute="bottom" constant="34" id="Fvy-rI-qBf"/>
                             <constraint firstItem="gUK-58-r3M" firstAttribute="top" secondItem="dB4-Ym-iGt" secondAttribute="bottom" constant="34" id="GvZ-Tw-loi"/>
                             <constraint firstAttribute="trailingMargin" secondItem="DBc-fx-yZT" secondAttribute="trailing" constant="20" id="Iqg-in-UHm"/>
                             <constraint firstItem="dB4-Ym-iGt" firstAttribute="top" secondItem="Ea8-9P-5cn" secondAttribute="bottom" constant="57" id="MTV-Ed-ti8"/>
-                            <constraint firstItem="dB4-Ym-iGt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="165" id="NWU-o5-bVy"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9Hs-2h-ycc" secondAttribute="trailing" constant="20" id="TkB-ww-DdZ"/>
                             <constraint firstItem="xeX-qY-Bbl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="YoM-3s-Urp"/>
                             <constraint firstItem="Ea8-9P-5cn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="bNH-cp-SU5"/>
@@ -115,23 +111,15 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xeX-qY-Bbl" secondAttribute="bottom" constant="257" id="v6U-Ti-7t4"/>
                             <constraint firstItem="Ea8-9P-5cn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="10" id="zyk-4V-MRQ"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="7Zu-w9-qY3"/>
-                                <exclude reference="NWU-o5-bVy"/>
-                                <exclude reference="84P-UP-AbG"/>
-                                <exclude reference="A5h-w2-Hi8"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
+                        <outlet property="companyField" destination="DBc-fx-yZT" id="dja-ry-nP7"/>
                         <outlet property="emailField" destination="gUK-58-r3M" id="oTD-qH-EgD"/>
                         <outlet property="facebookField" destination="xeX-qY-Bbl" id="v9Y-M8-CGs"/>
                         <outlet property="imageView" destination="Ea8-9P-5cn" id="iWb-N9-kv3"/>
                         <outlet property="nameField" destination="dB4-Ym-iGt" id="y7k-IX-q5b"/>
                         <outlet property="titleField" destination="TfY-Wz-hBG" id="vHr-WA-mI3"/>
                         <outlet property="twitterField" destination="9Hs-2h-ycc" id="HGC-4K-aCE"/>
-                        <outlet property="websiteField" destination="DBc-fx-yZT" id="5Zq-3G-vVv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
