@@ -14,6 +14,12 @@
 		243607F21B4F004D00049811 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 243607F01B4F004D00049811 /* LaunchScreen.xib */; };
 		243607FE1B4F004D00049811 /* BizPassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243607FD1B4F004D00049811 /* BizPassTests.swift */; };
 		243608081B4F005C00049811 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 243608071B4F005C00049811 /* PassKit.framework */; };
+		243608111B4F524F00049811 /* SF-UI-Display-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2436080B1B4F524F00049811 /* SF-UI-Display-Light.otf */; };
+		243608121B4F524F00049811 /* SF-UI-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2436080C1B4F524F00049811 /* SF-UI-Display-Regular.otf */; };
+		243608131B4F524F00049811 /* SF-UI-Display-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2436080D1B4F524F00049811 /* SF-UI-Display-Thin.otf */; };
+		243608141B4F524F00049811 /* SF-UI-Display-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2436080E1B4F524F00049811 /* SF-UI-Display-Ultralight.otf */; };
+		243608151B4F524F00049811 /* SF-UI-Text-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2436080F1B4F524F00049811 /* SF-UI-Text-Light.otf */; };
+		243608161B4F524F00049811 /* SF-UI-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 243608101B4F524F00049811 /* SF-UI-Text-Regular.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +45,12 @@
 		243607FD1B4F004D00049811 /* BizPassTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BizPassTests.swift; sourceTree = "<group>"; };
 		243608071B4F005C00049811 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
 		243608091B4F005C00049811 /* BizPass.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = BizPass.entitlements; sourceTree = "<group>"; };
+		2436080B1B4F524F00049811 /* SF-UI-Display-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Display-Light.otf"; path = "../../../../Downloads/SF-UI/SF-UI-Display-Light.otf"; sourceTree = "<group>"; };
+		2436080C1B4F524F00049811 /* SF-UI-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Display-Regular.otf"; path = "../../../../Downloads/SF-UI/SF-UI-Display-Regular.otf"; sourceTree = "<group>"; };
+		2436080D1B4F524F00049811 /* SF-UI-Display-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Display-Thin.otf"; path = "../../../../Downloads/SF-UI/SF-UI-Display-Thin.otf"; sourceTree = "<group>"; };
+		2436080E1B4F524F00049811 /* SF-UI-Display-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Display-Ultralight.otf"; path = "../../../../Downloads/SF-UI/SF-UI-Display-Ultralight.otf"; sourceTree = "<group>"; };
+		2436080F1B4F524F00049811 /* SF-UI-Text-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-Light.otf"; path = "../../../../Downloads/SF-UI/SF-UI-Text-Light.otf"; sourceTree = "<group>"; };
+		243608101B4F524F00049811 /* SF-UI-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-Regular.otf"; path = "../../../../Downloads/SF-UI/SF-UI-Text-Regular.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +94,7 @@
 		243607E41B4F004D00049811 /* BizPass */ = {
 			isa = PBXGroup;
 			children = (
+				2436080A1B4F521B00049811 /* Fonts */,
 				243608091B4F005C00049811 /* BizPass.entitlements */,
 				243607E71B4F004D00049811 /* AppDelegate.swift */,
 				243607E91B4F004D00049811 /* ViewController.swift */,
@@ -116,6 +129,19 @@
 				243607FC1B4F004D00049811 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2436080A1B4F521B00049811 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2436080B1B4F524F00049811 /* SF-UI-Display-Light.otf */,
+				2436080C1B4F524F00049811 /* SF-UI-Display-Regular.otf */,
+				2436080D1B4F524F00049811 /* SF-UI-Display-Thin.otf */,
+				2436080E1B4F524F00049811 /* SF-UI-Display-Ultralight.otf */,
+				2436080F1B4F524F00049811 /* SF-UI-Text-Light.otf */,
+				243608101B4F524F00049811 /* SF-UI-Text-Regular.otf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +232,12 @@
 			files = (
 				243607ED1B4F004D00049811 /* Main.storyboard in Resources */,
 				243607F21B4F004D00049811 /* LaunchScreen.xib in Resources */,
+				243608161B4F524F00049811 /* SF-UI-Text-Regular.otf in Resources */,
+				243608121B4F524F00049811 /* SF-UI-Display-Regular.otf in Resources */,
+				243608111B4F524F00049811 /* SF-UI-Display-Light.otf in Resources */,
+				243608141B4F524F00049811 /* SF-UI-Display-Ultralight.otf in Resources */,
+				243608131B4F524F00049811 /* SF-UI-Display-Thin.otf in Resources */,
+				243608151B4F524F00049811 /* SF-UI-Text-Light.otf in Resources */,
 				243607EF1B4F004D00049811 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,6 +465,7 @@
 				243608031B4F004D00049811 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		243608041B4F004D00049811 /* Build configuration list for PBXNativeTarget "BizPassTests" */ = {
 			isa = XCConfigurationList;
@@ -441,6 +474,7 @@
 				243608061B4F004D00049811 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
