@@ -125,7 +125,13 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="emailField" destination="gUK-58-r3M" id="oTD-qH-EgD"/>
+                        <outlet property="facebookField" destination="xeX-qY-Bbl" id="v9Y-M8-CGs"/>
+                        <outlet property="imageView" destination="Ea8-9P-5cn" id="iWb-N9-kv3"/>
                         <outlet property="nameField" destination="dB4-Ym-iGt" id="y7k-IX-q5b"/>
+                        <outlet property="titleField" destination="TfY-Wz-hBG" id="vHr-WA-mI3"/>
+                        <outlet property="twitterField" destination="9Hs-2h-ycc" id="HGC-4K-aCE"/>
+                        <outlet property="websiteField" destination="DBc-fx-yZT" id="5Zq-3G-vVv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
