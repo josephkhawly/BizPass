@@ -17,29 +17,20 @@ import PassKit
                     addPasses(...)
                     canAddPasses()
                     init(pass)
+
+        Think about using a table view instead.
      */
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var nameField: UITextField!
-    @IBOutlet weak var titleField: UITextField!
-    @IBOutlet weak var emailField: UITextField!
-    @IBOutlet weak var companyField: UITextField!
-    @IBOutlet weak var facebookField: UITextField!
-    @IBOutlet weak var twitterField: UITextField!
-    
-    @IBOutlet weak var imageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //Set the font for each text field
-        nameField.font = UIFont(name: "SF UI Text Light", size: 20)
-        titleField.font = UIFont(name: "SF UI Text Light", size: 20)
-        emailField.font = UIFont(name: "SF UI Text Light", size: 20)
-        companyField.font = UIFont(name: "SF UI Text Light", size: 20)
-        facebookField.font = UIFont(name: "SF UI Text Light", size: 20)
-        twitterField.font = UIFont(name: "SF UI Text Light", size: 20)
+    
+        if PKPassLibrary.isPassLibraryAvailable() {
+            
+        } else {
+            
+        }
     }
 
     override func didReceiveMemoryWarning() {
