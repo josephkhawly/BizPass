@@ -53,7 +53,7 @@
 		2436080E1B4F524F00049811 /* SF-UI-Display-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Display-Ultralight.otf"; path = "../../../../Downloads/SF-UI/SF-UI-Display-Ultralight.otf"; sourceTree = "<group>"; };
 		2436080F1B4F524F00049811 /* SF-UI-Text-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-Light.otf"; path = "../../../../Downloads/SF-UI/SF-UI-Text-Light.otf"; sourceTree = "<group>"; };
 		243608101B4F524F00049811 /* SF-UI-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-Regular.otf"; path = "../../../../Downloads/SF-UI/SF-UI-Text-Regular.otf"; sourceTree = "<group>"; };
-		24F2C5201B5432AD001F1263 /* BizPass-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BizPass-Bridging-Header.h"; sourceTree = "<group>"; };
+		24F2C5211B543820001F1263 /* BizPass-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BizPass-Bridging-Header.h"; sourceTree = "<group>"; };
 		2F1C4E5046A45AA5AF366D69 /* Pods-BizPass.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BizPass.release.xcconfig"; path = "Pods/Target Support Files/Pods-BizPass/Pods-BizPass.release.xcconfig"; sourceTree = "<group>"; };
 		C03D154483C61258EF890543 /* libPods-BizPass.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BizPass.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -106,11 +106,11 @@
 				243608091B4F005C00049811 /* BizPass.entitlements */,
 				243607E71B4F004D00049811 /* AppDelegate.swift */,
 				243607E91B4F004D00049811 /* ViewController.swift */,
+				24F2C5211B543820001F1263 /* BizPass-Bridging-Header.h */,
 				243607EB1B4F004D00049811 /* Main.storyboard */,
 				243607EE1B4F004D00049811 /* Images.xcassets */,
 				243607F01B4F004D00049811 /* LaunchScreen.xib */,
 				243607E51B4F004D00049811 /* Supporting Files */,
-				24F2C5201B5432AD001F1263 /* BizPass-Bridging-Header.h */,
 			);
 			path = BizPass;
 			sourceTree = "<group>";
@@ -455,6 +455,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "BizPass/BizPass-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -471,6 +472,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "BizPass/BizPass-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

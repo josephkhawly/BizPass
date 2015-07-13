@@ -1,0 +1,10 @@
+PODS:
+  - PassSlot (0.7)
+
+DEPENDENCIES:
+  - PassSlot
+
+SPEC CHECKSUMS:
+  PassSlot: b28b719efa4ba418ca757d2b3006dc789410d492
+
+COCOAPODS: 0.37.2
