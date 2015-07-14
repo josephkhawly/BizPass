@@ -23,11 +23,11 @@ import PassKit
 
 class ViewController: UIViewController {
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         if PKPassLibrary.isPassLibraryAvailable() {
+            PassSlot.start("oalzIWdtIUZdOmQaaCtSQnRYzrHpFjSLeiLjBXiLlzMLOPLFmeoYYmvUljKyMacX")
             
         } else {
             
@@ -41,4 +41,5 @@ class ViewController: UIViewController {
 
 
 }
+
 
