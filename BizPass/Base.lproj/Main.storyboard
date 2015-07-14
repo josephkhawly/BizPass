@@ -2,6 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="SF-UI-Display-Light.otf">
@@ -28,51 +30,90 @@
                         <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wrG-WO-T7B">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K7i-vc-Ssl">
+                                <rect key="frame" x="16" y="154" width="145" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="145" id="9q5-MN-e8y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wrG-WO-T7B">
                                 <rect key="frame" x="16" y="218" width="145" height="30"/>
                                 <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Website" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UC5-vL-OTG">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Website" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UC5-vL-OTG">
                                 <rect key="frame" x="16" y="285" width="145" height="30"/>
                                 <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Resume Link" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oKx-G7-5UD">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Resume Link" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oKx-G7-5UD">
                                 <rect key="frame" x="16" y="354" width="145" height="30"/>
                                 <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jzn-aG-Kt0">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jzn-aG-Kt0">
                                 <rect key="frame" x="439" y="154" width="145" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="145" id="PBN-NV-tzm"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Twitter" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zqh-mo-HVT">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Twitter" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zqh-mo-HVT">
                                 <rect key="frame" x="439" y="218" width="145" height="30"/>
                                 <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Linkedin" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qP9-XF-Ts5">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Linkedin" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qP9-XF-Ts5">
                                 <rect key="frame" x="439" y="285" width="145" height="30"/>
                                 <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qMJ-P0-zHb">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qMJ-P0-zHb">
                                 <rect key="frame" x="439" y="354" width="145" height="30"/>
                                 <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Si-6C-cSh">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1Si-6C-cSh">
                                 <rect key="frame" x="240" y="20" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="Pn7-EH-RgA"/>
+                                    <constraint firstAttribute="width" secondItem="1Si-6C-cSh" secondAttribute="height" multiplier="1:1" id="aOd-0z-SPF"/>
+                                    <constraint firstAttribute="height" constant="120" id="doU-l6-lv4"/>
+                                    <constraint firstAttribute="width" constant="120" id="mbL-BO-Bgh"/>
+                                </constraints>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K7i-vc-Ssl">
-                                <rect key="frame" x="16" y="154" width="145" height="30"/>
-                                <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="16"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.50196081399917603" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="wrG-WO-T7B" firstAttribute="top" secondItem="K7i-vc-Ssl" secondAttribute="bottom" constant="34" id="04L-HU-a9k"/>
+                            <constraint firstItem="qP9-XF-Ts5" firstAttribute="trailing" secondItem="qMJ-P0-zHb" secondAttribute="trailing" id="1so-kD-6mx"/>
+                            <constraint firstItem="zqh-mo-HVT" firstAttribute="baseline" secondItem="wrG-WO-T7B" secondAttribute="baseline" id="3q0-fk-ysN"/>
+                            <constraint firstItem="qMJ-P0-zHb" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="7s0-PI-nCH"/>
+                            <constraint firstItem="qMJ-P0-zHb" firstAttribute="leading" secondItem="qP9-XF-Ts5" secondAttribute="leading" id="DzB-4A-pbF"/>
+                            <constraint firstItem="oKx-G7-5UD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="FJ6-Th-8fa"/>
+                            <constraint firstItem="1Si-6C-cSh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Gg3-9S-hvz"/>
+                            <constraint firstItem="Jzn-aG-Kt0" firstAttribute="trailing" secondItem="zqh-mo-HVT" secondAttribute="trailing" id="HJh-gJ-qz0"/>
+                            <constraint firstItem="qP9-XF-Ts5" firstAttribute="leading" secondItem="zqh-mo-HVT" secondAttribute="leading" id="IeW-HF-0BI"/>
+                            <constraint firstItem="UC5-vL-OTG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Jsx-yj-6DN"/>
+                            <constraint firstItem="wrG-WO-T7B" firstAttribute="trailing" secondItem="UC5-vL-OTG" secondAttribute="trailing" id="KQQ-dc-GH1"/>
+                            <constraint firstItem="oKx-G7-5UD" firstAttribute="top" secondItem="UC5-vL-OTG" secondAttribute="bottom" constant="39" id="PZt-0M-chx"/>
+                            <constraint firstItem="wrG-WO-T7B" firstAttribute="trailing" secondItem="K7i-vc-Ssl" secondAttribute="trailing" id="UQQ-fX-YPX"/>
+                            <constraint firstItem="1Si-6C-cSh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UZh-jr-CKv"/>
+                            <constraint firstItem="UC5-vL-OTG" firstAttribute="top" secondItem="wrG-WO-T7B" secondAttribute="bottom" constant="37" id="Uod-fb-9Lc"/>
+                            <constraint firstItem="oKx-G7-5UD" firstAttribute="trailing" secondItem="UC5-vL-OTG" secondAttribute="trailing" id="WOA-kO-QCj"/>
+                            <constraint firstItem="zqh-mo-HVT" firstAttribute="trailing" secondItem="qP9-XF-Ts5" secondAttribute="trailing" id="b3b-sh-4W4"/>
+                            <constraint firstItem="K7i-vc-Ssl" firstAttribute="leading" secondItem="wrG-WO-T7B" secondAttribute="leading" id="cpX-Ke-Nz9"/>
+                            <constraint firstItem="qP9-XF-Ts5" firstAttribute="baseline" secondItem="UC5-vL-OTG" secondAttribute="baseline" id="dq4-08-Mes"/>
+                            <constraint firstItem="K7i-vc-Ssl" firstAttribute="baseline" secondItem="Jzn-aG-Kt0" secondAttribute="baseline" id="eQU-Pb-2hn"/>
+                            <constraint firstItem="oKx-G7-5UD" firstAttribute="leading" secondItem="UC5-vL-OTG" secondAttribute="leading" id="g0A-Bw-a6i"/>
+                            <constraint firstItem="qMJ-P0-zHb" firstAttribute="baseline" secondItem="oKx-G7-5UD" secondAttribute="baseline" id="g3E-Hh-Iek"/>
+                            <constraint firstItem="zqh-mo-HVT" firstAttribute="leading" secondItem="Jzn-aG-Kt0" secondAttribute="leading" id="kbY-vh-Z40"/>
+                            <constraint firstItem="UC5-vL-OTG" firstAttribute="leading" secondItem="wrG-WO-T7B" secondAttribute="leading" id="qck-2U-jzK"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1Si-6C-cSh" secondAttribute="bottom" constant="460" id="zoE-r4-QdQ"/>
+                        </constraints>
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <nil key="simulatedTopBarMetrics"/>
@@ -88,7 +129,6 @@
                         <outlet property="titleField" destination="Jzn-aG-Kt0" id="Qb0-Ff-RQl"/>
                         <outlet property="twitterField" destination="zqh-mo-HVT" id="1Mi-KX-7xF"/>
                         <outlet property="websiteField" destination="UC5-vL-OTG" id="phI-EW-FOR"/>
-                        <outlet property="webstieField" destination="UC5-vL-OTG" id="sQK-L9-RtU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

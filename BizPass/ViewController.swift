@@ -48,9 +48,15 @@ class ViewController: UIViewController {
             //If they do, start the PassSlot service.
             PassSlot.start("oalzIWdtIUZdOmQaaCtSQnRYzrHpFjSLeiLjBXiLlzMLOPLFmeoYYmvUljKyMacX")
             
-            /*
+            /**
             
-            the method for creating a pass.
+            Create a pass from a template and request the installation of the pass
+            @param template PassTemplate that is used to create the pass
+            @param values Placeholder values that will be filled in
+            @param images Array of PSImage for the pass
+            @param viewController The UIViewController that will be used to present the PKAddPassesViewController. If the controller conforms to PKAddPassesViewControllerDelegate it is set as the delegate for the PKAddPassesViewController.
+            @param completion A block object to be executed when the pass was added to passbook. This block takes no parameters and has no return value.
+
             
             PassSlot.createPassFromTemplate(<#template: PSPassTemplate!#>, withValues: <#[NSObject : AnyObject]!#>, withImages: <#[AnyObject]!#>, andRequestInstallation: <#UIViewController!#>, completion: <#PSCompletion!##() -> Void#>)
             */
@@ -58,7 +64,7 @@ class ViewController: UIViewController {
         } else {
             
             // If they don't, present an alert controller and exit the app.
-            let alertController = UIAlertController(title: "Well shit, son.", message: "Looks like you don't have Passbook.", preferredStyle: .Alert)
+            let alertController = UIAlertController(title: "Well shit, son.", message: "Looks like you don't have Passbook on your device, which means this app is completely useless to you. Sorry.", preferredStyle: .Alert)
             let okAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
             alertController.addAction(okAction)
             self.presentViewController(alertController, animated: true, completion: nil)
@@ -69,8 +75,6 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 
 
