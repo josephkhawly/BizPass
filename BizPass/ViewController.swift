@@ -23,7 +23,7 @@ import PassKit
         Feature suggestion: have the user choose whatever info that isn't their name and title to present on the front of the card.
      */
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var imageView: UIImageView!
     
@@ -36,11 +36,32 @@ class ViewController: UIViewController {
     @IBOutlet weak var resumeField: UITextField!
     @IBOutlet weak var phoneNumberField: UITextField!
     
+    func textFieldDidBeginEditing(textField: UITextField) {
+        animateViewMoving(true, moveValue: 100)
+    }
+    func textFieldDidEndEditing(textField: UITextField) {
+        animateViewMoving(false, moveValue: 100)
+    }
+    
+    func animateViewMoving (up:Bool, moveValue :CGFloat){
+        var movementDuration:NSTimeInterval = 0.3
+        var movement:CGFloat = ( up ? -moveValue : moveValue)
+        UIView.beginAnimations( "animateView", context: nil)
+        UIView.setAnimationBeginsFromCurrentState(true)
+        UIView.setAnimationDuration(movementDuration )
+        self.view.frame = CGRectOffset(self.view.frame, 0,  movement)
+        UIView.commitAnimations()
+    }
+    
     
     
     //If this method gets too crowded, we'll put the pass handling in a separate class.
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.nameField.delegate = self
+        self.emailField.delegate = self
+        self.resumeField.delegate = self
         
         //Check if the user's device has Passbook.
         if PKPassLibrary.isPassLibraryAvailable() {
