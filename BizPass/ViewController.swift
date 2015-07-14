@@ -25,6 +25,7 @@ import PassKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
     
+    //MARK: IBOutlets
     @IBOutlet weak var imageView: UIImageView!
     
     @IBOutlet weak var nameField: UITextField!
@@ -36,6 +37,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var resumeField: UITextField!
     @IBOutlet weak var phoneNumberField: UITextField!
     
+    
+    //MARK: View Handling
     func textFieldDidBeginEditing(textField: UITextField) {
         animateViewMoving(true, moveValue: 100)
     }
@@ -43,7 +46,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         animateViewMoving(false, moveValue: 100)
     }
     
-    func animateViewMoving (up:Bool, moveValue :CGFloat){
+    func animateViewMoving(up:Bool, moveValue :CGFloat){
         var movementDuration:NSTimeInterval = 0.3
         var movement:CGFloat = ( up ? -moveValue : moveValue)
         UIView.beginAnimations( "animateView", context: nil)
@@ -71,6 +74,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    //MARK: Button click method
     //If this method gets too crowded, we'll put the pass handling in a separate class.
     @IBAction func makeCard(sender: AnyObject) {
         //Check if the user's device has Passbook.
