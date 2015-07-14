@@ -23,6 +23,17 @@ import PassKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var imageView: UIImageView!
+    
+    @IBOutlet weak var nameField: UITextField!
+    @IBOutlet weak var titleField: UITextField!
+    @IBOutlet weak var emailField: UITextField!
+    @IBOutlet weak var twitterField: UITextField!
+    @IBOutlet weak var webstieField: UITextField!
+    @IBOutlet weak var linkedinField: UITextField!
+    @IBOutlet weak var resumeField: UITextField!
+    @IBOutlet weak var githubField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

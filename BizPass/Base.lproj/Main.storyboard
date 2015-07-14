@@ -78,6 +78,17 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="emailField" destination="wrG-WO-T7B" id="LHa-ec-siJ"/>
+                        <outlet property="githubField" destination="qMJ-P0-zHb" id="aAr-7H-bcQ"/>
+                        <outlet property="imageView" destination="1Si-6C-cSh" id="RnU-Ox-XAX"/>
+                        <outlet property="linkedinField" destination="qP9-XF-Ts5" id="FnL-GE-mz3"/>
+                        <outlet property="nameField" destination="K7i-vc-Ssl" id="yJB-Qk-9Nm"/>
+                        <outlet property="resumeField" destination="oKx-G7-5UD" id="tg8-Vo-eFE"/>
+                        <outlet property="titleField" destination="Jzn-aG-Kt0" id="Qb0-Ff-RQl"/>
+                        <outlet property="twitterField" destination="zqh-mo-HVT" id="1Mi-KX-7xF"/>
+                        <outlet property="webstieField" destination="UC5-vL-OTG" id="sQK-L9-RtU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
