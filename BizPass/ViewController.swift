@@ -60,8 +60,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         
         self.nameField.delegate = self
+        self.titleField.delegate = self
         self.emailField.delegate = self
+        self.twitterField.delegate = self
+        self.websiteField.delegate = self
+        self.linkedinField.delegate = self
         self.resumeField.delegate = self
+        self.phoneNumberField.delegate = self
         
         //Check if the user's device has Passbook.
         if PKPassLibrary.isPassLibraryAvailable() {
