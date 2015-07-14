@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		144F2B0802E05F5B47C7F485 /* libPods-BizPass.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C03D154483C61258EF890543 /* libPods-BizPass.a */; };
 		243607E81B4F004D00049811 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243607E71B4F004D00049811 /* AppDelegate.swift */; };
 		243607EA1B4F004D00049811 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243607E91B4F004D00049811 /* ViewController.swift */; };
 		243607ED1B4F004D00049811 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 243607EB1B4F004D00049811 /* Main.storyboard */; };
@@ -22,6 +21,7 @@
 		243608151B4F524F00049811 /* SF-UI-Text-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2436080F1B4F524F00049811 /* SF-UI-Text-Light.otf */; };
 		243608161B4F524F00049811 /* SF-UI-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 243608101B4F524F00049811 /* SF-UI-Text-Regular.otf */; };
 		247EC2311B55622000EA159B /* PassControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247EC2301B55622000EA159B /* PassControl.swift */; };
+		BAFFDB044F388A0B2764E959 /* Pods_BizPass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38DCAABCD513FA3A2BD1B974 /* Pods_BizPass.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +57,7 @@
 		247EC2301B55622000EA159B /* PassControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassControl.swift; sourceTree = "<group>"; };
 		24F2C5211B543820001F1263 /* BizPass-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BizPass-Bridging-Header.h"; sourceTree = "<group>"; };
 		2F1C4E5046A45AA5AF366D69 /* Pods-BizPass.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BizPass.release.xcconfig"; path = "Pods/Target Support Files/Pods-BizPass/Pods-BizPass.release.xcconfig"; sourceTree = "<group>"; };
-		C03D154483C61258EF890543 /* libPods-BizPass.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BizPass.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		38DCAABCD513FA3A2BD1B974 /* Pods_BizPass.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BizPass.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +66,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				243608081B4F005C00049811 /* PassKit.framework in Frameworks */,
-				144F2B0802E05F5B47C7F485 /* libPods-BizPass.a in Frameworks */,
+				BAFFDB044F388A0B2764E959 /* Pods_BizPass.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,7 +168,7 @@
 		9A1B1937A04ED1C36F268C43 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C03D154483C61258EF890543 /* libPods-BizPass.a */,
+				38DCAABCD513FA3A2BD1B974 /* Pods_BizPass.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -185,6 +185,7 @@
 				243607DF1B4F004D00049811 /* Frameworks */,
 				243607E01B4F004D00049811 /* Resources */,
 				ABF9CA62A647B68337A7BC37 /* Copy Pods Resources */,
+				4CF4C6D783B13231168F9737 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -283,6 +284,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		4CF4C6D783B13231168F9737 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BizPass/Pods-BizPass-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		70A3D7F41E54C21C19BBDBC1 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
