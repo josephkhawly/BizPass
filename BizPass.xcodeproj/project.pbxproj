@@ -108,12 +108,12 @@
 				243608091B4F005C00049811 /* BizPass.entitlements */,
 				243607E71B4F004D00049811 /* AppDelegate.swift */,
 				243607E91B4F004D00049811 /* ViewController.swift */,
+				247EC2301B55622000EA159B /* PassControl.swift */,
 				24F2C5211B543820001F1263 /* BizPass-Bridging-Header.h */,
 				243607EB1B4F004D00049811 /* Main.storyboard */,
 				243607EE1B4F004D00049811 /* Images.xcassets */,
 				243607F01B4F004D00049811 /* LaunchScreen.xib */,
 				243607E51B4F004D00049811 /* Supporting Files */,
-				247EC2301B55622000EA159B /* PassControl.swift */,
 			);
 			path = BizPass;
 			sourceTree = "<group>";

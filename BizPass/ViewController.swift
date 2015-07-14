@@ -34,7 +34,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var websiteField: UITextField!
     @IBOutlet weak var linkedinField: UITextField!
     @IBOutlet weak var resumeField: UITextField!
-    @IBOutlet weak var githubField: UITextField!
+    @IBOutlet weak var phoneNumberField: UITextField!
+    
     
     
     //If this method gets too crowded, we'll put the pass handling in a separate class.
