@@ -15,6 +15,7 @@
             <string>SFUIDisplay-Light</string>
             <string>SFUIDisplay-Light</string>
             <string>SFUIDisplay-Light</string>
+            <string>SFUIDisplay-Light</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -85,6 +86,21 @@
                                     <constraint firstAttribute="width" constant="120" id="mbL-BO-Bgh"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXh-eM-hdU">
+                                <rect key="frame" x="225" y="550" width="151" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="151" id="6K9-sK-GZF"/>
+                                    <constraint firstAttribute="height" constant="30" id="Owb-2S-PeZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="20"/>
+                                <state key="normal" title="Create Your Card">
+                                    <color key="titleColor" red="1" green="1" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="makeCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PZz-T5-tWA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.50196081399917603" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -100,6 +116,7 @@
                             <constraint firstItem="UC5-vL-OTG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Jsx-yj-6DN"/>
                             <constraint firstItem="wrG-WO-T7B" firstAttribute="trailing" secondItem="UC5-vL-OTG" secondAttribute="trailing" id="KQQ-dc-GH1"/>
                             <constraint firstItem="oKx-G7-5UD" firstAttribute="top" secondItem="UC5-vL-OTG" secondAttribute="bottom" constant="39" id="PZt-0M-chx"/>
+                            <constraint firstItem="dXh-eM-hdU" firstAttribute="centerX" secondItem="1Si-6C-cSh" secondAttribute="centerX" id="SvB-jZ-3rh"/>
                             <constraint firstItem="wrG-WO-T7B" firstAttribute="trailing" secondItem="K7i-vc-Ssl" secondAttribute="trailing" id="UQQ-fX-YPX"/>
                             <constraint firstItem="1Si-6C-cSh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UZh-jr-CKv"/>
                             <constraint firstItem="UC5-vL-OTG" firstAttribute="top" secondItem="wrG-WO-T7B" secondAttribute="bottom" constant="37" id="Uod-fb-9Lc"/>
@@ -111,6 +128,7 @@
                             <constraint firstItem="oKx-G7-5UD" firstAttribute="leading" secondItem="UC5-vL-OTG" secondAttribute="leading" id="g0A-Bw-a6i"/>
                             <constraint firstItem="qMJ-P0-zHb" firstAttribute="baseline" secondItem="oKx-G7-5UD" secondAttribute="baseline" id="g3E-Hh-Iek"/>
                             <constraint firstItem="zqh-mo-HVT" firstAttribute="leading" secondItem="Jzn-aG-Kt0" secondAttribute="leading" id="kbY-vh-Z40"/>
+                            <constraint firstAttribute="bottom" secondItem="dXh-eM-hdU" secondAttribute="bottom" constant="20" symbolic="YES" id="kel-8i-Eoc"/>
                             <constraint firstItem="UC5-vL-OTG" firstAttribute="leading" secondItem="wrG-WO-T7B" secondAttribute="leading" id="qck-2U-jzK"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1Si-6C-cSh" secondAttribute="bottom" constant="460" id="zoE-r4-QdQ"/>
                         </constraints>

@@ -53,9 +53,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         UIView.commitAnimations()
     }
     
-    
-    
-    //If this method gets too crowded, we'll put the pass handling in a separate class.
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -67,7 +64,15 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.linkedinField.delegate = self
         self.resumeField.delegate = self
         self.phoneNumberField.delegate = self
-        
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    //If this method gets too crowded, we'll put the pass handling in a separate class.
+    @IBAction func makeCard(sender: AnyObject) {
         //Check if the user's device has Passbook.
         if PKPassLibrary.isPassLibraryAvailable() {
             
@@ -82,7 +87,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             @param images Array of PSImage for the pass
             @param viewController The UIViewController that will be used to present the PKAddPassesViewController. If the controller conforms to PKAddPassesViewControllerDelegate it is set as the delegate for the PKAddPassesViewController.
             @param completion A block object to be executed when the pass was added to passbook. This block takes no parameters and has no return value.
-
+            
             
             PassSlot.createPassFromTemplate(<#template: PSPassTemplate!#>, withValues: <#[NSObject : AnyObject]!#>, withImages: <#[AnyObject]!#>, andRequestInstallation: <#UIViewController!#>, completion: <#PSCompletion!##() -> Void#>)
             */
@@ -96,11 +101,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             self.presentViewController(alertController, animated: true, completion: nil)
         }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    
 }
 
 
