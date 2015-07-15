@@ -91,30 +91,21 @@ class ViewController: UIViewController, UITextFieldDelegate {
             var values = ["Name": "\(nameField.text)",
                 "Title": "\(titleField.text)", "Email": "\(emailField.text)", "Phone": "\(phoneNumberField.text)"]
             
-            PassSlot.createPassFromTemplateWithName("Business Card Template", withValues: values, andRequestInstallation: self, completion: {
-                let alertController = UIAlertController(title: "Awesome!", message: "Your business card has been created!", preferredStyle: .Alert)
-                
-                let okAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
-                
-                alertController.addAction(okAction)
-                
-                self.presentViewController(alertController, animated: true, completion: nil)
-            })
-            
-            
+            PassSlot.createPassFromTemplateWithName("Business Card Template", withValues: values, andRequestInstallation: self, completion: nil)
             
             /**
-            
-            Create a pass from a template and request the installation of the pass
-            @param template PassTemplate that is used to create the pass
-            @param values Placeholder values that will be filled in
-            @param images Array of PSImage for the pass
-            @param viewController The UIViewController that will be used to present the PKAddPassesViewController. If the controller conforms to PKAddPassesViewControllerDelegate it is set as the delegate for the PKAddPassesViewController.
-            @param completion A block object to be executed when the pass was added to passbook. This block takes no parameters and has no return value.
-            
+            Once we get the image uploading to work, this method will be used in place of the one above.
             
             PassSlot.createPassFromTemplate(<#template: PSPassTemplate!#>, withValues: <#[NSObject : AnyObject]!#>, withImages: <#[AnyObject]!#>, andRequestInstallation: <#UIViewController!#>, completion: <#PSCompletion!##() -> Void#>)
             */
+            
+            let alertController = UIAlertController(title: "Awesome!", message: "Your business card has been created!", preferredStyle: .Alert)
+            
+            let okAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
+            
+            alertController.addAction(okAction)
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
             
         } else {
             
@@ -127,5 +118,3 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
 }
-
-
