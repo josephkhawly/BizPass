@@ -46,6 +46,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
         animateViewMoving(false, moveValue: 100)
     }
     
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
     func animateViewMoving(up:Bool, moveValue :CGFloat){
         var movementDuration:NSTimeInterval = 0.3
         var movement:CGFloat = ( up ? -moveValue : moveValue)
@@ -81,7 +86,22 @@ class ViewController: UIViewController, UITextFieldDelegate {
         if PKPassLibrary.isPassLibraryAvailable() {
             
             //If they do, start the PassSlot service.
-            PassSlot.start("oalzIWdtIUZdOmQaaCtSQnRYzrHpFjSLeiLjBXiLlzMLOPLFmeoYYmvUljKyMacX")
+            PassSlot.start("sVSUwmfkUQdmOsFjZPvFqmeUqQPeLqnhthejrVRVwgBNbWUFLOtfwlFUSWRuvdQQ")
+            
+            var values = ["Name": "\(nameField.text)",
+                "Title": "\(titleField.text)", "Email": "\(emailField.text)", "Phone": "\(phoneNumberField.text)"]
+            
+            PassSlot.createPassFromTemplateWithName("Business Card Template", withValues: values, andRequestInstallation: self, completion: {
+                let alertController = UIAlertController(title: "Awesome!", message: "Your business card has been created!", preferredStyle: .Alert)
+                
+                let okAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
+                
+                alertController.addAction(okAction)
+                
+                self.presentViewController(alertController, animated: true, completion: nil)
+            })
+            
+            
             
             /**
             
