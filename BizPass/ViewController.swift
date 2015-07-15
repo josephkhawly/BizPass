@@ -20,7 +20,10 @@ import PassKit
 
         Think about using a table view instead.
 
-        Feature suggestion: have the user choose whatever info that isn't their name and title to present on the front of the card.
+        Feature suggestions: have the user choose whatever info that isn't their name and title to present on the front of the card.
+
+        Let the user decide the color of the card.
+        
      */
 
 class ViewController: UIViewController, UITextFieldDelegate {
@@ -91,21 +94,21 @@ class ViewController: UIViewController, UITextFieldDelegate {
             var values = ["Name": "\(nameField.text)",
                 "Title": "\(titleField.text)", "Email": "\(emailField.text)", "Phone": "\(phoneNumberField.text)"]
             
-            PassSlot.createPassFromTemplateWithName("Business Card Template", withValues: values, andRequestInstallation: self, completion: nil)
+            PassSlot.createPassFromTemplateWithName("Business Card Template", withValues: values, andRequestInstallation: self, completion: {
+                let alertController = UIAlertController(title: "Awesome!", message: "Your business card has been created!", preferredStyle: .Alert)
+                
+                let okAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
+                
+                alertController.addAction(okAction)
+                
+                self.presentViewController(alertController, animated: true, completion: nil)
+            })
             
             /**
             Once we get the image uploading to work, this method will be used in place of the one above.
             
             PassSlot.createPassFromTemplate(<#template: PSPassTemplate!#>, withValues: <#[NSObject : AnyObject]!#>, withImages: <#[AnyObject]!#>, andRequestInstallation: <#UIViewController!#>, completion: <#PSCompletion!##() -> Void#>)
             */
-            
-            let alertController = UIAlertController(title: "Awesome!", message: "Your business card has been created!", preferredStyle: .Alert)
-            
-            let okAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
-            
-            alertController.addAction(okAction)
-            
-            self.presentViewController(alertController, animated: true, completion: nil)
             
         } else {
             
