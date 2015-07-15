@@ -88,36 +88,44 @@ class ViewController: UIViewController, UITextFieldDelegate {
         //Check if the user's device has Passbook.
         if PKPassLibrary.isPassLibraryAvailable() {
             
-            //If they do, start the PassSlot service.
-            PassSlot.start("sVSUwmfkUQdmOsFjZPvFqmeUqQPeLqnhthejrVRVwgBNbWUFLOtfwlFUSWRuvdQQ")
-            
-            var values = ["Name": "\(nameField.text)",
-                "Title": "\(titleField.text)", "Email": "\(emailField.text)", "Phone": "\(phoneNumberField.text)"]
-            
-            PassSlot.createPassFromTemplateWithName("Business Card Template", withValues: values, andRequestInstallation: self, completion: {
-                let alertController = UIAlertController(title: "Awesome!", message: "Your business card has been created!", preferredStyle: .Alert)
+            //Check if some of the text fields are empty.
+            if (nameField.text != "" && titleField.text != "" && emailField.text != "" && phoneNumberField.text != "") {
+                //If they do, start the PassSlot service.
+                PassSlot.start("sVSUwmfkUQdmOsFjZPvFqmeUqQPeLqnhthejrVRVwgBNbWUFLOtfwlFUSWRuvdQQ")
                 
-                let okAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
+                var values = ["Name": "\(nameField.text)",
+                    "Title": "\(titleField.text)", "Email": "\(emailField.text)", "Phone": "\(phoneNumberField.text)"]
                 
-                alertController.addAction(okAction)
+                PassSlot.createPassFromTemplateWithName("Business Card Template", withValues: values, andRequestInstallation: self, completion: {
+                    
+                    self.displayAlert("Awesome!", message: "Your business card has been created!", preferredStyle: .Alert)
+                    
+                })
                 
-                self.presentViewController(alertController, animated: true, completion: nil)
-            })
-            
-            /**
-            Once we get the image uploading to work, this method will be used in place of the one above.
-            
-            PassSlot.createPassFromTemplate(<#template: PSPassTemplate!#>, withValues: <#[NSObject : AnyObject]!#>, withImages: <#[AnyObject]!#>, andRequestInstallation: <#UIViewController!#>, completion: <#PSCompletion!##() -> Void#>)
-            */
+                /**
+                Once we get the image uploading to work, this method will be used in place of the one above.
+                
+                PassSlot.createPassFromTemplate(<#template: PSPassTemplate!#>, withValues: <#[NSObject : AnyObject]!#>, withImages: <#[AnyObject]!#>, andRequestInstallation: <#UIViewController!#>, completion: <#PSCompletion!##() -> Void#>)
+                */
+            } else {
+                displayAlert("Hey, not so fast.", message: "You need to at least fill in your name, title, email address and phone number in order to generate a card.", preferredStyle: .Alert)
+            }
             
         } else {
-            
             // If they don't, present an alert controller and exit the app.
-            let alertController = UIAlertController(title: "Well shit, son.", message: "Looks like you don't have Passbook on your device, which means this app is completely useless to you. Sorry.", preferredStyle: .Alert)
-            let okAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
-            alertController.addAction(okAction)
-            self.presentViewController(alertController, animated: true, completion: nil)
+            displayAlert("Well shit, son.", message: "Looks like you don't have Passbook on your device, which means this app is completely useless to you. Sorry.", preferredStyle: .Alert)
         }
+    }
+    
+    //Since there are several instances of displaying alert controllers in this app, I thought I'd streamline it and create my own method for displaying it.
+    func displayAlert(title: String, message: String, preferredStyle: UIAlertControllerStyle) {
+        
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: preferredStyle)
+        
+        let okAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
+        
+        alertController.addAction(okAction)
+        self.presentViewController(alertController, animated: true, completion: nil)
     }
     
 }
