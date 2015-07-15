@@ -96,11 +96,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 var values = ["Name": "\(nameField.text)",
                     "Title": "\(titleField.text)", "Email": "\(emailField.text)", "Phone": "\(phoneNumberField.text)"]
                 
-                PassSlot.createPassFromTemplateWithName("Business Card Template", withValues: values, andRequestInstallation: self, completion: {
-                    
-                    self.displayAlert("Awesome!", message: "Your business card has been created!", preferredStyle: .Alert)
-                    
-                })
+                PassSlot.createPassFromTemplateWithName("Business Card Template", withValues: values, andRequestInstallation: self, completion: nil)
                 
                 /**
                 Once we get the image uploading to work, this method will be used in place of the one above.
@@ -108,7 +104,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 PassSlot.createPassFromTemplate(<#template: PSPassTemplate!#>, withValues: <#[NSObject : AnyObject]!#>, withImages: <#[AnyObject]!#>, andRequestInstallation: <#UIViewController!#>, completion: <#PSCompletion!##() -> Void#>)
                 */
             } else {
-                displayAlert("Hey, not so fast.", message: "You need to at least fill in your name, title, email address and phone number in order to generate a card.", preferredStyle: .Alert)
+                displayAlert("Hey, not so fast.", message: "You need to fill in at least your name, title, email address and phone number in order to generate a card.", preferredStyle: .Alert)
             }
             
         } else {
