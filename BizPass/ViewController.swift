@@ -75,6 +75,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.linkedinField.delegate = self
         self.resumeField.delegate = self
         self.phoneNumberField.delegate = self
+        
+        let tapGesture = UIGestureRecognizer(target: self, action: Selector("imageTapped:"))
+        imageView.addGestureRecognizer(tapGesture)
+        //imageView.userInteractionEnabled = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -124,5 +128,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
         alertController.addAction(okAction)
         self.presentViewController(alertController, animated: true, completion: nil)
     }
+    
+    @IBAction func imageTapped(sender: AnyObject) {
+        displayAlert("hey", message: "Just a test.", preferredStyle: .Alert)
+    }
+    
     
 }

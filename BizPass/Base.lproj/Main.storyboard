@@ -30,12 +30,16 @@
                         <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder.png" translatesAutoresizingMaskIntoConstraints="NO" id="1Si-6C-cSh">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder.png" translatesAutoresizingMaskIntoConstraints="NO" id="1Si-6C-cSh">
                                 <rect key="frame" x="240" y="20" width="120" height="120"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="1n4-va-yR1"/>
                                     <constraint firstAttribute="width" constant="120" id="hM2-CB-qat"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="GtP-9t-zBM" appends="YES" id="3Ao-Kz-frC"/>
+                                </connections>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXh-eM-hdU">
                                 <rect key="frame" x="225" y="550" width="151" height="30"/>
@@ -100,6 +104,7 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.50196081399917603" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="wrG-WO-T7B" firstAttribute="top" secondItem="K7i-vc-Ssl" secondAttribute="bottom" constant="34" id="04L-HU-a9k"/>
                             <constraint firstItem="qP9-XF-Ts5" firstAttribute="trailing" secondItem="qMJ-P0-zHb" secondAttribute="trailing" id="1so-kD-6mx"/>
@@ -146,6 +151,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="GtP-9t-zBM">
+                    <connections>
+                        <action selector="imageTapped:" destination="BYZ-38-t0r" id="6fz-oE-3u2"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
         </scene>
     </scenes>
