@@ -27,6 +27,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var linkedinField: UITextField!
     @IBOutlet weak var resumeField: UITextField!
     @IBOutlet weak var phoneNumberField: UITextField!
+    @IBOutlet weak var companyField: UITextField!
     
     var photoHelper: PhotoHelper?
     var photo: UIImage?
@@ -96,6 +97,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 if websiteField.text != "" { values["Website"] = ["\(websiteField.text)"] }
                 if linkedinField.text != "" { values["Linkedin"] = ["\(linkedinField.text)"] }
                 if resumeField.text != "" { values["Resume"] = ["\(resumeField.text)"] }
+                if companyField.text != "" { values["Company"] = ["\(companyField.text)"] }
                 
                 
                 let image = PSImage(named: "Profile", ofType: .Thumbnail)
