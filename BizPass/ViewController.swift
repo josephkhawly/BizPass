@@ -40,6 +40,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var resumeField: UITextField!
     @IBOutlet weak var phoneNumberField: UITextField!
     
+    var photoHelper: PhotoHelper?
+    
     
     //MARK: UITextFieldDelegate Methods
     func textFieldDidBeginEditing(textField: UITextField) {
@@ -130,7 +132,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func imageTapped(sender: AnyObject) {
-        displayAlert("hey", message: "Just a test.", preferredStyle: .Alert)
+        //put PhotoHelper here.
+        photoHelper = PhotoHelper(viewController: self) { (image: UIImage?) in
+            self.imageView.image = image
+        }
     }
     
     
