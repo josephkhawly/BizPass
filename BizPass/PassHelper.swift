@@ -9,6 +9,6 @@
 import UIKit
 import PassKit
 
-class PassControl {
+class PassHelper {
     
 }

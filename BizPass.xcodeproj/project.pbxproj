@@ -21,7 +21,8 @@
 		243608151B4F524F00049811 /* SF-UI-Text-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2436080F1B4F524F00049811 /* SF-UI-Text-Light.otf */; };
 		243608161B4F524F00049811 /* SF-UI-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 243608101B4F524F00049811 /* SF-UI-Text-Regular.otf */; };
 		2446372C1B56EDC200142B3E /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 2446372B1B56EDC200142B3E /* placeholder.png */; };
-		247EC2311B55622000EA159B /* PassControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247EC2301B55622000EA159B /* PassControl.swift */; };
+		24781D051B57FC2B002C76E2 /* PhotoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24781D041B57FC2B002C76E2 /* PhotoHelper.swift */; };
+		247EC2311B55622000EA159B /* PassHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247EC2301B55622000EA159B /* PassHelper.swift */; };
 		BAFFDB044F388A0B2764E959 /* Pods_BizPass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38DCAABCD513FA3A2BD1B974 /* Pods_BizPass.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -56,7 +57,8 @@
 		2436080F1B4F524F00049811 /* SF-UI-Text-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-Light.otf"; path = "../../../../Downloads/SF-UI/SF-UI-Text-Light.otf"; sourceTree = "<group>"; };
 		243608101B4F524F00049811 /* SF-UI-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-Regular.otf"; path = "../../../../Downloads/SF-UI/SF-UI-Text-Regular.otf"; sourceTree = "<group>"; };
 		2446372B1B56EDC200142B3E /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = SOURCE_ROOT; };
-		247EC2301B55622000EA159B /* PassControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassControl.swift; sourceTree = "<group>"; };
+		24781D041B57FC2B002C76E2 /* PhotoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoHelper.swift; sourceTree = "<group>"; };
+		247EC2301B55622000EA159B /* PassHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassHelper.swift; sourceTree = "<group>"; };
 		24F2C5211B543820001F1263 /* BizPass-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BizPass-Bridging-Header.h"; sourceTree = "<group>"; };
 		2F1C4E5046A45AA5AF366D69 /* Pods-BizPass.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BizPass.release.xcconfig"; path = "Pods/Target Support Files/Pods-BizPass/Pods-BizPass.release.xcconfig"; sourceTree = "<group>"; };
 		38DCAABCD513FA3A2BD1B974 /* Pods_BizPass.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BizPass.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,7 +113,8 @@
 				2446372B1B56EDC200142B3E /* placeholder.png */,
 				243607E71B4F004D00049811 /* AppDelegate.swift */,
 				243607E91B4F004D00049811 /* ViewController.swift */,
-				247EC2301B55622000EA159B /* PassControl.swift */,
+				24781D041B57FC2B002C76E2 /* PhotoHelper.swift */,
+				247EC2301B55622000EA159B /* PassHelper.swift */,
 				24F2C5211B543820001F1263 /* BizPass-Bridging-Header.h */,
 				243607EB1B4F004D00049811 /* Main.storyboard */,
 				243607EE1B4F004D00049811 /* Images.xcassets */,
@@ -342,7 +345,8 @@
 			files = (
 				243607EA1B4F004D00049811 /* ViewController.swift in Sources */,
 				243607E81B4F004D00049811 /* AppDelegate.swift in Sources */,
-				247EC2311B55622000EA159B /* PassControl.swift in Sources */,
+				24781D051B57FC2B002C76E2 /* PhotoHelper.swift in Sources */,
+				247EC2311B55622000EA159B /* PassHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

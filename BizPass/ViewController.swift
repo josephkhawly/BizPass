@@ -41,7 +41,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var phoneNumberField: UITextField!
     
     
-    //MARK: View Handling
+    //MARK: UITextFieldDelegate Methods
     func textFieldDidBeginEditing(textField: UITextField) {
         animateViewMoving(true, moveValue: 100)
     }
@@ -93,7 +93,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 //If they do, start the PassSlot service.
                 PassSlot.start("sVSUwmfkUQdmOsFjZPvFqmeUqQPeLqnhthejrVRVwgBNbWUFLOtfwlFUSWRuvdQQ")
                 
-                var values = ["Name": "\(nameField.text)",
+                let values = ["Name": "\(nameField.text)",
                     "Title": "\(titleField.text)", "Email": "\(emailField.text)", "Phone": "\(phoneNumberField.text)"]
                 
                 PassSlot.createPassFromTemplateWithName("Business Card Template", withValues: values, andRequestInstallation: self, completion: nil)
@@ -101,10 +101,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 /**
                 Once we get the image uploading to work, this method will be used in place of the one above.
                 
-                PassSlot.createPassFromTemplate(<#template: PSPassTemplate!#>, withValues: <#[NSObject : AnyObject]!#>, withImages: <#[AnyObject]!#>, andRequestInstallation: <#UIViewController!#>, completion: <#PSCompletion!##() -> Void#>)
+                PassSlot.createPassFromTemplateWithName("Business Card Template, withValues: values, withImages: <#[AnyObject]!#>, andRequestInstallation: self, completion: nil)
                 */
+
             } else {
-                displayAlert("Hey, not so fast.", message: "You need to fill in at least your name, title, email address and phone number in order to generate a card.", preferredStyle: .Alert)
+                displayAlert("Hey, not so fast.", message: "You need to at least fill in your name, title, email address and phone number in order to generate a card. Everything else is optional.", preferredStyle: .Alert)
             }
             
         } else {
