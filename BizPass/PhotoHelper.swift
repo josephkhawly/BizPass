@@ -34,7 +34,7 @@ class PhotoHelper: NSObject {
     func showPhotoSourceSelection() {
         
         //Set up the alert controller
-        let alertController = UIAlertController(title: nil, message: "Where do you want to get your picture from?", preferredStyle: .ActionSheet)
+        let alertController = UIAlertController(title: nil, message: "Upload a picture of yourself", preferredStyle: .ActionSheet)
         
         
         let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil) //set up the cancel action.

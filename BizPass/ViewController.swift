@@ -9,21 +9,9 @@
 import UIKit
 import PassKit
 
-    /* Possible methods and classes to use:
-        Classes: PKPassLibrary, PKAddPassesViewController
-        Methods: isPassLibraryAvailable() -> Bool
-                    passes() -> [PKPass]
-                    passWithPassTypeIdentifier(identifier: String, serialNumber: String)->PKPass?
-                    addPasses(...)
-                    canAddPasses()
-                    init(pass)
-
-        Think about using a table view instead.
-
-        Feature suggestions: have the user choose whatever info that isn't their name and title to present on the front of the card.
+    /* Feature suggestions: have the user choose whatever info that isn't their name and title to present on the front of the card.
 
         Let the user decide the color of the card.
-        
      */
 
 class ViewController: UIViewController, UITextFieldDelegate {
@@ -79,9 +67,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.resumeField.delegate = self
         self.phoneNumberField.delegate = self
         
-        let tapGesture = UIGestureRecognizer(target: self, action: Selector("imageTapped:"))
+        //Add the tap gesture to the ImageView
+        let tapGesture = UIGestureRecognizer(target: self, action: Selector("uploadImage:"))
         imageView.addGestureRecognizer(tapGesture)
-        //imageView.userInteractionEnabled = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -90,59 +78,59 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     //MARK: Button click method
-    //If this method gets too crowded, we'll put the pass handling in a separate class.
     @IBAction func makeCard(sender: AnyObject) {
+        
         //Check if the user's device has Passbook.
         if PKPassLibrary.isPassLibraryAvailable() {
             
-            //Check if some of the text fields are empty.
-            if (nameField.text != "" && titleField.text != "" && emailField.text != "" && phoneNumberField.text != "") {
+            //These are the minimum requirements for generating a card.
+            if nameField.text != "" && titleField.text != "" && emailField.text != "" && phoneNumberField.text != "" {
+                
                 //If they do, start the PassSlot service.
                 PassSlot.start("sVSUwmfkUQdmOsFjZPvFqmeUqQPeLqnhthejrVRVwgBNbWUFLOtfwlFUSWRuvdQQ")
                 
-                let values = ["Name": "\(nameField.text)",
-                    "Title": "\(titleField.text)", "Email": "\(emailField.text)", "Phone": "\(phoneNumberField.text)"]
+                //Store the user values into an array
+                var values : [NSObject: AnyObject] = ["Name": "\(nameField.text)", "Title": "\(titleField.text)", "Email": "\(emailField.text)", "Phone": "\(phoneNumberField.text)"]
                 
-                let image = PSImage(named: "Thumbnail", ofType: .Thumbnail)
+                if twitterField.text != "" { values["Twitter"] = ["\(twitterField.text)"] }
+                if websiteField.text != "" { values["Website"] = ["\(websiteField.text)"] }
+                if linkedinField.text != "" { values["Linkedin"] = ["\(linkedinField.text)"] }
+                if resumeField.text != "" { values["Resume"] = ["\(resumeField.text)"] }
+                
+                
+                let image = PSImage(named: "Profile", ofType: .Thumbnail)
                 image.setImage(photo, forResolution: .High)
                 
                 let imageArray = [image]
                 
-                //PassSlot.createPassFromTemplateWithName("Business Card Template", withValues: values, andRequestInstallation: self, completion: nil)
-                
                 PassSlot.createPassFromTemplateWithName("Business Card Template", withValues: values, withImages: imageArray, andRequestInstallation: self, completion: nil)
                 
-
-
             } else {
-                displayAlert("Hey, not so fast.", message: "You need to at least fill in your name, title, email address and phone number in order to generate a card. Everything else is optional.", preferredStyle: .Alert)
+                //If the requirements are not met, show the user an alert dialog.
+                displayAlert("Hey, not so fast.", message: "You need to at least have your name, title, email address, phone number, and a photo in order to generate a card. Everything else is optional.", preferredStyle: .Alert)
             }
             
         } else {
-            // If they don't, present an alert controller and exit the app.
-            displayAlert("Well shit, son.", message: "Looks like you don't have Passbook on your device, which means this app is completely useless to you. Sorry.", preferredStyle: .Alert)
+            //If the user doesn't have Passbook, we show them this:
+            displayAlert("Well shit, son.", message: "You don't have Passbook on your device, so you can't use this app. Sorry.", preferredStyle: .Alert)
         }
     }
     
-    //Since there are several instances of displaying alert controllers in this app, I thought I'd streamline it and create my own method for displaying it.
+    //A single method to display an alert controller for convenience purposes
     func displayAlert(title: String, message: String, preferredStyle: UIAlertControllerStyle) {
         
         let alertController = UIAlertController(title: title, message: message, preferredStyle: preferredStyle)
-        
         let okAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
-        
         alertController.addAction(okAction)
         self.presentViewController(alertController, animated: true, completion: nil)
+        
     }
     
-    @IBAction func imageTapped(sender: AnyObject) {
-        //put PhotoHelper here.
+    //MARK: Image upload
+    @IBAction func uploadImage(sender: UITapGestureRecognizer) {
         photoHelper = PhotoHelper(viewController: self) { (image: UIImage?) in
             self.imageView.image = image
             self.photo = image
-            
         }
     }
-    
-    
 }
