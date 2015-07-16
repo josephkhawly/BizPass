@@ -19,6 +19,8 @@ class PhotoHelper: NSObject {
     var callback: PhotoHelperCallback
     var imagePickerController: UIImagePickerController?
     
+    
+    //MARK: init method
     init(viewController: UIViewController, callback: PhotoHelperCallback) {
         self.viewController = viewController
         self.callback = callback

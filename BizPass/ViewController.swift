@@ -41,6 +41,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var phoneNumberField: UITextField!
     
     var photoHelper: PhotoHelper?
+    var photo: UIImage?
     
     
     //MARK: UITextFieldDelegate Methods
@@ -102,13 +103,16 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 let values = ["Name": "\(nameField.text)",
                     "Title": "\(titleField.text)", "Email": "\(emailField.text)", "Phone": "\(phoneNumberField.text)"]
                 
-                PassSlot.createPassFromTemplateWithName("Business Card Template", withValues: values, andRequestInstallation: self, completion: nil)
+                let image = PSImage(named: "Thumbnail", ofType: .Thumbnail)
+                image.setImage(photo, forResolution: .High)
                 
-                /**
-                Once we get the image uploading to work, this method will be used in place of the one above.
+                let imageArray = [image]
                 
-                PassSlot.createPassFromTemplateWithName("Business Card Template, withValues: values, withImages: <#[AnyObject]!#>, andRequestInstallation: self, completion: nil)
-                */
+                //PassSlot.createPassFromTemplateWithName("Business Card Template", withValues: values, andRequestInstallation: self, completion: nil)
+                
+                PassSlot.createPassFromTemplateWithName("Business Card Template", withValues: values, withImages: imageArray, andRequestInstallation: self, completion: nil)
+                
+
 
             } else {
                 displayAlert("Hey, not so fast.", message: "You need to at least fill in your name, title, email address and phone number in order to generate a card. Everything else is optional.", preferredStyle: .Alert)
@@ -135,6 +139,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         //put PhotoHelper here.
         photoHelper = PhotoHelper(viewController: self) { (image: UIImage?) in
             self.imageView.image = image
+            self.photo = image
+            
         }
     }
     
