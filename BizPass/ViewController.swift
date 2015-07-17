@@ -8,6 +8,7 @@
 
 import UIKit
 import PassKit
+import SwiftLoader
 
     /* Feature suggestions: have the user choose whatever info that isn't their name and title to present on the front of the card.
 
@@ -101,7 +102,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 
                 let imageArray = [image]
                 
-                PassSlot.createPassFromTemplateWithName("Business Card Template", withValues: values, withImages: imageArray, andRequestInstallation: self, completion: nil)
+                SwiftLoader.show(title: "Creating your business card...", animated: true)
+                
+                PassSlot.createPassFromTemplateWithName("Business Card Template", withValues: values, withImages: imageArray, andRequestInstallation: self, completion: {
+                    SwiftLoader.hide()
+                })
                 
             } else {
                 //If the requirements are not met, show the user an alert dialog.

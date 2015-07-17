@@ -1,10 +1,13 @@
 PODS:
   - PassSlot (0.7)
+  - SwiftLoader (0.2.2)
 
 DEPENDENCIES:
   - PassSlot
+  - SwiftLoader
 
 SPEC CHECKSUMS:
   PassSlot: b28b719efa4ba418ca757d2b3006dc789410d492
+  SwiftLoader: 9c5e547ae8e00b1c1079139492d6a273c7f73171
 
 COCOAPODS: 0.37.2

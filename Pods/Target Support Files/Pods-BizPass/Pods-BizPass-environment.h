@@ -12,3 +12,9 @@
 #define COCOAPODS_VERSION_MINOR_PassSlot 7
 #define COCOAPODS_VERSION_PATCH_PassSlot 0
 
+// SwiftLoader
+#define COCOAPODS_POD_AVAILABLE_SwiftLoader
+#define COCOAPODS_VERSION_MAJOR_SwiftLoader 0
+#define COCOAPODS_VERSION_MINOR_SwiftLoader 2
+#define COCOAPODS_VERSION_PATCH_SwiftLoader 2
+
