@@ -31,17 +31,6 @@
                         <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder.png" translatesAutoresizingMaskIntoConstraints="NO" id="1Si-6C-cSh">
-                                <rect key="frame" x="240" y="20" width="120" height="120"/>
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="120" id="1n4-va-yR1"/>
-                                    <constraint firstAttribute="width" constant="120" id="hM2-CB-qat"/>
-                                </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="GtP-9t-zBM" appends="YES" id="3Ao-Kz-frC"/>
-                                </connections>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXh-eM-hdU">
                                 <rect key="frame" x="225" y="550" width="151" height="30"/>
                                 <constraints>
@@ -93,6 +82,12 @@
                                 <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next"/>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Twitter" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zqh-mo-HVT">
+                                <rect key="frame" x="439" y="259" width="145" height="20"/>
+                                <color key="textColor" red="1" green="1" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="twitter" returnKeyType="next"/>
+                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Linkedin" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qP9-XF-Ts5">
                                 <rect key="frame" x="439" y="321" width="145" height="20"/>
                                 <color key="textColor" red="1" green="1" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -111,12 +106,17 @@
                                 <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Twitter" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zqh-mo-HVT">
-                                <rect key="frame" x="439" y="259" width="145" height="20"/>
-                                <color key="textColor" red="1" green="1" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="twitter" returnKeyType="next"/>
-                            </textField>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder.png" translatesAutoresizingMaskIntoConstraints="NO" id="1Si-6C-cSh">
+                                <rect key="frame" x="240" y="28" width="120" height="120"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="1n4-va-yR1"/>
+                                    <constraint firstAttribute="width" constant="120" id="hM2-CB-qat"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="GtP-9t-zBM" appends="YES" id="3Ao-Kz-frC"/>
+                                </connections>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -145,7 +145,7 @@
                             <constraint firstItem="qMJ-P0-zHb" firstAttribute="baseline" secondItem="oKx-G7-5UD" secondAttribute="baseline" id="g3E-Hh-Iek"/>
                             <constraint firstItem="iP0-JQ-Jxv" firstAttribute="top" secondItem="oKx-G7-5UD" secondAttribute="bottom" constant="41" id="gah-vX-hWN"/>
                             <constraint firstItem="1Si-6C-cSh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jE9-GI-FNY"/>
-                            <constraint firstItem="1Si-6C-cSh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="jfv-a0-BeJ"/>
+                            <constraint firstItem="1Si-6C-cSh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="jfv-a0-BeJ"/>
                             <constraint firstItem="zqh-mo-HVT" firstAttribute="leading" secondItem="Jzn-aG-Kt0" secondAttribute="leading" id="kbY-vh-Z40"/>
                             <constraint firstAttribute="bottom" secondItem="dXh-eM-hdU" secondAttribute="bottom" constant="20" symbolic="YES" id="kel-8i-Eoc"/>
                             <constraint firstItem="UC5-vL-OTG" firstAttribute="leading" secondItem="wrG-WO-T7B" secondAttribute="leading" id="qck-2U-jzK"/>
