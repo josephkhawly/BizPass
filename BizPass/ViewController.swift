@@ -67,6 +67,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.linkedinField.delegate = self
         self.resumeField.delegate = self
         self.phoneNumberField.delegate = self
+        self.companyField.delegate = self
         
         //Add the tap gesture to the ImageView
         let tapGesture = UIGestureRecognizer(target: self, action: Selector("uploadImage:"))
@@ -91,14 +92,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 PassSlot.start("sVSUwmfkUQdmOsFjZPvFqmeUqQPeLqnhthejrVRVwgBNbWUFLOtfwlFUSWRuvdQQ")
                 
                 //Store the user values into an array
-                var values : [NSObject: AnyObject] = ["Name": "\(nameField.text)", "Title": "\(titleField.text)", "Email": "\(emailField.text)", "Phone": "\(phoneNumberField.text)"]
+                var values = ["Name": "\(nameField.text)", "Title": "\(titleField.text)", "Email": "\(emailField.text)", "Phone": "\(phoneNumberField.text)", "Company": "\(companyField.text)", "Twitter": "\(twitterField.text)","Resume": "\(resumeField.text)", "Linkedin": "\(linkedinField.text)", "Website": "\(websiteField.text)"]
                 
-                if twitterField.text != "" { values["Twitter"] = ["\(twitterField.text)"] }
-                if websiteField.text != "" { values["Website"] = ["\(websiteField.text)"] }
-                if linkedinField.text != "" { values["Linkedin"] = ["\(linkedinField.text)"] }
-                if resumeField.text != "" { values["Resume"] = ["\(resumeField.text)"] }
-                if companyField.text != "" { values["Company"] = ["\(companyField.text)"] }
-                
+                //let newPhoto = UIImage(CGImage: photo?.CGImage, scale: 1.0, orientation: .Left)
                 
                 let image = PSImage(named: "Profile", ofType: .Thumbnail)
                 image.setImage(photo, forResolution: .High)
@@ -109,7 +105,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 
             } else {
                 //If the requirements are not met, show the user an alert dialog.
-                displayAlert("Hey, not so fast.", message: "You need to at least have your name, title, email address, phone number, and a photo in order to generate a card. Everything else is optional.", preferredStyle: .Alert)
+                displayAlert("Hey, not so fast.", message: "You need to at least have your name, company, title, email address, phone number, and a photo in order to generate a card. Everything else is optional.", preferredStyle: .Alert)
             }
             
         } else {
