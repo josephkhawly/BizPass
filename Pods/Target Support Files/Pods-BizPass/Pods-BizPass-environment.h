@@ -6,6 +6,12 @@
 // project.
 
 
+// AlertKit
+#define COCOAPODS_POD_AVAILABLE_AlertKit
+#define COCOAPODS_VERSION_MAJOR_AlertKit 0
+#define COCOAPODS_VERSION_MINOR_AlertKit 1
+#define COCOAPODS_VERSION_PATCH_AlertKit 2
+
 // PassSlot
 #define COCOAPODS_POD_AVAILABLE_PassSlot
 #define COCOAPODS_VERSION_MAJOR_PassSlot 0

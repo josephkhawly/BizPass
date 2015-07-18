@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-BizPass-AlertKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-BizPass-SwiftLoader.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>02247357771DBC70845F42FB</key>
+		<key>1E1BCEF81630EB41DFEFBF7E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FDDCF87D83BE7CD27C2A2CFA</key>
+		<key>2347F55317C7360AA4C9B199</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FFF167C6B84D367C50C695AF</key>
 		<dict>
 			<key>primary</key>
 			<true/>

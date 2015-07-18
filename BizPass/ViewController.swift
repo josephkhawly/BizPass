@@ -9,15 +9,20 @@
 import UIKit
 import PassKit
 import SwiftLoader
+import AlertKit
 
     /* Feature suggestions: have the user choose whatever info that isn't their name and title to present on the front of the card.
 
         Let the user decide the color of the card.
-     */
+
+        Small Stuff That Needs to be Done Before User Testing:
+            Get the "next" keyboard buttons to move to the next field
+            make it so that the keyboard hides when the user taps outside of the text field
+            Make the ImageView move up with all the other stuff in the view */
 
 class ViewController: UIViewController, UITextFieldDelegate {
     
-    //MARK: IBOutlets
+    //MARK: IBOutlets and variables
     @IBOutlet weak var imageView: UIImageView!
     
     @IBOutlet weak var nameField: UITextField!
@@ -32,7 +37,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     var photoHelper: PhotoHelper?
     var photo: UIImage?
-    
     
     //MARK: UITextFieldDelegate Methods
     func textFieldDidBeginEditing(textField: UITextField) {
@@ -89,7 +93,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             //These are the minimum requirements for generating a card.
             if nameField.text != "" && titleField.text != "" && emailField.text != "" && phoneNumberField.text != "" {
                 
-                //If they do, start the PassSlot service.
+                //Start the PassSlot service.
                 PassSlot.start("sVSUwmfkUQdmOsFjZPvFqmeUqQPeLqnhthejrVRVwgBNbWUFLOtfwlFUSWRuvdQQ")
                 
                 //Store the user values into an array
@@ -97,36 +101,27 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 
                 //let newPhoto = UIImage(CGImage: photo?.CGImage, scale: 1.0, orientation: .Left)
                 
+                //set the image to be displayed on the card.
                 let image = PSImage(named: "Profile", ofType: .Thumbnail)
                 image.setImage(photo, forResolution: .High)
                 
                 let imageArray = [image]
                 
-                SwiftLoader.show(title: "Creating your business card...", animated: true)
+                //Show the loading indicator in the middle of the view.
+                SwiftLoader.show(title: "Creating your card...", animated: true)
                 
-                PassSlot.createPassFromTemplateWithName("Business Card Template", withValues: values, withImages: imageArray, andRequestInstallation: self, completion: {
-                    SwiftLoader.hide()
-                })
+                //Create the pass and stop the loading indicator when finished.
+                PassSlot.createPassFromTemplateWithName("Business Card Template", withValues: values, withImages: imageArray, andRequestInstallation: self, completion: { SwiftLoader.hide() })
                 
             } else {
                 //If the requirements are not met, show the user an alert dialog.
-                displayAlert("Hey, not so fast.", message: "You need to at least have your name, company, title, email address, phone number, and a photo in order to generate a card. Everything else is optional.", preferredStyle: .Alert)
+                showAlert("Hey, not so fast.", message: "You need to at least have your name, company, title, email address, phone number, and a photo in order to generate a card. Everything else is optional.")
             }
             
         } else {
             //If the user doesn't have Passbook, we show them this:
-            displayAlert("Well shit, son.", message: "You don't have Passbook on your device, so you can't use this app. Sorry.", preferredStyle: .Alert)
+            showAlert("Well shit, son.", message: "You don't have Passbook on your device, so you can't use this app. Sorry.")
         }
-    }
-    
-    //A single method to display an alert controller for convenience purposes
-    func displayAlert(title: String, message: String, preferredStyle: UIAlertControllerStyle) {
-        
-        let alertController = UIAlertController(title: title, message: message, preferredStyle: preferredStyle)
-        let okAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
-        alertController.addAction(okAction)
-        self.presentViewController(alertController, animated: true, completion: nil)
-        
     }
     
     //MARK: Image upload
