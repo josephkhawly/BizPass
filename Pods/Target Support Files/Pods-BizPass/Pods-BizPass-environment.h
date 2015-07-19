@@ -12,6 +12,12 @@
 #define COCOAPODS_VERSION_MINOR_AlertKit 1
 #define COCOAPODS_VERSION_PATCH_AlertKit 2
 
+// IHKeyboardAvoiding
+#define COCOAPODS_POD_AVAILABLE_IHKeyboardAvoiding
+#define COCOAPODS_VERSION_MAJOR_IHKeyboardAvoiding 2
+#define COCOAPODS_VERSION_MINOR_IHKeyboardAvoiding 4
+#define COCOAPODS_VERSION_PATCH_IHKeyboardAvoiding 0
+
 // PassSlot
 #define COCOAPODS_POD_AVAILABLE_PassSlot
 #define COCOAPODS_VERSION_MAJOR_PassSlot 0

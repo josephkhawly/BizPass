@@ -7,6 +7,7 @@ target 'BizPass' do
 pod 'PassSlot'
 pod 'SwiftLoader'
 pod 'AlertKit'
+pod 'IHKeyboardAvoiding'
 
 end
 

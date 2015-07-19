@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-BizPass-IHKeyboardAvoiding.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-BizPass-SwiftLoader.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1E1BCEF81630EB41DFEFBF7E</key>
+		<key>685E4D0F76782B0A5DCC8C1B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2347F55317C7360AA4C9B199</key>
+		<key>A784F11CBEE48794D462F9BB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FFF167C6B84D367C50C695AF</key>
+		<key>BDCC790556C2495BEFBE00FC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BE3AFB5956ABA1993507EDC3</key>
 		<dict>
 			<key>primary</key>
 			<true/>

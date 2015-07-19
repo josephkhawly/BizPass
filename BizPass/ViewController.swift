@@ -47,7 +47,30 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
+        if textField.returnKeyType == .Next {
+            switch textField {
+            case nameField: titleField.becomeFirstResponder()
+                
+            case titleField: emailField.becomeFirstResponder()
+                
+            case emailField: twitterField.becomeFirstResponder()
+                
+            case twitterField: websiteField.becomeFirstResponder()
+                
+            case websiteField: linkedinField.becomeFirstResponder()
+                
+            case linkedinField: resumeField.becomeFirstResponder()
+                
+            case resumeField: phoneNumberField.becomeFirstResponder()
+                
+            case phoneNumberField: companyField.becomeFirstResponder()
+                
+            default: break
+            }
+        } else {
+            textField.resignFirstResponder()
+        }
+        
         return true
     }
     
@@ -73,6 +96,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.resumeField.delegate = self
         self.phoneNumberField.delegate = self
         self.companyField.delegate = self
+        
+        
         
         //Add the tap gesture to the ImageView
         let tapGesture = UIGestureRecognizer(target: self, action: Selector("uploadImage:"))
