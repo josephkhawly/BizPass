@@ -11,15 +11,17 @@ import UIKit
 import PassKit
 import SwiftLoader
 import AlertKit
-import KeyboardController
 
     /* Feature suggestions: have the user choose whatever info that isn't their name and title to present on the front of the card.
 
         Let the user decide the color of the card.
 
+        Make sure to get rid of sample data before shipping.
+
         Small Stuff That Needs to be Done Before User Testing:
             make it so that the keyboard hides when the user taps outside of the text field
-            Make the ImageView move up with all the other stuff in the view */
+            Make the ImageView move up with all the other stuff in the view 
+            Have something happen if the user isn't connected to the internet. */
 
 class ViewController: UIViewController, UITextFieldDelegate {
     
@@ -39,18 +41,23 @@ class ViewController: UIViewController, UITextFieldDelegate {
     var photoHelper: PhotoHelper?
     var photo: UIImage?
     
-    //MARK: UITextFieldDelegate Methods
+    //MARK: Keyboard management
     func textFieldDidBeginEditing(textField: UITextField) {
+        //Hide the imageView and move all the textFields up so the keyboard doesn't hide them
         imageView.hidden = true
-        animateViewMoving(true, moveValue: 100)
+        animateViewMoving(true, moveValue: 120)
+        
     }
+    
     func textFieldDidEndEditing(textField: UITextField) {
+        //Do the opposite when done editing.
         imageView.hidden = false
-        animateViewMoving(false, moveValue: 100)
+        animateViewMoving(false, moveValue: 120)
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         if textField.returnKeyType == .Next {
+            
             switch textField {
                 
             case nameField: titleField.becomeFirstResponder()
@@ -88,6 +95,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
         UIView.commitAnimations()
     }
     
+    //Method that dismisses the keyboard.
+    func dismissKeyboard() {
+        view.endEditing(true)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -102,10 +115,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.companyField.delegate = self
         
         //Add the tap gesture to the ImageView
-        let tapGesture = UIGestureRecognizer(target: self, action: Selector("uploadImage:"))
-        imageView.addGestureRecognizer(tapGesture)
+        let imageTapGesture = UIGestureRecognizer(target: self, action: Selector("uploadImage:"))
+        imageView.addGestureRecognizer(imageTapGesture)
         
-        
+        let dismissGesture = UIGestureRecognizer(target: self, action: Selector("dismissKeyboard:"))
+        self.view.addGestureRecognizer(dismissGesture)
     }
 
     override func didReceiveMemoryWarning() {
@@ -122,11 +136,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
             //These are the minimum requirements for generating a card.
             if nameField.text != "" && titleField.text != "" && emailField.text != "" && phoneNumberField.text != "" {
                 
-                //Start the PassSlot service.
-                PassSlot.start("sVSUwmfkUQdmOsFjZPvFqmeUqQPeLqnhthejrVRVwgBNbWUFLOtfwlFUSWRuvdQQ")
-                
                 //Store the user values into an array
                 var values = ["Name": "\(nameField.text)", "Title": "\(titleField.text)", "Email": "\(emailField.text)", "Phone": "\(phoneNumberField.text)", "Company": "\(companyField.text)", "Twitter": "\(twitterField.text)","Resume": "\(resumeField.text)", "Linkedin": "\(linkedinField.text)", "Website": "\(websiteField.text)"]
+                
+                //Start the PassSlot service.
+                PassSlot.start("sVSUwmfkUQdmOsFjZPvFqmeUqQPeLqnhthejrVRVwgBNbWUFLOtfwlFUSWRuvdQQ")
                 
                 //set the image to be displayed on the card.
                 let image = PSImage(named: "Profile", ofType: .Thumbnail)
