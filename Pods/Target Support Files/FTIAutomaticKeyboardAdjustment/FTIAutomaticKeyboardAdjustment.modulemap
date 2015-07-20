@@ -1,6 +1,0 @@
-framework module FTIAutomaticKeyboardAdjustment {
-  umbrella header "FTIAutomaticKeyboardAdjustment-umbrella.h"
-
-  export *
-  module * { export * }
-}

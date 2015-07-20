@@ -9,11 +9,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>FTIAutomaticKeyboardAdjustment.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-BizPass.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,17 +27,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>096A039D0A9E8BE9C426772273D7A602</key>
+		<key>6F612C08B04CB33BC079019D7D900613</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DB3C29329790D6D249587A3D7D0886B3</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F3CF490B0CE1186FD6E94806DC02E140</key>
+		<key>FC9804FB133CA866F993A984FAF8616D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

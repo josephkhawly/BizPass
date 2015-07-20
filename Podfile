@@ -7,7 +7,6 @@ target 'BizPass' do
 pod 'PassSlot'
 pod 'SwiftLoader'
 pod 'AlertKit'
-pod 'FTIAutomaticKeyboardAdjustment'
 
 end
 
