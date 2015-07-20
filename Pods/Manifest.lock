@@ -1,15 +1,18 @@
 PODS:
   - AlertKit (0.1.2)
+  - NextResponderTextField (1.0.1)
   - PassSlot (0.7)
   - SwiftLoader (0.2.2)
 
 DEPENDENCIES:
   - AlertKit
+  - NextResponderTextField
   - PassSlot
   - SwiftLoader
 
 SPEC CHECKSUMS:
   AlertKit: 3826f4d257492f539213d46880bb220e91559817
+  NextResponderTextField: 75af38a50aa2f1539ab2e7b3dd8d0687f2b71508
   PassSlot: b28b719efa4ba418ca757d2b3006dc789410d492
   SwiftLoader: 9c5e547ae8e00b1c1079139492d6a273c7f73171
 

@@ -7,29 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2BC8205D305299546B5B70A0976663E6 /* AlertKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D4EB69E182EAE348D9068922B4468E /* AlertKit-dummy.m */; };
+		0BC25D2FC35568CE528704AEC81F5CB3 /* AlertKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1307D5A2B615D7C9B31887FB66930DD /* AlertKit.swift */; };
+		0FDBE96B9BE95508616FD1A4823092F9 /* AlertKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EEE51BDFCA813170D638BD8F9B7F1F9 /* AlertKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25913E635852A67888F1E852CECC2D62 /* NextResponderTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9428BC4840BC8E734750440E26288CA1 /* NextResponderTextField-dummy.m */; };
 		327DEA223702054A163633E86D58F39C /* SwiftLoader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A330DC395D0B120FD564FDB3CFA1A9 /* SwiftLoader-dummy.m */; };
-		334F084FB0CE7A6A2D9829722060A741 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1849524DE9509FB927293592F5B9862A /* Foundation.framework */; };
-		4A7F394895DE5912AB8C2AB4E113869C /* Pods-BizPass-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 726F4688E3AABB91D4EC4E09279774EC /* Pods-BizPass-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		55BA7CEE431C51A10DF2424E967DC0EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1849524DE9509FB927293592F5B9862A /* Foundation.framework */; };
-		67AC42346F200F06D477CB6137DA8F35 /* Pods-BizPass-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB39CCB4B4F9426C534913035BD1134 /* Pods-BizPass-dummy.m */; };
-		70E0879352852AFEC53CF8850D3AD517 /* AlertKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 39E0AA05D4F8CA86932ACE6A5E27F4E4 /* AlertKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C679619D1CD1209C183D12AF279F91 /* NextResponderTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CE8201E10AD05ED4B05CE700BA68F72D /* NextResponderTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79EA96A3E67D0A701422B6809EC0F2C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1849524DE9509FB927293592F5B9862A /* Foundation.framework */; };
+		84C414CC72E05BA68CD3AEC0D66F1FC5 /* Pods-BizPass-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A928D23DD1A508DA5D5F18AF431EC03 /* Pods-BizPass-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8CFCF6BF3DE2CF226E58FDE4CBFD0EAA /* SwiftLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FAFFB3FBE5DC2515519B7A929E75DB /* SwiftLoader.swift */; };
+		8FF11404C6C5798C912FC25F0D625D4F /* NextResponderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909783F36959B8237AA543161DC3F086 /* NextResponderTextField.swift */; };
+		9A116C416094BB8E4D521F7B80EF9102 /* NextResponderTextField.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 10DADC714E68BB8C5751042EB1C577A7 /* NextResponderTextField.bundle */; };
+		B1B505A9DA3376FC838F1507E227C7BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1849524DE9509FB927293592F5B9862A /* Foundation.framework */; };
 		B320FDCD06F7E60E3206DF8C1E32B4F6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E50C9271626C4BA818F11781A2EC638F /* UIKit.framework */; };
-		CE546CC268917010796B8EA48E2A883F /* AlertKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C62E990E38B29E6D05AD73B35DB3CC /* AlertKit.swift */; };
-		D81C076DE3BEDCC788644325BCD3B3AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1849524DE9509FB927293592F5B9862A /* Foundation.framework */; };
+		B916211D8214ED17EA4B07E42116DB31 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1849524DE9509FB927293592F5B9862A /* Foundation.framework */; };
+		E2EB0974546353B46136077751703056 /* AlertKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 933517DC0B660A66AA24B17ACF7FF563 /* AlertKit-dummy.m */; };
 		E70B1DA82B11B361C5D1FC083117D858 /* SwiftLoader-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 394FB4CCE65A307E3EE2EF182B5EC1D2 /* SwiftLoader-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1BDB2DB23EC271220F77B4E5BFAC355 /* Pods-BizPass-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 97260F8D3F790F0E821360496C91E228 /* Pods-BizPass-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3A6189F264E0098EC7B504C976081B13 /* PBXContainerItemProxy */ = {
+		252B96D8EA14130A8EF71A0E8A5394D2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6F612C08B04CB33BC079019D7D900613;
+			remoteGlobalIDString = E1E292A208A6C01A608BD214092228B6;
 			remoteInfo = AlertKit;
 		};
-		5C2A0C943C71F5031D9F2EDBA9683545 /* PBXContainerItemProxy */ = {
+		5A06EE31A4D11D481B87BC75AAED353A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9AA8342BD5B234007C6E5239CAE6D88;
+			remoteInfo = NextResponderTextField;
+		};
+		A02EB26667F72CA3D3644769279A7D48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CE8515D684305BF6F9FACF315DF067E;
+			remoteInfo = "NextResponderTextField-NextResponderTextField";
+		};
+		FACC56B6CE6B30751834F05A4F18A4B3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -39,45 +58,78 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0577683257498EB5A402B8C251680A9F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C4DF0E5FEAF8B0E39A1B470FDB5DD69 /* Pods-BizPass-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BizPass-acknowledgements.plist"; sourceTree = "<group>"; };
-		0D629E0C9280D54DEA0272111C0C353D /* PSPassTemplate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PSPassTemplate.h; path = sdk/PassSlot.framework/Versions/A/Headers/PSPassTemplate.h; sourceTree = "<group>"; };
-		132BBB63E78230B9B74D6C21E17DA85C /* SwiftLoader-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftLoader-prefix.pch"; sourceTree = "<group>"; };
-		15A6C2BAFBFC7145344D4DE8D867EDA0 /* Pods_BizPass.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BizPass.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		10DADC714E68BB8C5751042EB1C577A7 /* NextResponderTextField.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NextResponderTextField.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		14ACB2CFE626617A5092BF78B0A6A7FC /* SwiftLoader.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftLoader.modulemap; sourceTree = "<group>"; };
 		1849524DE9509FB927293592F5B9862A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		1CD14C46D4D33237CDE294B04944BB2E /* SwiftLoader.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLoader.xcconfig; sourceTree = "<group>"; };
+		20DD2F97CD147C0A70898791B24D72F0 /* Pods_BizPass.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BizPass.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22C493ED5FC4FF1AC49FDD3A3E5334DE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C7FF504CFB9FF66B2A79F74BA071BC2 /* NextResponderTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NextResponderTextField-prefix.pch"; sourceTree = "<group>"; };
+		2D6E8BE78112665A282DA24B303A7DF2 /* SwiftLoader-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftLoader-prefix.pch"; sourceTree = "<group>"; };
+		3016959444B7D6E7D3B7FF80D597DE8B /* AlertKit-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "AlertKit-Private.xcconfig"; sourceTree = "<group>"; };
 		3378DD1F9114C5770CEEE5B9377C1FBB /* Pods-BizPass-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BizPass-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3655EF3E59DEF20E69D4E361FC48F7A2 /* Pods-BizPass-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BizPass-frameworks.sh"; sourceTree = "<group>"; };
 		394FB4CCE65A307E3EE2EF182B5EC1D2 /* SwiftLoader-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftLoader-umbrella.h"; sourceTree = "<group>"; };
-		39E0AA05D4F8CA86932ACE6A5E27F4E4 /* AlertKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlertKit-umbrella.h"; sourceTree = "<group>"; };
+		3A928D23DD1A508DA5D5F18AF431EC03 /* Pods-BizPass-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BizPass-umbrella.h"; sourceTree = "<group>"; };
 		4173ACB6733B4FA7701A1A311B17862C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4ADF50F14C427DB405BABFA25090E889 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6227E5B2F82CE51726D002D9A77532CE /* SwiftLoader.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLoader.xcconfig; sourceTree = "<group>"; };
-		62FBEBFF4BFB9449273268DC72E07717 /* AlertKit-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "AlertKit-Private.xcconfig"; sourceTree = "<group>"; };
-		712555FA779834ED7D93C692FC4A7043 /* AlertKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AlertKit.xcconfig; sourceTree = "<group>"; };
-		726F4688E3AABB91D4EC4E09279774EC /* Pods-BizPass-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BizPass-umbrella.h"; sourceTree = "<group>"; };
+		42F92673A7D81D5493FFABE200CEDA48 /* NextResponderTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NextResponderTextField.xcconfig; sourceTree = "<group>"; };
+		5BD59155FE5BFBF7E8B2D754402428C1 /* AlertKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlertKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		636343F8A3F6617F8E60FD4AE6096E13 /* NextResponderTextField-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "NextResponderTextField-Private.xcconfig"; sourceTree = "<group>"; };
+		67AE57A6F70DEBCA8572543852A8A0A6 /* PassSlot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PassSlot.h; path = sdk/PassSlot.framework/Versions/A/Headers/PassSlot.h; sourceTree = "<group>"; };
+		73756DC2FB298B9C687A41C2E80C165E /* AlertKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlertKit-prefix.pch"; sourceTree = "<group>"; };
 		74FAFFB3FBE5DC2515519B7A929E75DB /* SwiftLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftLoader.swift; path = src/SwiftLoader/SwiftLoader.swift; sourceTree = "<group>"; };
-		78E5BB8A0B816DA24E77718B6E5055C6 /* PassSlot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PassSlot.h; path = sdk/PassSlot.framework/Versions/A/Headers/PassSlot.h; sourceTree = "<group>"; };
+		8156B1DF4FDDF4D8C82A92E355E63B5E /* NextResponderTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = NextResponderTextField.modulemap; sourceTree = "<group>"; };
 		84D4001BB12EBF995669CB9DCB174308 /* SwiftLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8827CEB692093C9E2653349FC506D123 /* AlertKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlertKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A1F59DDE8E41E75700AFBBC197FB2EB9 /* Pods-BizPass.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BizPass.release.xcconfig"; sourceTree = "<group>"; };
-		A77C0466A72BD71BFAE83B33C12601A7 /* PSImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PSImage.h; path = sdk/PassSlot.framework/Versions/A/Headers/PSImage.h; sourceTree = "<group>"; };
-		AA386E510B57D0807EB937DB4725DF15 /* Pods-BizPass.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BizPass.debug.xcconfig"; sourceTree = "<group>"; };
+		8EEE51BDFCA813170D638BD8F9B7F1F9 /* AlertKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlertKit-umbrella.h"; sourceTree = "<group>"; };
+		909783F36959B8237AA543161DC3F086 /* NextResponderTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NextResponderTextField.swift; path = Pod/Classes/NextResponderTextField.swift; sourceTree = "<group>"; };
+		933517DC0B660A66AA24B17ACF7FF563 /* AlertKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AlertKit-dummy.m"; sourceTree = "<group>"; };
+		9428BC4840BC8E734750440E26288CA1 /* NextResponderTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NextResponderTextField-dummy.m"; sourceTree = "<group>"; };
+		97260F8D3F790F0E821360496C91E228 /* Pods-BizPass-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BizPass-dummy.m"; sourceTree = "<group>"; };
 		AE71671FC7478E11B07669207A22BE76 /* SwiftLoader-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "SwiftLoader-Private.xcconfig"; sourceTree = "<group>"; };
+		B4B2FBFB57F65916EA6200979899A021 /* Pods-BizPass.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BizPass.debug.xcconfig"; sourceTree = "<group>"; };
 		B64E91B7211FB28C8D94E26A0F1867B7 /* Pods-BizPass.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BizPass.modulemap"; sourceTree = "<group>"; };
-		BE07FB6F9CA48AF4D3086598572450B6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BEB39CCB4B4F9426C534913035BD1134 /* Pods-BizPass-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BizPass-dummy.m"; sourceTree = "<group>"; };
+		B7AD2F108F15A6FC46030EA9DF171C84 /* Pods-BizPass.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BizPass.release.xcconfig"; sourceTree = "<group>"; };
 		C4A330DC395D0B120FD564FDB3CFA1A9 /* SwiftLoader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftLoader-dummy.m"; sourceTree = "<group>"; };
 		C88113A79685B4EFEE7BAD12896829F7 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		D237BF748EDDFAB774BE28B94C35F1A3 /* AlertKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlertKit-prefix.pch"; sourceTree = "<group>"; };
+		CE8201E10AD05ED4B05CE700BA68F72D /* NextResponderTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NextResponderTextField-umbrella.h"; sourceTree = "<group>"; };
+		D1307D5A2B615D7C9B31887FB66930DD /* AlertKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlertKit.swift; path = AlertKit/AlertKit.swift; sourceTree = "<group>"; };
 		D3BE77113388B90433A10FF1DCD4430D /* Pods-BizPass-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BizPass-resources.sh"; sourceTree = "<group>"; };
-		DE158335D8817B6B7BB1FD302C76D48B /* SwiftLoader.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftLoader.modulemap; sourceTree = "<group>"; };
-		E4D4EB69E182EAE348D9068922B4468E /* AlertKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AlertKit-dummy.m"; sourceTree = "<group>"; };
+		D4BEDF2FD89C8699496BE860EBC6BD86 /* NextResponderTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NextResponderTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D99FB04DB6FCC91456BF10F4DABDEF37 /* PSPassTemplate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PSPassTemplate.h; path = sdk/PassSlot.framework/Versions/A/Headers/PSPassTemplate.h; sourceTree = "<group>"; };
+		DE637BB70BFF8C1B2BE975A7C32DE862 /* AlertKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AlertKit.modulemap; sourceTree = "<group>"; };
+		E0550B2356E0880C031C12EF1AFD6E3D /* PSImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PSImage.h; path = sdk/PassSlot.framework/Versions/A/Headers/PSImage.h; sourceTree = "<group>"; };
 		E50C9271626C4BA818F11781A2EC638F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		E7C62E990E38B29E6D05AD73B35DB3CC /* AlertKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlertKit.swift; path = AlertKit/AlertKit.swift; sourceTree = "<group>"; };
-		EEDB0A07A101C9F56D5CCE7976B1ED65 /* AlertKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AlertKit.modulemap; sourceTree = "<group>"; };
-		FCD3125813B436F5CED54EF25FC31042 /* PSPass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PSPass.h; path = sdk/PassSlot.framework/Versions/A/Headers/PSPass.h; sourceTree = "<group>"; };
+		EF5D3FD84FF38F11BA2907CFBAF07EAC /* PSPass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PSPass.h; path = sdk/PassSlot.framework/Versions/A/Headers/PSPass.h; sourceTree = "<group>"; };
+		F9084405366B1923876E96CD4C49160B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAF023BC3A4CCA6BDC3A76C0C9805750 /* AlertKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AlertKit.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		15D3D38A1CE8BEB60223315494DB858C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		245E6FB36436FE6273BC302821D2E48D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1B505A9DA3376FC838F1507E227C7BE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		535CAB2B0AA8F222BC52C4A59B737416 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B916211D8214ED17EA4B07E42116DB31 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		540F295F18F5698E044543E3FA3B9B91 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -87,41 +139,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		894CD9D5A7769157A2201AB5BB6832A5 /* Frameworks */ = {
+		AE91D1B7F41B5CE1B88C614FC3215D43 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D81C076DE3BEDCC788644325BCD3B3AE /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BF4A0B1E61427A0C18A814B55AD4E756 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				334F084FB0CE7A6A2D9829722060A741 /* Foundation.framework in Frameworks */,
+				79EA96A3E67D0A701422B6809EC0F2C5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		01718FF952B0EC712465C2993F7F0675 /* AlertKit */ = {
+		1042E95AC219803C526028863BBA152A /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E7C62E990E38B29E6D05AD73B35DB3CC /* AlertKit.swift */,
-				C8569F59F44D00D34731CF839A3E7F6B /* Support Files */,
+				0577683257498EB5A402B8C251680A9F /* Info.plist */,
+				8156B1DF4FDDF4D8C82A92E355E63B5E /* NextResponderTextField.modulemap */,
+				42F92673A7D81D5493FFABE200CEDA48 /* NextResponderTextField.xcconfig */,
+				636343F8A3F6617F8E60FD4AE6096E13 /* NextResponderTextField-Private.xcconfig */,
+				9428BC4840BC8E734750440E26288CA1 /* NextResponderTextField-dummy.m */,
+				2C7FF504CFB9FF66B2A79F74BA071BC2 /* NextResponderTextField-prefix.pch */,
+				CE8201E10AD05ED4B05CE700BA68F72D /* NextResponderTextField-umbrella.h */,
 			);
-			path = AlertKit;
-			sourceTree = "<group>";
-		};
-		21CA19E124A6148FCB05DB4F648D60BB /* SwiftLoader */ = {
-			isa = PBXGroup;
-			children = (
-				74FAFFB3FBE5DC2515519B7A929E75DB /* SwiftLoader.swift */,
-				70E086CFEC6B00E9629A346F60211EB3 /* Support Files */,
-			);
-			path = SwiftLoader;
+			name = "Support Files";
+			path = "../Target Support Files/NextResponderTextField";
 			sourceTree = "<group>";
 		};
 		21FF83D38BE2E1D5499360B06000D8F3 /* iOS */ = {
@@ -133,15 +174,13 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		4874705697F620807556D69C69A8BDEF /* PassSlot */ = {
+		25892F09561A6D4A8AEA369E4DE2F054 /* NextResponderTextField */ = {
 			isa = PBXGroup;
 			children = (
-				A77C0466A72BD71BFAE83B33C12601A7 /* PSImage.h */,
-				FCD3125813B436F5CED54EF25FC31042 /* PSPass.h */,
-				0D629E0C9280D54DEA0272111C0C353D /* PSPassTemplate.h */,
-				78E5BB8A0B816DA24E77718B6E5055C6 /* PassSlot.h */,
+				909783F36959B8237AA543161DC3F086 /* NextResponderTextField.swift */,
+				1042E95AC219803C526028863BBA152A /* Support Files */,
 			);
-			path = PassSlot;
+			path = NextResponderTextField;
 			sourceTree = "<group>";
 		};
 		5E1F3384B1B39575144FEBFCF3210CCC /* Frameworks */ = {
@@ -152,19 +191,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		70E086CFEC6B00E9629A346F60211EB3 /* Support Files */ = {
+		6A09A967B9A4939FCBFC2F7C43F1F3F4 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				4ADF50F14C427DB405BABFA25090E889 /* Info.plist */,
-				DE158335D8817B6B7BB1FD302C76D48B /* SwiftLoader.modulemap */,
-				6227E5B2F82CE51726D002D9A77532CE /* SwiftLoader.xcconfig */,
+				F9084405366B1923876E96CD4C49160B /* Info.plist */,
+				14ACB2CFE626617A5092BF78B0A6A7FC /* SwiftLoader.modulemap */,
+				1CD14C46D4D33237CDE294B04944BB2E /* SwiftLoader.xcconfig */,
 				AE71671FC7478E11B07669207A22BE76 /* SwiftLoader-Private.xcconfig */,
 				C4A330DC395D0B120FD564FDB3CFA1A9 /* SwiftLoader-dummy.m */,
-				132BBB63E78230B9B74D6C21E17DA85C /* SwiftLoader-prefix.pch */,
+				2D6E8BE78112665A282DA24B303A7DF2 /* SwiftLoader-prefix.pch */,
 				394FB4CCE65A307E3EE2EF182B5EC1D2 /* SwiftLoader-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SwiftLoader";
+			sourceTree = "<group>";
+		};
+		7DAF96F23880D765E27D2927B62F230C /* SwiftLoader */ = {
+			isa = PBXGroup;
+			children = (
+				74FAFFB3FBE5DC2515519B7A929E75DB /* SwiftLoader.swift */,
+				6A09A967B9A4939FCBFC2F7C43F1F3F4 /* Support Files */,
+			);
+			path = SwiftLoader;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -172,7 +220,7 @@
 			children = (
 				C88113A79685B4EFEE7BAD12896829F7 /* Podfile */,
 				5E1F3384B1B39575144FEBFCF3210CCC /* Frameworks */,
-				B72A7892EECA4A44771AFFC274D6CFA9 /* Pods */,
+				EF447B4E1DFAE4F853BEEBB25E70B50E /* Pods */,
 				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
 				848A6CE8DA3504A266A17F635DC3683A /* Targets Support Files */,
 			);
@@ -193,37 +241,27 @@
 				B64E91B7211FB28C8D94E26A0F1867B7 /* Pods-BizPass.modulemap */,
 				3378DD1F9114C5770CEEE5B9377C1FBB /* Pods-BizPass-acknowledgements.markdown */,
 				0C4DF0E5FEAF8B0E39A1B470FDB5DD69 /* Pods-BizPass-acknowledgements.plist */,
-				BEB39CCB4B4F9426C534913035BD1134 /* Pods-BizPass-dummy.m */,
+				97260F8D3F790F0E821360496C91E228 /* Pods-BizPass-dummy.m */,
 				3655EF3E59DEF20E69D4E361FC48F7A2 /* Pods-BizPass-frameworks.sh */,
 				D3BE77113388B90433A10FF1DCD4430D /* Pods-BizPass-resources.sh */,
-				726F4688E3AABB91D4EC4E09279774EC /* Pods-BizPass-umbrella.h */,
-				AA386E510B57D0807EB937DB4725DF15 /* Pods-BizPass.debug.xcconfig */,
-				A1F59DDE8E41E75700AFBBC197FB2EB9 /* Pods-BizPass.release.xcconfig */,
+				3A928D23DD1A508DA5D5F18AF431EC03 /* Pods-BizPass-umbrella.h */,
+				B4B2FBFB57F65916EA6200979899A021 /* Pods-BizPass.debug.xcconfig */,
+				B7AD2F108F15A6FC46030EA9DF171C84 /* Pods-BizPass.release.xcconfig */,
 			);
 			name = "Pods-BizPass";
 			path = "Target Support Files/Pods-BizPass";
 			sourceTree = "<group>";
 		};
-		B72A7892EECA4A44771AFFC274D6CFA9 /* Pods */ = {
+		9CEF1CD6572531B1E93D9A22EF8A32A2 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				01718FF952B0EC712465C2993F7F0675 /* AlertKit */,
-				4874705697F620807556D69C69A8BDEF /* PassSlot */,
-				21CA19E124A6148FCB05DB4F648D60BB /* SwiftLoader */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		C8569F59F44D00D34731CF839A3E7F6B /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				EEDB0A07A101C9F56D5CCE7976B1ED65 /* AlertKit.modulemap */,
-				712555FA779834ED7D93C692FC4A7043 /* AlertKit.xcconfig */,
-				62FBEBFF4BFB9449273268DC72E07717 /* AlertKit-Private.xcconfig */,
-				E4D4EB69E182EAE348D9068922B4468E /* AlertKit-dummy.m */,
-				D237BF748EDDFAB774BE28B94C35F1A3 /* AlertKit-prefix.pch */,
-				39E0AA05D4F8CA86932ACE6A5E27F4E4 /* AlertKit-umbrella.h */,
-				BE07FB6F9CA48AF4D3086598572450B6 /* Info.plist */,
+				DE637BB70BFF8C1B2BE975A7C32DE862 /* AlertKit.modulemap */,
+				FAF023BC3A4CCA6BDC3A76C0C9805750 /* AlertKit.xcconfig */,
+				3016959444B7D6E7D3B7FF80D597DE8B /* AlertKit-Private.xcconfig */,
+				933517DC0B660A66AA24B17ACF7FF563 /* AlertKit-dummy.m */,
+				73756DC2FB298B9C687A41C2E80C165E /* AlertKit-prefix.pch */,
+				8EEE51BDFCA813170D638BD8F9B7F1F9 /* AlertKit-umbrella.h */,
+				22C493ED5FC4FF1AC49FDD3A3E5334DE /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/AlertKit";
@@ -232,11 +270,44 @@
 		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8827CEB692093C9E2653349FC506D123 /* AlertKit.framework */,
-				15A6C2BAFBFC7145344D4DE8D867EDA0 /* Pods_BizPass.framework */,
+				5BD59155FE5BFBF7E8B2D754402428C1 /* AlertKit.framework */,
+				10DADC714E68BB8C5751042EB1C577A7 /* NextResponderTextField.bundle */,
+				D4BEDF2FD89C8699496BE860EBC6BD86 /* NextResponderTextField.framework */,
+				20DD2F97CD147C0A70898791B24D72F0 /* Pods_BizPass.framework */,
 				84D4001BB12EBF995669CB9DCB174308 /* SwiftLoader.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		D58628597B7F2ECF98B6416EAE6453F2 /* PassSlot */ = {
+			isa = PBXGroup;
+			children = (
+				E0550B2356E0880C031C12EF1AFD6E3D /* PSImage.h */,
+				EF5D3FD84FF38F11BA2907CFBAF07EAC /* PSPass.h */,
+				D99FB04DB6FCC91456BF10F4DABDEF37 /* PSPassTemplate.h */,
+				67AE57A6F70DEBCA8572543852A8A0A6 /* PassSlot.h */,
+			);
+			path = PassSlot;
+			sourceTree = "<group>";
+		};
+		E1D78F3BAA0933E993B4156FF9AF4802 /* AlertKit */ = {
+			isa = PBXGroup;
+			children = (
+				D1307D5A2B615D7C9B31887FB66930DD /* AlertKit.swift */,
+				9CEF1CD6572531B1E93D9A22EF8A32A2 /* Support Files */,
+			);
+			path = AlertKit;
+			sourceTree = "<group>";
+		};
+		EF447B4E1DFAE4F853BEEBB25E70B50E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E1D78F3BAA0933E993B4156FF9AF4802 /* AlertKit */,
+				25892F09561A6D4A8AEA369E4DE2F054 /* NextResponderTextField */,
+				D58628597B7F2ECF98B6416EAE6453F2 /* PassSlot */,
+				7DAF96F23880D765E27D2927B62F230C /* SwiftLoader */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,19 +321,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AD16BD49673BAF4165FCAF9AEA849AB8 /* Headers */ = {
+		A09CF00B49A1F40086A8D815439BB2F1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A7F394895DE5912AB8C2AB4E113869C /* Pods-BizPass-umbrella.h in Headers */,
+				63C679619D1CD1209C183D12AF279F91 /* NextResponderTextField-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C498A637893E1401457B4B4D646B37F3 /* Headers */ = {
+		A97D1B76BB7DF75540AC743C1AC25CD9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70E0879352852AFEC53CF8850D3AD517 /* AlertKit-umbrella.h in Headers */,
+				0FDBE96B9BE95508616FD1A4823092F9 /* AlertKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C80A3D4F7BBA4542EFEA62ACCFDE41A9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84C414CC72E05BA68CD3AEC0D66F1FC5 /* Pods-BizPass-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,13 +365,69 @@
 			productReference = 84D4001BB12EBF995669CB9DCB174308 /* SwiftLoader.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		6F612C08B04CB33BC079019D7D900613 /* AlertKit */ = {
+		8CE8515D684305BF6F9FACF315DF067E /* NextResponderTextField-NextResponderTextField */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4BF94155DE9CB9998DA2756C100ADF9C /* Build configuration list for PBXNativeTarget "AlertKit" */;
+			buildConfigurationList = 19B8CEF2F2C2A1559FDD7E6AEE75A754 /* Build configuration list for PBXNativeTarget "NextResponderTextField-NextResponderTextField" */;
 			buildPhases = (
-				189405698B6D7A7B815D1DED7622EB22 /* Sources */,
-				BF4A0B1E61427A0C18A814B55AD4E756 /* Frameworks */,
-				C498A637893E1401457B4B4D646B37F3 /* Headers */,
+				694F1B03F804101E19C03148618AC71D /* Sources */,
+				15D3D38A1CE8BEB60223315494DB858C /* Frameworks */,
+				100F712971425296FE6BFA69FC1CAD65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NextResponderTextField-NextResponderTextField";
+			productName = "NextResponderTextField-NextResponderTextField";
+			productReference = 10DADC714E68BB8C5751042EB1C577A7 /* NextResponderTextField.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		A9AA8342BD5B234007C6E5239CAE6D88 /* NextResponderTextField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B128952E53A0E37335C22EF2C67E959 /* Build configuration list for PBXNativeTarget "NextResponderTextField" */;
+			buildPhases = (
+				E081E622BFA79C35DA68A3BFAD91A62E /* Sources */,
+				245E6FB36436FE6273BC302821D2E48D /* Frameworks */,
+				983A6160125BA78C1A93139EB978E509 /* Resources */,
+				A09CF00B49A1F40086A8D815439BB2F1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7FBB1C0F8A509FE1EFBCB539083FDEB9 /* PBXTargetDependency */,
+			);
+			name = NextResponderTextField;
+			productName = NextResponderTextField;
+			productReference = D4BEDF2FD89C8699496BE860EBC6BD86 /* NextResponderTextField.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DB3C29329790D6D249587A3D7D0886B3 /* Pods-BizPass */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36AFC981CC64B257EB8F48B6FAF40595 /* Build configuration list for PBXNativeTarget "Pods-BizPass" */;
+			buildPhases = (
+				87CCA798BF86C46B148FEFFB4B1075C5 /* Sources */,
+				535CAB2B0AA8F222BC52C4A59B737416 /* Frameworks */,
+				C80A3D4F7BBA4542EFEA62ACCFDE41A9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB5CEEA5903BA48A7D3F187F17E4D03B /* PBXTargetDependency */,
+				93E5CE77D30A20FD45B3F1E518009DFA /* PBXTargetDependency */,
+				5B0B4C8D4D72891B28AB2A46F92908B4 /* PBXTargetDependency */,
+			);
+			name = "Pods-BizPass";
+			productName = "Pods-BizPass";
+			productReference = 20DD2F97CD147C0A70898791B24D72F0 /* Pods_BizPass.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E1E292A208A6C01A608BD214092228B6 /* AlertKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 283DE7939EDDBDABAC69856A560FF6F5 /* Build configuration list for PBXNativeTarget "AlertKit" */;
+			buildPhases = (
+				34A1EB542C436A827FDF7818E6E5A176 /* Sources */,
+				AE91D1B7F41B5CE1B88C614FC3215D43 /* Frameworks */,
+				A97D1B76BB7DF75540AC743C1AC25CD9 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -300,26 +435,7 @@
 			);
 			name = AlertKit;
 			productName = AlertKit;
-			productReference = 8827CEB692093C9E2653349FC506D123 /* AlertKit.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		FC9804FB133CA866F993A984FAF8616D /* Pods-BizPass */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D0975B47AEC322FB56436A977EA5320A /* Build configuration list for PBXNativeTarget "Pods-BizPass" */;
-			buildPhases = (
-				1E435B1655F10F0DF76A939D3A664886 /* Sources */,
-				894CD9D5A7769157A2201AB5BB6832A5 /* Frameworks */,
-				AD16BD49673BAF4165FCAF9AEA849AB8 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				22B2CFF901072D24DCB24B358260530A /* PBXTargetDependency */,
-				5D389C4F682A05BEF929646806793618 /* PBXTargetDependency */,
-			);
-			name = "Pods-BizPass";
-			productName = "Pods-BizPass";
-			productReference = 15A6C2BAFBFC7145344D4DE8D867EDA0 /* Pods_BizPass.framework */;
+			productReference = 5BD59155FE5BFBF7E8B2D754402428C1 /* AlertKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -343,28 +459,47 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6F612C08B04CB33BC079019D7D900613 /* AlertKit */,
-				FC9804FB133CA866F993A984FAF8616D /* Pods-BizPass */,
+				E1E292A208A6C01A608BD214092228B6 /* AlertKit */,
+				A9AA8342BD5B234007C6E5239CAE6D88 /* NextResponderTextField */,
+				8CE8515D684305BF6F9FACF315DF067E /* NextResponderTextField-NextResponderTextField */,
+				DB3C29329790D6D249587A3D7D0886B3 /* Pods-BizPass */,
 				08DDAF0830AC578EDF5CB6F33D894EB1 /* SwiftLoader */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXSourcesBuildPhase section */
-		189405698B6D7A7B815D1DED7622EB22 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+/* Begin PBXResourcesBuildPhase section */
+		100F712971425296FE6BFA69FC1CAD65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BC8205D305299546B5B70A0976663E6 /* AlertKit-dummy.m in Sources */,
-				CE546CC268917010796B8EA48E2A883F /* AlertKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1E435B1655F10F0DF76A939D3A664886 /* Sources */ = {
+		983A6160125BA78C1A93139EB978E509 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A116C416094BB8E4D521F7B80EF9102 /* NextResponderTextField.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		34A1EB542C436A827FDF7818E6E5A176 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67AC42346F200F06D477CB6137DA8F35 /* Pods-BizPass-dummy.m in Sources */,
+				E2EB0974546353B46136077751703056 /* AlertKit-dummy.m in Sources */,
+				0BC25D2FC35568CE528704AEC81F5CB3 /* AlertKit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		694F1B03F804101E19C03148618AC71D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,27 +512,56 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		87CCA798BF86C46B148FEFFB4B1075C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1BDB2DB23EC271220F77B4E5BFAC355 /* Pods-BizPass-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E081E622BFA79C35DA68A3BFAD91A62E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25913E635852A67888F1E852CECC2D62 /* NextResponderTextField-dummy.m in Sources */,
+				8FF11404C6C5798C912FC25F0D625D4F /* NextResponderTextField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		22B2CFF901072D24DCB24B358260530A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AlertKit;
-			target = 6F612C08B04CB33BC079019D7D900613 /* AlertKit */;
-			targetProxy = 3A6189F264E0098EC7B504C976081B13 /* PBXContainerItemProxy */;
-		};
-		5D389C4F682A05BEF929646806793618 /* PBXTargetDependency */ = {
+		5B0B4C8D4D72891B28AB2A46F92908B4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftLoader;
 			target = 08DDAF0830AC578EDF5CB6F33D894EB1 /* SwiftLoader */;
-			targetProxy = 5C2A0C943C71F5031D9F2EDBA9683545 /* PBXContainerItemProxy */;
+			targetProxy = FACC56B6CE6B30751834F05A4F18A4B3 /* PBXContainerItemProxy */;
+		};
+		7FBB1C0F8A509FE1EFBCB539083FDEB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "NextResponderTextField-NextResponderTextField";
+			target = 8CE8515D684305BF6F9FACF315DF067E /* NextResponderTextField-NextResponderTextField */;
+			targetProxy = A02EB26667F72CA3D3644769279A7D48 /* PBXContainerItemProxy */;
+		};
+		93E5CE77D30A20FD45B3F1E518009DFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NextResponderTextField;
+			target = A9AA8342BD5B234007C6E5239CAE6D88 /* NextResponderTextField */;
+			targetProxy = 5A06EE31A4D11D481B87BC75AAED353A /* PBXContainerItemProxy */;
+		};
+		AB5CEEA5903BA48A7D3F187F17E4D03B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AlertKit;
+			target = E1E292A208A6C01A608BD214092228B6 /* AlertKit */;
+			targetProxy = 252B96D8EA14130A8EF71A0E8A5394D2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		02683DDCE126D18F8112985CFB0DD928 /* Release */ = {
+		03BCB4855E828FA2293918B328CC8C4E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 62FBEBFF4BFB9449273268DC72E07717 /* AlertKit-Private.xcconfig */;
+			baseConfigurationReference = B4B2FBFB57F65916EA6200979899A021 /* Pods-BizPass.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -406,21 +570,24 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/AlertKit/AlertKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AlertKit/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-BizPass/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AlertKit/AlertKit.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = AlertKit;
+				MODULEMAP_FILE = "Target Support Files/Pods-BizPass/Pods-BizPass.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_BizPass;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		0C812A8B084AB655D058D5DC45F0D458 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -461,9 +628,37 @@
 			};
 			name = Debug;
 		};
-		265E9EBB59B964246A567764F3B07CD4 /* Release */ = {
+		1FB880150DA4B594F858084829574BB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A1F59DDE8E41E75700AFBBC197FB2EB9 /* Pods-BizPass.release.xcconfig */;
+			baseConfigurationReference = 636343F8A3F6617F8E60FD4AE6096E13 /* NextResponderTextField-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/NextResponderTextField/NextResponderTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NextResponderTextField/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NextResponderTextField/NextResponderTextField.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = NextResponderTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		24C0045062877646CCA589589BEAC088 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7AD2F108F15A6FC46030EA9DF171C84 /* Pods-BizPass.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -518,9 +713,9 @@
 			};
 			name = Debug;
 		};
-		2F984215113B2C0250BB764742127DA6 /* Debug */ = {
+		433B958A86E5957A0466DFF5E683F232 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA386E510B57D0807EB937DB4725DF15 /* Pods-BizPass.debug.xcconfig */;
+			baseConfigurationReference = 3016959444B7D6E7D3B7FF80D597DE8B /* AlertKit-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -529,16 +724,41 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-BizPass/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/AlertKit/AlertKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AlertKit/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-BizPass/Pods-BizPass.modulemap";
+				MODULEMAP_FILE = "Target Support Files/AlertKit/AlertKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AlertKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		63C75353A5E0371CADCC28E535D2D66E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3016959444B7D6E7D3B7FF80D597DE8B /* AlertKit-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AlertKit/AlertKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AlertKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AlertKit/AlertKit.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_BizPass;
+				PRODUCT_NAME = AlertKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -547,6 +767,33 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		69382E1235AF1582381D5EF7CD6015FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 636343F8A3F6617F8E60FD4AE6096E13 /* NextResponderTextField-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/NextResponderTextField/NextResponderTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NextResponderTextField/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NextResponderTextField/NextResponderTextField.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = NextResponderTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		7C84345D7EEBBBB2BFF18E13BB3BA6A7 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -582,6 +829,30 @@
 			};
 			name = Release;
 		};
+		8605A113BA53EE5F93B6A137D73D561C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 636343F8A3F6617F8E60FD4AE6096E13 /* NextResponderTextField-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = NextResponderTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		A95E3F5AB1CE4154D086DB5C05961820 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 636343F8A3F6617F8E60FD4AE6096E13 /* NextResponderTextField-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = NextResponderTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		BC608A2722F46A8A9CCC8D53C72B67EE /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AE71671FC7478E11B07669207A22BE76 /* SwiftLoader-Private.xcconfig */;
@@ -609,37 +880,27 @@
 			};
 			name = Release;
 		};
-		C7E61ECC10019957A7E94B76C6C6957C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 62FBEBFF4BFB9449273268DC72E07717 /* AlertKit-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/AlertKit/AlertKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AlertKit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AlertKit/AlertKit.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = AlertKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		19B8CEF2F2C2A1559FDD7E6AEE75A754 /* Build configuration list for PBXNativeTarget "NextResponderTextField-NextResponderTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8605A113BA53EE5F93B6A137D73D561C /* Debug */,
+				A95E3F5AB1CE4154D086DB5C05961820 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		283DE7939EDDBDABAC69856A560FF6F5 /* Build configuration list for PBXNativeTarget "AlertKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63C75353A5E0371CADCC28E535D2D66E /* Debug */,
+				433B958A86E5957A0466DFF5E683F232 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -649,11 +910,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4BF94155DE9CB9998DA2756C100ADF9C /* Build configuration list for PBXNativeTarget "AlertKit" */ = {
+		36AFC981CC64B257EB8F48B6FAF40595 /* Build configuration list for PBXNativeTarget "Pods-BizPass" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C7E61ECC10019957A7E94B76C6C6957C /* Debug */,
-				02683DDCE126D18F8112985CFB0DD928 /* Release */,
+				03BCB4855E828FA2293918B328CC8C4E /* Debug */,
+				24C0045062877646CCA589589BEAC088 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B128952E53A0E37335C22EF2C67E959 /* Build configuration list for PBXNativeTarget "NextResponderTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FB880150DA4B594F858084829574BB0 /* Debug */,
+				69382E1235AF1582381D5EF7CD6015FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -663,15 +933,6 @@
 			buildConfigurations = (
 				2F034760D43A2D156E1AF8843FE20A34 /* Debug */,
 				BC608A2722F46A8A9CCC8D53C72B67EE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D0975B47AEC322FB56436A977EA5320A /* Build configuration list for PBXNativeTarget "Pods-BizPass" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2F984215113B2C0250BB764742127DA6 /* Debug */,
-				265E9EBB59B964246A567764F3B07CD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
