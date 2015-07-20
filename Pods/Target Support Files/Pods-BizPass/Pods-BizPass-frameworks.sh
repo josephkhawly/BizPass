@@ -53,11 +53,13 @@ code_sign_if_enabled() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'Pods-BizPass/AlertKit.framework'
-  install_framework 'Pods-BizPass/NextResponderTextField.framework'
+  install_framework 'Pods-BizPass/AutoHideKeyboardControllers.framework'
+  install_framework 'Pods-BizPass/KeyboardController.framework'
   install_framework 'Pods-BizPass/SwiftLoader.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'Pods-BizPass/AlertKit.framework'
-  install_framework 'Pods-BizPass/NextResponderTextField.framework'
+  install_framework 'Pods-BizPass/AutoHideKeyboardControllers.framework'
+  install_framework 'Pods-BizPass/KeyboardController.framework'
   install_framework 'Pods-BizPass/SwiftLoader.framework'
 fi

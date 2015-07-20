@@ -1,0 +1,6 @@
+framework module AutoHideKeyboardControllers {
+  umbrella header "AutoHideKeyboardControllers-umbrella.h"
+
+  export *
+  module * { export * }
+}

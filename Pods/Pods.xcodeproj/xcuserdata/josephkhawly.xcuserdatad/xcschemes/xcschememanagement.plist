@@ -9,12 +9,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>NextResponderTextField-NextResponderTextField.xcscheme</key>
+		<key>AutoHideKeyboardControllers.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>NextResponderTextField.xcscheme</key>
+		<key>KeyboardController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -37,22 +37,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8CE8515D684305BF6F9FACF315DF067E</key>
+		<key>3C10C2EDBB9D57B1E417BEE386EFF53D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A9AA8342BD5B234007C6E5239CAE6D88</key>
+		<key>4DF8C2720617DB72C6D2647A3FEB7FF9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DB3C29329790D6D249587A3D7D0886B3</key>
+		<key>666D8F7F3846CDD58D74D8AF5F04E725</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E1E292A208A6C01A608BD214092228B6</key>
+		<key>DAF7B6A0E1BA931A32232BE5DD1E60E4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
