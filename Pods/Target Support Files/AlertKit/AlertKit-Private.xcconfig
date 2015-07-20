@@ -1,6 +1,6 @@
 #include "AlertKit.xcconfig"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/AlertKit" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AlertKit" "${PODS_ROOT}/Headers/Public/AutoHideKeyboardControllers" "${PODS_ROOT}/Headers/Public/KeyboardController" "${PODS_ROOT}/Headers/Public/PassSlot" "${PODS_ROOT}/Headers/Public/SwiftLoader"
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/AlertKit" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AlertKit" "${PODS_ROOT}/Headers/Public/PassSlot" "${PODS_ROOT}/Headers/Public/SwiftLoader"
 OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
 PODS_ROOT = ${SRCROOT}
 SKIP_INSTALL = YES

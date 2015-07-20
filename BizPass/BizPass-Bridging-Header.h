@@ -14,6 +14,5 @@
 #import <PassSlot/PSImage.h>
 #import <PassSlot/PSPass.h>
 #import <KeyboardController/KeyboardController.h>
-#import <AutoHideKeyboardControllers/AutoHideKeyboardViewController.h>
 
 #endif

@@ -6,10 +6,12 @@
 //  Copyright (c) 2015 Joseph Khawly. All rights reserved.
 //
 
+//Import ALL the things!
 import UIKit
 import PassKit
 import SwiftLoader
 import AlertKit
+import KeyboardController
 
     /* Feature suggestions: have the user choose whatever info that isn't their name and title to present on the front of the card.
 
@@ -46,7 +48,29 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
-        if textField.returnKeyType == .Done {
+        if textField.returnKeyType == .Next {
+            switch textField {
+                
+            case nameField: titleField.becomeFirstResponder()
+                
+            case titleField: emailField.becomeFirstResponder()
+                
+            case emailField: twitterField.becomeFirstResponder()
+                
+            case twitterField: websiteField.becomeFirstResponder()
+                
+            case websiteField: linkedinField.becomeFirstResponder()
+                
+            case linkedinField: resumeField.becomeFirstResponder()
+                
+            case resumeField: phoneNumberField.becomeFirstResponder()
+                
+            case phoneNumberField: companyField.becomeFirstResponder()
+                
+            default: break
+                
+            }
+        } else {
             textField.resignFirstResponder()
         }
         return true
@@ -78,6 +102,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         //Add the tap gesture to the ImageView
         let tapGesture = UIGestureRecognizer(target: self, action: Selector("uploadImage:"))
         imageView.addGestureRecognizer(tapGesture)
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

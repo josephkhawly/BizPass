@@ -9,16 +9,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>AutoHideKeyboardControllers.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>KeyboardController.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-BizPass.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,22 +27,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3C10C2EDBB9D57B1E417BEE386EFF53D</key>
+		<key>10AE1BAC73D5BC970BED20167F9BCD08</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4DF8C2720617DB72C6D2647A3FEB7FF9</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>666D8F7F3846CDD58D74D8AF5F04E725</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>DAF7B6A0E1BA931A32232BE5DD1E60E4</key>
+		<key>FC9804FB133CA866F993A984FAF8616D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
