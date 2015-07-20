@@ -41,9 +41,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     //MARK: UITextFieldDelegate Methods
     func textFieldDidBeginEditing(textField: UITextField) {
+        imageView.hidden = true
         animateViewMoving(true, moveValue: 100)
     }
     func textFieldDidEndEditing(textField: UITextField) {
+        imageView.hidden = false
         animateViewMoving(false, moveValue: 100)
     }
     
@@ -125,8 +127,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 
                 //Store the user values into an array
                 var values = ["Name": "\(nameField.text)", "Title": "\(titleField.text)", "Email": "\(emailField.text)", "Phone": "\(phoneNumberField.text)", "Company": "\(companyField.text)", "Twitter": "\(twitterField.text)","Resume": "\(resumeField.text)", "Linkedin": "\(linkedinField.text)", "Website": "\(websiteField.text)"]
-                
-                //let newPhoto = UIImage(CGImage: photo?.CGImage, scale: 1.0, orientation: .Left)
                 
                 //set the image to be displayed on the card.
                 let image = PSImage(named: "Profile", ofType: .Thumbnail)
