@@ -1,1 +1,0 @@
-../../../PassSlot/sdk/PassSlot.framework/Versions/A/Headers/PSPass.h

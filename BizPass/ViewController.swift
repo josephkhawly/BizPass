@@ -16,7 +16,6 @@ import AlertKit
         Let the user decide the color of the card.
 
         Small Stuff That Needs to be Done Before User Testing:
-            Get the "next" keyboard buttons to move to the next field
             make it so that the keyboard hides when the user taps outside of the text field
             Make the ImageView move up with all the other stuff in the view */
 
@@ -48,6 +47,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         if textField.returnKeyType == .Next {
+            
             switch textField {
             case nameField: titleField.becomeFirstResponder()
                 
@@ -66,7 +66,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
             case phoneNumberField: companyField.becomeFirstResponder()
                 
             default: break
+                
             }
+            
         } else {
             textField.resignFirstResponder()
         }
@@ -96,8 +98,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.resumeField.delegate = self
         self.phoneNumberField.delegate = self
         self.companyField.delegate = self
-        
-        
         
         //Add the tap gesture to the ImageView
         let tapGesture = UIGestureRecognizer(target: self, action: Selector("uploadImage:"))

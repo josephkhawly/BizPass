@@ -4,17 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-BizPass-AlertKit.xcscheme</key>
+		<key>AlertKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-BizPass-IHKeyboardAvoiding.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-BizPass-SwiftLoader.xcscheme</key>
+		<key>FTIAutomaticKeyboardAdjustment.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -24,25 +19,30 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SwiftLoader.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>685E4D0F76782B0A5DCC8C1B</key>
+		<key>08DDAF0830AC578EDF5CB6F33D894EB1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A784F11CBEE48794D462F9BB</key>
+		<key>096A039D0A9E8BE9C426772273D7A602</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BDCC790556C2495BEFBE00FC</key>
+		<key>DB3C29329790D6D249587A3D7D0886B3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BE3AFB5956ABA1993507EDC3</key>
+		<key>F3CF490B0CE1186FD6E94806DC02E140</key>
 		<dict>
 			<key>primary</key>
 			<true/>

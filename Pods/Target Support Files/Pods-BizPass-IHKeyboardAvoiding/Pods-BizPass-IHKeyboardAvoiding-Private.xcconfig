@@ -1,9 +1,0 @@
-#include "Pods-BizPass-IHKeyboardAvoiding.xcconfig"
-CONFIGURATION_BUILD_DIR = $PODS_FRAMEWORK_BUILD_PATH
-FRAMEWORK_SEARCH_PATHS = "$PODS_FRAMEWORK_BUILD_PATH"
-GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/IHKeyboardAvoiding" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AlertKit" "${PODS_ROOT}/Headers/Public/IHKeyboardAvoiding" "${PODS_ROOT}/Headers/Public/PassSlot" "${PODS_ROOT}/Headers/Public/SwiftLoader"
-OTHER_LDFLAGS = -ObjC
-PODS_FRAMEWORK_BUILD_PATH = $(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-BizPass
-PODS_ROOT = ${SRCROOT}
-SKIP_INSTALL = YES

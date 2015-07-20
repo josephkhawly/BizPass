@@ -7,293 +7,293 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		072AB39F8205F379F92F7D55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17FFA9525694CF48286351BB /* Foundation.framework */; };
-		0AA4FE44B34A39A1185B00A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17FFA9525694CF48286351BB /* Foundation.framework */; };
-		21B9BB171EC2AA4FB923F592 /* Pods-BizPass-IHKeyboardAvoiding-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A7007291920C3A131AFFD7D2 /* Pods-BizPass-IHKeyboardAvoiding-dummy.m */; };
-		29D1ECC97422A8298586D102 /* SwiftLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CE9474013A22E7705DDF5C /* SwiftLoader.swift */; };
-		2FD2882BF594303C7DC4040F /* Pods-BizPass-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 215CBA4AE0EB605E2EFD0385 /* Pods-BizPass-dummy.m */; };
-		34926E04946F4112890B2279 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17FFA9525694CF48286351BB /* Foundation.framework */; };
-		4049212351050A4BAF31620B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 918CE83ECA191CFC1BE668E0 /* UIKit.framework */; };
-		5E6452EFDA1E6B34D0D5E7C7 /* Pods-BizPass-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BD6AA385B90863CA1BE263B /* Pods-BizPass-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5E93C6DB3E536E18D46E2FCD /* Pods-BizPass-SwiftLoader-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 974C47768A1707423C88E265 /* Pods-BizPass-SwiftLoader-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		70787B6B242DD691672D2D12 /* AlertKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D7AE01C71B05B3B47E2F45 /* AlertKit.swift */; };
-		712F27011B3D01A160D2F601 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17FFA9525694CF48286351BB /* Foundation.framework */; };
-		720E51D4C694E4B5152FC654 /* Pods-BizPass-SwiftLoader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E5364AC0910E8DC4A6305E77 /* Pods-BizPass-SwiftLoader-dummy.m */; };
-		7684F5D4E1E3BB9F2748C08B /* IHKeyboardAvoiding.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AC5720279C20A66DA5E7075 /* IHKeyboardAvoiding.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		86D7D183A1E5D398680F6CA8 /* Pods-BizPass-IHKeyboardAvoiding-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CE47135EF59405F7629AC81 /* Pods-BizPass-IHKeyboardAvoiding-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A7D95C7DD4F68B734E586B3F /* Pods-BizPass-AlertKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ABAE738C0BD31A936875E039 /* Pods-BizPass-AlertKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B7C20A3FA0844418A54D8DE1 /* Pods-BizPass-AlertKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF3E25E050582D614463AB4 /* Pods-BizPass-AlertKit-dummy.m */; };
-		D3C06F5C3339299BEFE015BF /* IHKeyboardAvoiding.m in Sources */ = {isa = PBXBuildFile; fileRef = 97DE156DD4B9D8C1F2FD709C /* IHKeyboardAvoiding.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0B1A185E90860F4E23587EE54ED4A11A /* AlertKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E351026C8766C8375C53FE5864224AE /* AlertKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0BEBB639032A80466B055E23E856FCB8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E50C9271626C4BA818F11781A2EC638F /* UIKit.framework */; };
+		136FD677817801CAA91C91B9B3DD5DC5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1849524DE9509FB927293592F5B9862A /* Foundation.framework */; };
+		2381BA462E46F0922DFE93D98F9FFC1D /* AlertKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA35E6D098CA29142D9267B4D919808 /* AlertKit.swift */; };
+		327DEA223702054A163633E86D58F39C /* SwiftLoader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A330DC395D0B120FD564FDB3CFA1A9 /* SwiftLoader-dummy.m */; };
+		3739260476FCC378005ABE42F782C62A /* AlertKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAF193475A105FC3405D52097AF9FF1 /* AlertKit-dummy.m */; };
+		3A23E2CABADB248C564BECB3E1C362B6 /* UIViewController+FTIAutomaticKeyboardAdjustment.h in Headers */ = {isa = PBXBuildFile; fileRef = E4485B1EBCCED9B547A258CE7B89136F /* UIViewController+FTIAutomaticKeyboardAdjustment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55BA7CEE431C51A10DF2424E967DC0EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1849524DE9509FB927293592F5B9862A /* Foundation.framework */; };
+		84C414CC72E05BA68CD3AEC0D66F1FC5 /* Pods-BizPass-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A928D23DD1A508DA5D5F18AF431EC03 /* Pods-BizPass-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8CFCF6BF3DE2CF226E58FDE4CBFD0EAA /* SwiftLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FAFFB3FBE5DC2515519B7A929E75DB /* SwiftLoader.swift */; };
+		9329290A3E6D5CFE2A318515A961B956 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1849524DE9509FB927293592F5B9862A /* Foundation.framework */; };
+		B320FDCD06F7E60E3206DF8C1E32B4F6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E50C9271626C4BA818F11781A2EC638F /* UIKit.framework */; };
+		B916211D8214ED17EA4B07E42116DB31 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1849524DE9509FB927293592F5B9862A /* Foundation.framework */; };
+		D262FBFE63067268C17306EFFA7BC362 /* FTIAutomaticKeyboardAdjustment-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 400F818E7F2DBD4D5FE09E068C35263B /* FTIAutomaticKeyboardAdjustment-dummy.m */; };
+		DFEDE1FAC4512DC38DC7E9D7E94E1DDC /* UIViewController+FTIAutomaticKeyboardAdjustment.m in Sources */ = {isa = PBXBuildFile; fileRef = CBED404B5FE34890E5FD7BACCA816496 /* UIViewController+FTIAutomaticKeyboardAdjustment.m */; };
+		E70B1DA82B11B361C5D1FC083117D858 /* SwiftLoader-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 394FB4CCE65A307E3EE2EF182B5EC1D2 /* SwiftLoader-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1BDB2DB23EC271220F77B4E5BFAC355 /* Pods-BizPass-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 97260F8D3F790F0E821360496C91E228 /* Pods-BizPass-dummy.m */; };
+		FCA8A804B7EFC319440B6E82A101932F /* FTIAutomaticKeyboardAdjustment-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AEA0E166776595AF8879E5154D45B2E3 /* FTIAutomaticKeyboardAdjustment-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2DB16CE38E02AB0E4D56AC0C /* PBXContainerItemProxy */ = {
+		61E1CAF9BD017A0E6DD7335CFEAABC05 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2CBE0DBDF0EE5AF438F190E3 /* Project object */;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = BDCC790556C2495BEFBE00FC;
-			remoteInfo = "Pods-BizPass-SwiftLoader";
+			remoteGlobalIDString = 08DDAF0830AC578EDF5CB6F33D894EB1;
+			remoteInfo = SwiftLoader;
 		};
-		3B3A03944B0850843B07BE1A /* PBXContainerItemProxy */ = {
+		D1A7A3B131B11906151C8C73197C3660 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2CBE0DBDF0EE5AF438F190E3 /* Project object */;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 685E4D0F76782B0A5DCC8C1B;
-			remoteInfo = "Pods-BizPass-AlertKit";
+			remoteGlobalIDString = F3CF490B0CE1186FD6E94806DC02E140;
+			remoteInfo = FTIAutomaticKeyboardAdjustment;
 		};
-		F239DC4D4759BCB090702CF4 /* PBXContainerItemProxy */ = {
+		E8AC767E94EBBD8317C80CE2B53D0FCB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2CBE0DBDF0EE5AF438F190E3 /* Project object */;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A784F11CBEE48794D462F9BB;
-			remoteInfo = "Pods-BizPass-IHKeyboardAvoiding";
+			remoteGlobalIDString = 096A039D0A9E8BE9C426772273D7A602;
+			remoteInfo = AlertKit;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		011C31A0D451ECBD8F3A5E24 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0641A61676F849CB7F46802B /* Pods-BizPass-AlertKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BizPass-AlertKit.xcconfig"; sourceTree = "<group>"; };
-		0AC5720279C20A66DA5E7075 /* IHKeyboardAvoiding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IHKeyboardAvoiding.h; path = Classes/IHKeyboardAvoiding.h; sourceTree = "<group>"; };
-		0BD6AA385B90863CA1BE263B /* Pods-BizPass-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BizPass-umbrella.h"; sourceTree = "<group>"; };
-		17FFA9525694CF48286351BB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		193B0A03BA96737D05DCB833 /* Pods_BizPass.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BizPass.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		215CBA4AE0EB605E2EFD0385 /* Pods-BizPass-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BizPass-dummy.m"; sourceTree = "<group>"; };
-		2BD364EE096B7947B9E8460E /* Pods-BizPass-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BizPass-acknowledgements.plist"; sourceTree = "<group>"; };
-		2E0176DAADE487327573AC33 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		30B1ECDE467F98C8B2EFCB37 /* PSPassTemplate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PSPassTemplate.h; path = sdk/PassSlot.framework/Versions/A/Headers/PSPassTemplate.h; sourceTree = "<group>"; };
-		3CE47135EF59405F7629AC81 /* Pods-BizPass-IHKeyboardAvoiding-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BizPass-IHKeyboardAvoiding-umbrella.h"; sourceTree = "<group>"; };
-		417B3534470130CF4C6CD7AA /* AlertKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlertKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		41C6A5752CEC9A0CA8B42430 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		47905D1A64D71BD90A906B91 /* Pods-BizPass-AlertKit-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BizPass-AlertKit-Private.xcconfig"; sourceTree = "<group>"; };
-		48D19866BED14BC770D9619C /* Pods-BizPass-SwiftLoader-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BizPass-SwiftLoader-Private.xcconfig"; sourceTree = "<group>"; };
-		5A74E9E34A4722C63154CAE1 /* IHKeyboardAvoiding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IHKeyboardAvoiding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5FAEA294B6FF0EE6948D7772 /* PSPass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PSPass.h; path = sdk/PassSlot.framework/Versions/A/Headers/PSPass.h; sourceTree = "<group>"; };
-		6997404AB0100B30C9AAFE7A /* Pods-BizPass-IHKeyboardAvoiding.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BizPass-IHKeyboardAvoiding.xcconfig"; sourceTree = "<group>"; };
-		80829D64F26BE60CD333CC6A /* Pods-BizPass-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BizPass-frameworks.sh"; sourceTree = "<group>"; };
-		86BEF7A55DC756CE16357C0E /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		8751BCFC0D1ACC06A008130A /* Pods-BizPass-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BizPass-environment.h"; sourceTree = "<group>"; };
-		918CE83ECA191CFC1BE668E0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		974C47768A1707423C88E265 /* Pods-BizPass-SwiftLoader-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BizPass-SwiftLoader-umbrella.h"; sourceTree = "<group>"; };
-		97DE156DD4B9D8C1F2FD709C /* IHKeyboardAvoiding.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IHKeyboardAvoiding.m; path = Classes/IHKeyboardAvoiding.m; sourceTree = "<group>"; };
-		A7007291920C3A131AFFD7D2 /* Pods-BizPass-IHKeyboardAvoiding-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BizPass-IHKeyboardAvoiding-dummy.m"; sourceTree = "<group>"; };
-		A7DD81DDCD6FD8F49400A5C8 /* Pods-BizPass-SwiftLoader.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BizPass-SwiftLoader.xcconfig"; sourceTree = "<group>"; };
-		ABAE738C0BD31A936875E039 /* Pods-BizPass-AlertKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BizPass-AlertKit-umbrella.h"; sourceTree = "<group>"; };
-		AFF3E25E050582D614463AB4 /* Pods-BizPass-AlertKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BizPass-AlertKit-dummy.m"; sourceTree = "<group>"; };
-		B52969E03E18747EA20EC9FA /* Pods-BizPass-AlertKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BizPass-AlertKit.modulemap"; sourceTree = "<group>"; };
-		B926F1123F0C4CDBC279BB48 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B98095872DF32804740B5E66 /* PassSlot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PassSlot.h; path = sdk/PassSlot.framework/Versions/A/Headers/PassSlot.h; sourceTree = "<group>"; };
-		B9D7AE01C71B05B3B47E2F45 /* AlertKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlertKit.swift; path = AlertKit/AlertKit.swift; sourceTree = "<group>"; };
-		BEF4027BE280E6DD55951DA0 /* Pods-BizPass-SwiftLoader-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BizPass-SwiftLoader-prefix.pch"; sourceTree = "<group>"; };
-		C5BC5F7306A1B93C9E0D78D5 /* Pods-BizPass.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BizPass.modulemap"; sourceTree = "<group>"; };
-		C65081B76612735160DE88B4 /* Pods-BizPass.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BizPass.release.xcconfig"; sourceTree = "<group>"; };
-		C8CE9474013A22E7705DDF5C /* SwiftLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftLoader.swift; path = src/SwiftLoader/SwiftLoader.swift; sourceTree = "<group>"; };
-		CBF773C6EC6ED8288F2826B9 /* Pods-BizPass-SwiftLoader.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BizPass-SwiftLoader.modulemap"; sourceTree = "<group>"; };
-		CC23C4E8531D7AC3D6B5C6F5 /* Pods-BizPass-IHKeyboardAvoiding-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BizPass-IHKeyboardAvoiding-Private.xcconfig"; sourceTree = "<group>"; };
-		CC80AA33B361DA33F65190A1 /* Pods-BizPass-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BizPass-resources.sh"; sourceTree = "<group>"; };
-		D0C821C55FAE59852A0ED82E /* SwiftLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE23AF81B489D08FC3D512ED /* Pods-BizPass.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BizPass.debug.xcconfig"; sourceTree = "<group>"; };
-		DF82900A8925BEE0B4200631 /* Pods-BizPass-AlertKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BizPass-AlertKit-prefix.pch"; sourceTree = "<group>"; };
-		E5364AC0910E8DC4A6305E77 /* Pods-BizPass-SwiftLoader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BizPass-SwiftLoader-dummy.m"; sourceTree = "<group>"; };
-		EC50CBC22D1031D92B091C88 /* PSImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PSImage.h; path = sdk/PassSlot.framework/Versions/A/Headers/PSImage.h; sourceTree = "<group>"; };
-		EF299B8CFC431A0E8ECF74E6 /* Pods-BizPass-IHKeyboardAvoiding.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BizPass-IHKeyboardAvoiding.modulemap"; sourceTree = "<group>"; };
-		F6F12B3514E2A93FB0AEFB8F /* Pods-BizPass-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BizPass-acknowledgements.markdown"; sourceTree = "<group>"; };
-		FFD6C79527341FE2B6283943 /* Pods-BizPass-IHKeyboardAvoiding-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BizPass-IHKeyboardAvoiding-prefix.pch"; sourceTree = "<group>"; };
+		0AA35E6D098CA29142D9267B4D919808 /* AlertKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlertKit.swift; path = AlertKit/AlertKit.swift; sourceTree = "<group>"; };
+		0C4DF0E5FEAF8B0E39A1B470FDB5DD69 /* Pods-BizPass-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BizPass-acknowledgements.plist"; sourceTree = "<group>"; };
+		14ACB2CFE626617A5092BF78B0A6A7FC /* SwiftLoader.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftLoader.modulemap; sourceTree = "<group>"; };
+		1849524DE9509FB927293592F5B9862A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		1B845180643A561EC9185A298754B8E7 /* AlertKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlertKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CD14C46D4D33237CDE294B04944BB2E /* SwiftLoader.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLoader.xcconfig; sourceTree = "<group>"; };
+		1E351026C8766C8375C53FE5864224AE /* AlertKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlertKit-umbrella.h"; sourceTree = "<group>"; };
+		20DD2F97CD147C0A70898791B24D72F0 /* Pods_BizPass.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BizPass.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22C493ED5FC4FF1AC49FDD3A3E5334DE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D6E8BE78112665A282DA24B303A7DF2 /* SwiftLoader-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftLoader-prefix.pch"; sourceTree = "<group>"; };
+		3378DD1F9114C5770CEEE5B9377C1FBB /* Pods-BizPass-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BizPass-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3655EF3E59DEF20E69D4E361FC48F7A2 /* Pods-BizPass-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BizPass-frameworks.sh"; sourceTree = "<group>"; };
+		394FB4CCE65A307E3EE2EF182B5EC1D2 /* SwiftLoader-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftLoader-umbrella.h"; sourceTree = "<group>"; };
+		3A928D23DD1A508DA5D5F18AF431EC03 /* Pods-BizPass-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BizPass-umbrella.h"; sourceTree = "<group>"; };
+		3DF76E3B9E935879FB3E1B363D057129 /* AlertKit-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "AlertKit-Private.xcconfig"; sourceTree = "<group>"; };
+		3E9DB030A9A5DEA089B30A48E63C0C0C /* FTIAutomaticKeyboardAdjustment.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FTIAutomaticKeyboardAdjustment.modulemap; sourceTree = "<group>"; };
+		400F818E7F2DBD4D5FE09E068C35263B /* FTIAutomaticKeyboardAdjustment-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FTIAutomaticKeyboardAdjustment-dummy.m"; sourceTree = "<group>"; };
+		4173ACB6733B4FA7701A1A311B17862C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55BBD2EC99CE47344958FE8C752ACDB9 /* FTIAutomaticKeyboardAdjustment-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "FTIAutomaticKeyboardAdjustment-Private.xcconfig"; sourceTree = "<group>"; };
+		67AE57A6F70DEBCA8572543852A8A0A6 /* PassSlot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PassSlot.h; path = sdk/PassSlot.framework/Versions/A/Headers/PassSlot.h; sourceTree = "<group>"; };
+		73756DC2FB298B9C687A41C2E80C165E /* AlertKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlertKit-prefix.pch"; sourceTree = "<group>"; };
+		74FAFFB3FBE5DC2515519B7A929E75DB /* SwiftLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftLoader.swift; path = src/SwiftLoader/SwiftLoader.swift; sourceTree = "<group>"; };
+		84D4001BB12EBF995669CB9DCB174308 /* SwiftLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97260F8D3F790F0E821360496C91E228 /* Pods-BizPass-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BizPass-dummy.m"; sourceTree = "<group>"; };
+		AE71671FC7478E11B07669207A22BE76 /* SwiftLoader-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "SwiftLoader-Private.xcconfig"; sourceTree = "<group>"; };
+		AEA0E166776595AF8879E5154D45B2E3 /* FTIAutomaticKeyboardAdjustment-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FTIAutomaticKeyboardAdjustment-umbrella.h"; sourceTree = "<group>"; };
+		B4B2FBFB57F65916EA6200979899A021 /* Pods-BizPass.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BizPass.debug.xcconfig"; sourceTree = "<group>"; };
+		B64E91B7211FB28C8D94E26A0F1867B7 /* Pods-BizPass.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BizPass.modulemap"; sourceTree = "<group>"; };
+		B7AD2F108F15A6FC46030EA9DF171C84 /* Pods-BizPass.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BizPass.release.xcconfig"; sourceTree = "<group>"; };
+		C4A330DC395D0B120FD564FDB3CFA1A9 /* SwiftLoader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftLoader-dummy.m"; sourceTree = "<group>"; };
+		C88113A79685B4EFEE7BAD12896829F7 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CAAF193475A105FC3405D52097AF9FF1 /* AlertKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AlertKit-dummy.m"; sourceTree = "<group>"; };
+		CBED404B5FE34890E5FD7BACCA816496 /* UIViewController+FTIAutomaticKeyboardAdjustment.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+FTIAutomaticKeyboardAdjustment.m"; path = "FTIAutomaticKeyboardAdjustment/UIViewController+FTIAutomaticKeyboardAdjustment.m"; sourceTree = "<group>"; };
+		CEE162DBBE5CB80125DAD761138941D8 /* FTIAutomaticKeyboardAdjustment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FTIAutomaticKeyboardAdjustment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1BE6AF6E8AE6DA1C3858CD695CBAEA6 /* FTIAutomaticKeyboardAdjustment.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FTIAutomaticKeyboardAdjustment.xcconfig; sourceTree = "<group>"; };
+		D3BE77113388B90433A10FF1DCD4430D /* Pods-BizPass-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BizPass-resources.sh"; sourceTree = "<group>"; };
+		D99FB04DB6FCC91456BF10F4DABDEF37 /* PSPassTemplate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PSPassTemplate.h; path = sdk/PassSlot.framework/Versions/A/Headers/PSPassTemplate.h; sourceTree = "<group>"; };
+		DAAA0F6E3CAD834F5FC607F19F8F64B9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE637BB70BFF8C1B2BE975A7C32DE862 /* AlertKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AlertKit.modulemap; sourceTree = "<group>"; };
+		E0550B2356E0880C031C12EF1AFD6E3D /* PSImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PSImage.h; path = sdk/PassSlot.framework/Versions/A/Headers/PSImage.h; sourceTree = "<group>"; };
+		E4485B1EBCCED9B547A258CE7B89136F /* UIViewController+FTIAutomaticKeyboardAdjustment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+FTIAutomaticKeyboardAdjustment.h"; path = "FTIAutomaticKeyboardAdjustment/UIViewController+FTIAutomaticKeyboardAdjustment.h"; sourceTree = "<group>"; };
+		E50C9271626C4BA818F11781A2EC638F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		EB27AC70D23243E5AE919892C4F45A60 /* FTIAutomaticKeyboardAdjustment-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FTIAutomaticKeyboardAdjustment-prefix.pch"; sourceTree = "<group>"; };
+		EF5D3FD84FF38F11BA2907CFBAF07EAC /* PSPass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PSPass.h; path = sdk/PassSlot.framework/Versions/A/Headers/PSPass.h; sourceTree = "<group>"; };
+		F9084405366B1923876E96CD4C49160B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAF023BC3A4CCA6BDC3A76C0C9805750 /* AlertKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AlertKit.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1FF225F0B39522A6854EF9AE /* Frameworks */ = {
+		17E414C80FE0EA1FB96C4A6CA9D12327 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				712F27011B3D01A160D2F601 /* Foundation.framework in Frameworks */,
-				4049212351050A4BAF31620B /* UIKit.framework in Frameworks */,
+				9329290A3E6D5CFE2A318515A961B956 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1FF32562FE11099108D7DD5B /* Frameworks */ = {
+		535CAB2B0AA8F222BC52C4A59B737416 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AA4FE44B34A39A1185B00A6 /* Foundation.framework in Frameworks */,
+				B916211D8214ED17EA4B07E42116DB31 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		579B832596889C1B17158D3B /* Frameworks */ = {
+		540F295F18F5698E044543E3FA3B9B91 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34926E04946F4112890B2279 /* Foundation.framework in Frameworks */,
+				55BA7CEE431C51A10DF2424E967DC0EA /* Foundation.framework in Frameworks */,
+				B320FDCD06F7E60E3206DF8C1E32B4F6 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		77A8752ACC5F7C3C364244A5 /* Frameworks */ = {
+		B62502610D8FB77D5DE34ABE8E00FF9C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				072AB39F8205F379F92F7D55 /* Foundation.framework in Frameworks */,
+				136FD677817801CAA91C91B9B3DD5DC5 /* Foundation.framework in Frameworks */,
+				0BEBB639032A80466B055E23E856FCB8 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		07B9CA2D6AB31E42B7139978 /* Support Files */ = {
+		1BB89F63EFB0091462F256E1F281A09F /* FTIAutomaticKeyboardAdjustment */ = {
 			isa = PBXGroup;
 			children = (
-				41C6A5752CEC9A0CA8B42430 /* Info.plist */,
-				CBF773C6EC6ED8288F2826B9 /* Pods-BizPass-SwiftLoader.modulemap */,
-				A7DD81DDCD6FD8F49400A5C8 /* Pods-BizPass-SwiftLoader.xcconfig */,
-				48D19866BED14BC770D9619C /* Pods-BizPass-SwiftLoader-Private.xcconfig */,
-				E5364AC0910E8DC4A6305E77 /* Pods-BizPass-SwiftLoader-dummy.m */,
-				BEF4027BE280E6DD55951DA0 /* Pods-BizPass-SwiftLoader-prefix.pch */,
-				974C47768A1707423C88E265 /* Pods-BizPass-SwiftLoader-umbrella.h */,
+				E4485B1EBCCED9B547A258CE7B89136F /* UIViewController+FTIAutomaticKeyboardAdjustment.h */,
+				CBED404B5FE34890E5FD7BACCA816496 /* UIViewController+FTIAutomaticKeyboardAdjustment.m */,
+				CE7A788606A847353CFE3CA96E63B907 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-BizPass-SwiftLoader";
+			path = FTIAutomaticKeyboardAdjustment;
 			sourceTree = "<group>";
 		};
-		09E5D03662F463832BD61253 = {
+		21FF83D38BE2E1D5499360B06000D8F3 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				86BEF7A55DC756CE16357C0E /* Podfile */,
-				1D92FDCC01B78BB3FB72C091 /* Frameworks */,
-				F8C9B3626DCF23339ECC13E1 /* Pods */,
-				212188ABB6CC2133C171EF59 /* Products */,
-				AC1982F8D06821737156A414 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		1D92FDCC01B78BB3FB72C091 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1F311FC82FFAF512BB5D7F08 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		1F311FC82FFAF512BB5D7F08 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				17FFA9525694CF48286351BB /* Foundation.framework */,
-				918CE83ECA191CFC1BE668E0 /* UIKit.framework */,
+				1849524DE9509FB927293592F5B9862A /* Foundation.framework */,
+				E50C9271626C4BA818F11781A2EC638F /* UIKit.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		212188ABB6CC2133C171EF59 /* Products */ = {
+		5E1F3384B1B39575144FEBFCF3210CCC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				417B3534470130CF4C6CD7AA /* AlertKit.framework */,
-				5A74E9E34A4722C63154CAE1 /* IHKeyboardAvoiding.framework */,
-				193B0A03BA96737D05DCB833 /* Pods_BizPass.framework */,
-				D0C821C55FAE59852A0ED82E /* SwiftLoader.framework */,
+				21FF83D38BE2E1D5499360B06000D8F3 /* iOS */,
 			);
-			name = Products;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3EF3039E383163AE1EDA3705 /* Support Files */ = {
+		6A09A967B9A4939FCBFC2F7C43F1F3F4 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				2E0176DAADE487327573AC33 /* Info.plist */,
-				B52969E03E18747EA20EC9FA /* Pods-BizPass-AlertKit.modulemap */,
-				0641A61676F849CB7F46802B /* Pods-BizPass-AlertKit.xcconfig */,
-				47905D1A64D71BD90A906B91 /* Pods-BizPass-AlertKit-Private.xcconfig */,
-				AFF3E25E050582D614463AB4 /* Pods-BizPass-AlertKit-dummy.m */,
-				DF82900A8925BEE0B4200631 /* Pods-BizPass-AlertKit-prefix.pch */,
-				ABAE738C0BD31A936875E039 /* Pods-BizPass-AlertKit-umbrella.h */,
+				F9084405366B1923876E96CD4C49160B /* Info.plist */,
+				14ACB2CFE626617A5092BF78B0A6A7FC /* SwiftLoader.modulemap */,
+				1CD14C46D4D33237CDE294B04944BB2E /* SwiftLoader.xcconfig */,
+				AE71671FC7478E11B07669207A22BE76 /* SwiftLoader-Private.xcconfig */,
+				C4A330DC395D0B120FD564FDB3CFA1A9 /* SwiftLoader-dummy.m */,
+				2D6E8BE78112665A282DA24B303A7DF2 /* SwiftLoader-prefix.pch */,
+				394FB4CCE65A307E3EE2EF182B5EC1D2 /* SwiftLoader-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/Pods-BizPass-AlertKit";
+			path = "../Target Support Files/SwiftLoader";
 			sourceTree = "<group>";
 		};
-		5BD61B1F9124401CB027FA7F /* Pods-BizPass */ = {
+		7DAF96F23880D765E27D2927B62F230C /* SwiftLoader */ = {
 			isa = PBXGroup;
 			children = (
-				011C31A0D451ECBD8F3A5E24 /* Info.plist */,
-				C5BC5F7306A1B93C9E0D78D5 /* Pods-BizPass.modulemap */,
-				F6F12B3514E2A93FB0AEFB8F /* Pods-BizPass-acknowledgements.markdown */,
-				2BD364EE096B7947B9E8460E /* Pods-BizPass-acknowledgements.plist */,
-				215CBA4AE0EB605E2EFD0385 /* Pods-BizPass-dummy.m */,
-				8751BCFC0D1ACC06A008130A /* Pods-BizPass-environment.h */,
-				80829D64F26BE60CD333CC6A /* Pods-BizPass-frameworks.sh */,
-				CC80AA33B361DA33F65190A1 /* Pods-BizPass-resources.sh */,
-				0BD6AA385B90863CA1BE263B /* Pods-BizPass-umbrella.h */,
-				DE23AF81B489D08FC3D512ED /* Pods-BizPass.debug.xcconfig */,
-				C65081B76612735160DE88B4 /* Pods-BizPass.release.xcconfig */,
+				74FAFFB3FBE5DC2515519B7A929E75DB /* SwiftLoader.swift */,
+				6A09A967B9A4939FCBFC2F7C43F1F3F4 /* Support Files */,
+			);
+			path = SwiftLoader;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				C88113A79685B4EFEE7BAD12896829F7 /* Podfile */,
+				5E1F3384B1B39575144FEBFCF3210CCC /* Frameworks */,
+				EF447B4E1DFAE4F853BEEBB25E70B50E /* Pods */,
+				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				848A6CE8DA3504A266A17F635DC3683A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		848A6CE8DA3504A266A17F635DC3683A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				97D67A028965BE1F9B3BD8094049AE82 /* Pods-BizPass */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		97D67A028965BE1F9B3BD8094049AE82 /* Pods-BizPass */ = {
+			isa = PBXGroup;
+			children = (
+				4173ACB6733B4FA7701A1A311B17862C /* Info.plist */,
+				B64E91B7211FB28C8D94E26A0F1867B7 /* Pods-BizPass.modulemap */,
+				3378DD1F9114C5770CEEE5B9377C1FBB /* Pods-BizPass-acknowledgements.markdown */,
+				0C4DF0E5FEAF8B0E39A1B470FDB5DD69 /* Pods-BizPass-acknowledgements.plist */,
+				97260F8D3F790F0E821360496C91E228 /* Pods-BizPass-dummy.m */,
+				3655EF3E59DEF20E69D4E361FC48F7A2 /* Pods-BizPass-frameworks.sh */,
+				D3BE77113388B90433A10FF1DCD4430D /* Pods-BizPass-resources.sh */,
+				3A928D23DD1A508DA5D5F18AF431EC03 /* Pods-BizPass-umbrella.h */,
+				B4B2FBFB57F65916EA6200979899A021 /* Pods-BizPass.debug.xcconfig */,
+				B7AD2F108F15A6FC46030EA9DF171C84 /* Pods-BizPass.release.xcconfig */,
 			);
 			name = "Pods-BizPass";
 			path = "Target Support Files/Pods-BizPass";
 			sourceTree = "<group>";
 		};
-		6336B8B3AABCDE5046E54206 /* Support Files */ = {
+		9CEF1CD6572531B1E93D9A22EF8A32A2 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B926F1123F0C4CDBC279BB48 /* Info.plist */,
-				EF299B8CFC431A0E8ECF74E6 /* Pods-BizPass-IHKeyboardAvoiding.modulemap */,
-				6997404AB0100B30C9AAFE7A /* Pods-BizPass-IHKeyboardAvoiding.xcconfig */,
-				CC23C4E8531D7AC3D6B5C6F5 /* Pods-BizPass-IHKeyboardAvoiding-Private.xcconfig */,
-				A7007291920C3A131AFFD7D2 /* Pods-BizPass-IHKeyboardAvoiding-dummy.m */,
-				FFD6C79527341FE2B6283943 /* Pods-BizPass-IHKeyboardAvoiding-prefix.pch */,
-				3CE47135EF59405F7629AC81 /* Pods-BizPass-IHKeyboardAvoiding-umbrella.h */,
+				DE637BB70BFF8C1B2BE975A7C32DE862 /* AlertKit.modulemap */,
+				FAF023BC3A4CCA6BDC3A76C0C9805750 /* AlertKit.xcconfig */,
+				3DF76E3B9E935879FB3E1B363D057129 /* AlertKit-Private.xcconfig */,
+				CAAF193475A105FC3405D52097AF9FF1 /* AlertKit-dummy.m */,
+				73756DC2FB298B9C687A41C2E80C165E /* AlertKit-prefix.pch */,
+				1E351026C8766C8375C53FE5864224AE /* AlertKit-umbrella.h */,
+				22C493ED5FC4FF1AC49FDD3A3E5334DE /* Info.plist */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/Pods-BizPass-IHKeyboardAvoiding";
+			path = "../Target Support Files/AlertKit";
 			sourceTree = "<group>";
 		};
-		688729869EBD12810BFED0EC /* PassSlot */ = {
+		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EC50CBC22D1031D92B091C88 /* PSImage.h */,
-				5FAEA294B6FF0EE6948D7772 /* PSPass.h */,
-				30B1ECDE467F98C8B2EFCB37 /* PSPassTemplate.h */,
-				B98095872DF32804740B5E66 /* PassSlot.h */,
+				1B845180643A561EC9185A298754B8E7 /* AlertKit.framework */,
+				CEE162DBBE5CB80125DAD761138941D8 /* FTIAutomaticKeyboardAdjustment.framework */,
+				20DD2F97CD147C0A70898791B24D72F0 /* Pods_BizPass.framework */,
+				84D4001BB12EBF995669CB9DCB174308 /* SwiftLoader.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE7A788606A847353CFE3CA96E63B907 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3E9DB030A9A5DEA089B30A48E63C0C0C /* FTIAutomaticKeyboardAdjustment.modulemap */,
+				D1BE6AF6E8AE6DA1C3858CD695CBAEA6 /* FTIAutomaticKeyboardAdjustment.xcconfig */,
+				55BBD2EC99CE47344958FE8C752ACDB9 /* FTIAutomaticKeyboardAdjustment-Private.xcconfig */,
+				400F818E7F2DBD4D5FE09E068C35263B /* FTIAutomaticKeyboardAdjustment-dummy.m */,
+				EB27AC70D23243E5AE919892C4F45A60 /* FTIAutomaticKeyboardAdjustment-prefix.pch */,
+				AEA0E166776595AF8879E5154D45B2E3 /* FTIAutomaticKeyboardAdjustment-umbrella.h */,
+				DAAA0F6E3CAD834F5FC607F19F8F64B9 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FTIAutomaticKeyboardAdjustment";
+			sourceTree = "<group>";
+		};
+		D58628597B7F2ECF98B6416EAE6453F2 /* PassSlot */ = {
+			isa = PBXGroup;
+			children = (
+				E0550B2356E0880C031C12EF1AFD6E3D /* PSImage.h */,
+				EF5D3FD84FF38F11BA2907CFBAF07EAC /* PSPass.h */,
+				D99FB04DB6FCC91456BF10F4DABDEF37 /* PSPassTemplate.h */,
+				67AE57A6F70DEBCA8572543852A8A0A6 /* PassSlot.h */,
 			);
 			path = PassSlot;
 			sourceTree = "<group>";
 		};
-		9DDF9B36E793F1D9528B1509 /* IHKeyboardAvoiding */ = {
+		E1D78F3BAA0933E993B4156FF9AF4802 /* AlertKit */ = {
 			isa = PBXGroup;
 			children = (
-				0AC5720279C20A66DA5E7075 /* IHKeyboardAvoiding.h */,
-				97DE156DD4B9D8C1F2FD709C /* IHKeyboardAvoiding.m */,
-				6336B8B3AABCDE5046E54206 /* Support Files */,
-			);
-			path = IHKeyboardAvoiding;
-			sourceTree = "<group>";
-		};
-		AC1982F8D06821737156A414 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				5BD61B1F9124401CB027FA7F /* Pods-BizPass */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		DDA930A552ECEBCB671F674D /* SwiftLoader */ = {
-			isa = PBXGroup;
-			children = (
-				C8CE9474013A22E7705DDF5C /* SwiftLoader.swift */,
-				07B9CA2D6AB31E42B7139978 /* Support Files */,
-			);
-			path = SwiftLoader;
-			sourceTree = "<group>";
-		};
-		EE5ABD7E096F8C9EDDA5AD2E /* AlertKit */ = {
-			isa = PBXGroup;
-			children = (
-				B9D7AE01C71B05B3B47E2F45 /* AlertKit.swift */,
-				3EF3039E383163AE1EDA3705 /* Support Files */,
+				0AA35E6D098CA29142D9267B4D919808 /* AlertKit.swift */,
+				9CEF1CD6572531B1E93D9A22EF8A32A2 /* Support Files */,
 			);
 			path = AlertKit;
 			sourceTree = "<group>";
 		};
-		F8C9B3626DCF23339ECC13E1 /* Pods */ = {
+		EF447B4E1DFAE4F853BEEBB25E70B50E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				EE5ABD7E096F8C9EDDA5AD2E /* AlertKit */,
-				9DDF9B36E793F1D9528B1509 /* IHKeyboardAvoiding */,
-				688729869EBD12810BFED0EC /* PassSlot */,
-				DDA930A552ECEBCB671F674D /* SwiftLoader */,
+				E1D78F3BAA0933E993B4156FF9AF4802 /* AlertKit */,
+				1BB89F63EFB0091462F256E1F281A09F /* FTIAutomaticKeyboardAdjustment */,
+				D58628597B7F2ECF98B6416EAE6453F2 /* PassSlot */,
+				7DAF96F23880D765E27D2927B62F230C /* SwiftLoader */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -301,232 +301,205 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0ABEFC67C9F4D4EA52D9D87D /* Headers */ = {
+		00031D22866E2B74E6E779F17C9F85CE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7D95C7DD4F68B734E586B3F /* Pods-BizPass-AlertKit-umbrella.h in Headers */,
+				E70B1DA82B11B361C5D1FC083117D858 /* SwiftLoader-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		436509B0097A0CD20A4ED462 /* Headers */ = {
+		C80A3D4F7BBA4542EFEA62ACCFDE41A9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E6452EFDA1E6B34D0D5E7C7 /* Pods-BizPass-umbrella.h in Headers */,
+				84C414CC72E05BA68CD3AEC0D66F1FC5 /* Pods-BizPass-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9B4D44B4A1760C14BDE3E27C /* Headers */ = {
+		D984EEE7129C2A4AC8FE1475C917ADD5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7684F5D4E1E3BB9F2748C08B /* IHKeyboardAvoiding.h in Headers */,
-				86D7D183A1E5D398680F6CA8 /* Pods-BizPass-IHKeyboardAvoiding-umbrella.h in Headers */,
+				0B1A185E90860F4E23587EE54ED4A11A /* AlertKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EEA17993B35EE84C7096BDBB /* Headers */ = {
+		EDB18EB2C7B7A963616CDE5FEC13523B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E93C6DB3E536E18D46E2FCD /* Pods-BizPass-SwiftLoader-umbrella.h in Headers */,
+				FCA8A804B7EFC319440B6E82A101932F /* FTIAutomaticKeyboardAdjustment-umbrella.h in Headers */,
+				3A23E2CABADB248C564BECB3E1C362B6 /* UIViewController+FTIAutomaticKeyboardAdjustment.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		685E4D0F76782B0A5DCC8C1B /* Pods-BizPass-AlertKit */ = {
+		08DDAF0830AC578EDF5CB6F33D894EB1 /* SwiftLoader */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0E5278DAACF49E93440A9E19 /* Build configuration list for PBXNativeTarget "Pods-BizPass-AlertKit" */;
+			buildConfigurationList = B83BB8D61FB2BF6AD1AB7B1714D0753E /* Build configuration list for PBXNativeTarget "SwiftLoader" */;
 			buildPhases = (
-				EE944DC90943795466C78AC1 /* Sources */,
-				77A8752ACC5F7C3C364244A5 /* Frameworks */,
-				0ABEFC67C9F4D4EA52D9D87D /* Headers */,
+				69ACF357889C0A4DD95F6F5E5E3F6AE2 /* Sources */,
+				540F295F18F5698E044543E3FA3B9B91 /* Frameworks */,
+				00031D22866E2B74E6E779F17C9F85CE /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-BizPass-AlertKit";
-			productName = "Pods-BizPass-AlertKit";
-			productReference = 417B3534470130CF4C6CD7AA /* AlertKit.framework */;
+			name = SwiftLoader;
+			productName = SwiftLoader;
+			productReference = 84D4001BB12EBF995669CB9DCB174308 /* SwiftLoader.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A784F11CBEE48794D462F9BB /* Pods-BizPass-IHKeyboardAvoiding */ = {
+		096A039D0A9E8BE9C426772273D7A602 /* AlertKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 10CF0B9621B41C3F82CFF86F /* Build configuration list for PBXNativeTarget "Pods-BizPass-IHKeyboardAvoiding" */;
+			buildConfigurationList = 044718C248BEB588DF30912B0BAD1369 /* Build configuration list for PBXNativeTarget "AlertKit" */;
 			buildPhases = (
-				D86DB8A987AB483CF9710446 /* Sources */,
-				1FF32562FE11099108D7DD5B /* Frameworks */,
-				9B4D44B4A1760C14BDE3E27C /* Headers */,
+				CDB86B4B77C0F0035FF423E317E3BE02 /* Sources */,
+				17E414C80FE0EA1FB96C4A6CA9D12327 /* Frameworks */,
+				D984EEE7129C2A4AC8FE1475C917ADD5 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-BizPass-IHKeyboardAvoiding";
-			productName = "Pods-BizPass-IHKeyboardAvoiding";
-			productReference = 5A74E9E34A4722C63154CAE1 /* IHKeyboardAvoiding.framework */;
+			name = AlertKit;
+			productName = AlertKit;
+			productReference = 1B845180643A561EC9185A298754B8E7 /* AlertKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		BDCC790556C2495BEFBE00FC /* Pods-BizPass-SwiftLoader */ = {
+		DB3C29329790D6D249587A3D7D0886B3 /* Pods-BizPass */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E567D5F6AFA3C975ECE000D2 /* Build configuration list for PBXNativeTarget "Pods-BizPass-SwiftLoader" */;
+			buildConfigurationList = 36AFC981CC64B257EB8F48B6FAF40595 /* Build configuration list for PBXNativeTarget "Pods-BizPass" */;
 			buildPhases = (
-				D39D825246A1837B41F1956E /* Sources */,
-				1FF225F0B39522A6854EF9AE /* Frameworks */,
-				EEA17993B35EE84C7096BDBB /* Headers */,
+				87CCA798BF86C46B148FEFFB4B1075C5 /* Sources */,
+				535CAB2B0AA8F222BC52C4A59B737416 /* Frameworks */,
+				C80A3D4F7BBA4542EFEA62ACCFDE41A9 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			name = "Pods-BizPass-SwiftLoader";
-			productName = "Pods-BizPass-SwiftLoader";
-			productReference = D0C821C55FAE59852A0ED82E /* SwiftLoader.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		BE3AFB5956ABA1993507EDC3 /* Pods-BizPass */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 07B39F649BBB0E72439D9485 /* Build configuration list for PBXNativeTarget "Pods-BizPass" */;
-			buildPhases = (
-				6C368B5EF767CDE209600996 /* Sources */,
-				579B832596889C1B17158D3B /* Frameworks */,
-				436509B0097A0CD20A4ED462 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8198AA85BBE54B456AA534A9 /* PBXTargetDependency */,
-				20E149CD013149D1340E6D8B /* PBXTargetDependency */,
-				894191FD764ED754C7626F40 /* PBXTargetDependency */,
+				BC0716234410DF23695DBBE922878111 /* PBXTargetDependency */,
+				69DFE301FF71FF558C0041F9E81252E0 /* PBXTargetDependency */,
+				0D3489B8F84F7EBD8A32AED0F023E3D6 /* PBXTargetDependency */,
 			);
 			name = "Pods-BizPass";
 			productName = "Pods-BizPass";
-			productReference = 193B0A03BA96737D05DCB833 /* Pods_BizPass.framework */;
+			productReference = 20DD2F97CD147C0A70898791B24D72F0 /* Pods_BizPass.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F3CF490B0CE1186FD6E94806DC02E140 /* FTIAutomaticKeyboardAdjustment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01516DFF5E7091A9E089BC160033714F /* Build configuration list for PBXNativeTarget "FTIAutomaticKeyboardAdjustment" */;
+			buildPhases = (
+				28EE9E16221461DB8A6512430D06E7B4 /* Sources */,
+				B62502610D8FB77D5DE34ABE8E00FF9C /* Frameworks */,
+				EDB18EB2C7B7A963616CDE5FEC13523B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FTIAutomaticKeyboardAdjustment;
+			productName = FTIAutomaticKeyboardAdjustment;
+			productReference = CEE162DBBE5CB80125DAD761138941D8 /* FTIAutomaticKeyboardAdjustment.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2CBE0DBDF0EE5AF438F190E3 /* Project object */ = {
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 			};
-			buildConfigurationList = 97A23C9616213A3E2E938AD9 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 09E5D03662F463832BD61253;
-			productRefGroup = 212188ABB6CC2133C171EF59 /* Products */;
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BE3AFB5956ABA1993507EDC3 /* Pods-BizPass */,
-				685E4D0F76782B0A5DCC8C1B /* Pods-BizPass-AlertKit */,
-				A784F11CBEE48794D462F9BB /* Pods-BizPass-IHKeyboardAvoiding */,
-				BDCC790556C2495BEFBE00FC /* Pods-BizPass-SwiftLoader */,
+				096A039D0A9E8BE9C426772273D7A602 /* AlertKit */,
+				F3CF490B0CE1186FD6E94806DC02E140 /* FTIAutomaticKeyboardAdjustment */,
+				DB3C29329790D6D249587A3D7D0886B3 /* Pods-BizPass */,
+				08DDAF0830AC578EDF5CB6F33D894EB1 /* SwiftLoader */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6C368B5EF767CDE209600996 /* Sources */ = {
+		28EE9E16221461DB8A6512430D06E7B4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FD2882BF594303C7DC4040F /* Pods-BizPass-dummy.m in Sources */,
+				D262FBFE63067268C17306EFFA7BC362 /* FTIAutomaticKeyboardAdjustment-dummy.m in Sources */,
+				DFEDE1FAC4512DC38DC7E9D7E94E1DDC /* UIViewController+FTIAutomaticKeyboardAdjustment.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D39D825246A1837B41F1956E /* Sources */ = {
+		69ACF357889C0A4DD95F6F5E5E3F6AE2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				720E51D4C694E4B5152FC654 /* Pods-BizPass-SwiftLoader-dummy.m in Sources */,
-				29D1ECC97422A8298586D102 /* SwiftLoader.swift in Sources */,
+				327DEA223702054A163633E86D58F39C /* SwiftLoader-dummy.m in Sources */,
+				8CFCF6BF3DE2CF226E58FDE4CBFD0EAA /* SwiftLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D86DB8A987AB483CF9710446 /* Sources */ = {
+		87CCA798BF86C46B148FEFFB4B1075C5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3C06F5C3339299BEFE015BF /* IHKeyboardAvoiding.m in Sources */,
-				21B9BB171EC2AA4FB923F592 /* Pods-BizPass-IHKeyboardAvoiding-dummy.m in Sources */,
+				F1BDB2DB23EC271220F77B4E5BFAC355 /* Pods-BizPass-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EE944DC90943795466C78AC1 /* Sources */ = {
+		CDB86B4B77C0F0035FF423E317E3BE02 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70787B6B242DD691672D2D12 /* AlertKit.swift in Sources */,
-				B7C20A3FA0844418A54D8DE1 /* Pods-BizPass-AlertKit-dummy.m in Sources */,
+				3739260476FCC378005ABE42F782C62A /* AlertKit-dummy.m in Sources */,
+				2381BA462E46F0922DFE93D98F9FFC1D /* AlertKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		20E149CD013149D1340E6D8B /* PBXTargetDependency */ = {
+		0D3489B8F84F7EBD8A32AED0F023E3D6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-BizPass-IHKeyboardAvoiding";
-			target = A784F11CBEE48794D462F9BB /* Pods-BizPass-IHKeyboardAvoiding */;
-			targetProxy = F239DC4D4759BCB090702CF4 /* PBXContainerItemProxy */;
+			name = SwiftLoader;
+			target = 08DDAF0830AC578EDF5CB6F33D894EB1 /* SwiftLoader */;
+			targetProxy = 61E1CAF9BD017A0E6DD7335CFEAABC05 /* PBXContainerItemProxy */;
 		};
-		8198AA85BBE54B456AA534A9 /* PBXTargetDependency */ = {
+		69DFE301FF71FF558C0041F9E81252E0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-BizPass-AlertKit";
-			target = 685E4D0F76782B0A5DCC8C1B /* Pods-BizPass-AlertKit */;
-			targetProxy = 3B3A03944B0850843B07BE1A /* PBXContainerItemProxy */;
+			name = FTIAutomaticKeyboardAdjustment;
+			target = F3CF490B0CE1186FD6E94806DC02E140 /* FTIAutomaticKeyboardAdjustment */;
+			targetProxy = D1A7A3B131B11906151C8C73197C3660 /* PBXContainerItemProxy */;
 		};
-		894191FD764ED754C7626F40 /* PBXTargetDependency */ = {
+		BC0716234410DF23695DBBE922878111 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-BizPass-SwiftLoader";
-			target = BDCC790556C2495BEFBE00FC /* Pods-BizPass-SwiftLoader */;
-			targetProxy = 2DB16CE38E02AB0E4D56AC0C /* PBXContainerItemProxy */;
+			name = AlertKit;
+			target = 096A039D0A9E8BE9C426772273D7A602 /* AlertKit */;
+			targetProxy = E8AC767E94EBBD8317C80CE2B53D0FCB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0B6E8580527C2C5D2F48F8D4 /* Debug */ = {
+		03BCB4855E828FA2293918B328CC8C4E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 47905D1A64D71BD90A906B91 /* Pods-BizPass-AlertKit-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-BizPass-AlertKit/Pods-BizPass-AlertKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-BizPass-AlertKit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-BizPass-AlertKit/Pods-BizPass-AlertKit.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = AlertKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		2B2DCFD78C03220481B215D9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE23AF81B489D08FC3D512ED /* Pods-BizPass.debug.xcconfig */;
+			baseConfigurationReference = B4B2FBFB57F65916EA6200979899A021 /* Pods-BizPass.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -554,95 +527,7 @@
 			};
 			name = Debug;
 		};
-		327A998BB9ED8E44FB7FD6FA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		43A2EC43D37167C0229A160A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CC23C4E8531D7AC3D6B5C6F5 /* Pods-BizPass-IHKeyboardAvoiding-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-BizPass-IHKeyboardAvoiding/Pods-BizPass-IHKeyboardAvoiding-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-BizPass-IHKeyboardAvoiding/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-BizPass-IHKeyboardAvoiding/Pods-BizPass-IHKeyboardAvoiding.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = IHKeyboardAvoiding;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		4EFE84BD64E2CD4140F877B4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 47905D1A64D71BD90A906B91 /* Pods-BizPass-AlertKit-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-BizPass-AlertKit/Pods-BizPass-AlertKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-BizPass-AlertKit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-BizPass-AlertKit/Pods-BizPass-AlertKit.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = AlertKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		74496DC36CBF2DF6C23C5FA5 /* Debug */ = {
+		0C812A8B084AB655D058D5DC45F0D458 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -681,9 +566,37 @@
 			};
 			name = Debug;
 		};
-		81F764674D58C3A71AB82376 /* Release */ = {
+		1C31AFAED57D723DEADFB0A2B899601E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C65081B76612735160DE88B4 /* Pods-BizPass.release.xcconfig */;
+			baseConfigurationReference = 3DF76E3B9E935879FB3E1B363D057129 /* AlertKit-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AlertKit/AlertKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AlertKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AlertKit/AlertKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AlertKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		24C0045062877646CCA589589BEAC088 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7AD2F108F15A6FC46030EA9DF171C84 /* Pods-BizPass.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -710,9 +623,9 @@
 			};
 			name = Release;
 		};
-		B2223774B49EF1A284EF2F03 /* Debug */ = {
+		2F034760D43A2D156E1AF8843FE20A34 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CC23C4E8531D7AC3D6B5C6F5 /* Pods-BizPass-IHKeyboardAvoiding-Private.xcconfig */;
+			baseConfigurationReference = AE71671FC7478E11B07669207A22BE76 /* SwiftLoader-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -721,39 +634,12 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-BizPass-IHKeyboardAvoiding/Pods-BizPass-IHKeyboardAvoiding-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-BizPass-IHKeyboardAvoiding/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftLoader/SwiftLoader-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftLoader/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-BizPass-IHKeyboardAvoiding/Pods-BizPass-IHKeyboardAvoiding.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = IHKeyboardAvoiding;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		E07AA76AC0B52EB0493E6455 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 48D19866BED14BC770D9619C /* Pods-BizPass-SwiftLoader-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-BizPass-SwiftLoader/Pods-BizPass-SwiftLoader-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-BizPass-SwiftLoader/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-BizPass-SwiftLoader/Pods-BizPass-SwiftLoader.modulemap";
+				MODULEMAP_FILE = "Target Support Files/SwiftLoader/SwiftLoader.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = SwiftLoader;
 				SDKROOT = iphoneos;
@@ -765,9 +651,9 @@
 			};
 			name = Debug;
 		};
-		EB3E8376FDE46F5A0FF96D62 /* Release */ = {
+		305667EBAA387DF552F1E390666FC424 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 48D19866BED14BC770D9619C /* Pods-BizPass-SwiftLoader-Private.xcconfig */;
+			baseConfigurationReference = 55BBD2EC99CE47344958FE8C752ACDB9 /* FTIAutomaticKeyboardAdjustment-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -776,12 +662,127 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-BizPass-SwiftLoader/Pods-BizPass-SwiftLoader-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-BizPass-SwiftLoader/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/FTIAutomaticKeyboardAdjustment/FTIAutomaticKeyboardAdjustment-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FTIAutomaticKeyboardAdjustment/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-BizPass-SwiftLoader/Pods-BizPass-SwiftLoader.modulemap";
+				MODULEMAP_FILE = "Target Support Files/FTIAutomaticKeyboardAdjustment/FTIAutomaticKeyboardAdjustment.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = FTIAutomaticKeyboardAdjustment;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3EAE5C4AB64EEC8C6B4CD3BBDA0E4CF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55BBD2EC99CE47344958FE8C752ACDB9 /* FTIAutomaticKeyboardAdjustment-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FTIAutomaticKeyboardAdjustment/FTIAutomaticKeyboardAdjustment-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FTIAutomaticKeyboardAdjustment/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FTIAutomaticKeyboardAdjustment/FTIAutomaticKeyboardAdjustment.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FTIAutomaticKeyboardAdjustment;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		66472E0D74AACD772A3CEAAF77A64E3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DF76E3B9E935879FB3E1B363D057129 /* AlertKit-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AlertKit/AlertKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AlertKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AlertKit/AlertKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AlertKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7C84345D7EEBBBB2BFF18E13BB3BA6A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC608A2722F46A8A9CCC8D53C72B67EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE71671FC7478E11B07669207A22BE76 /* SwiftLoader-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftLoader/SwiftLoader-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftLoader/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftLoader/SwiftLoader.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = SwiftLoader;
 				SDKROOT = iphoneos;
@@ -795,52 +796,52 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		07B39F649BBB0E72439D9485 /* Build configuration list for PBXNativeTarget "Pods-BizPass" */ = {
+		01516DFF5E7091A9E089BC160033714F /* Build configuration list for PBXNativeTarget "FTIAutomaticKeyboardAdjustment" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2B2DCFD78C03220481B215D9 /* Debug */,
-				81F764674D58C3A71AB82376 /* Release */,
+				305667EBAA387DF552F1E390666FC424 /* Debug */,
+				3EAE5C4AB64EEC8C6B4CD3BBDA0E4CF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0E5278DAACF49E93440A9E19 /* Build configuration list for PBXNativeTarget "Pods-BizPass-AlertKit" */ = {
+		044718C248BEB588DF30912B0BAD1369 /* Build configuration list for PBXNativeTarget "AlertKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0B6E8580527C2C5D2F48F8D4 /* Debug */,
-				4EFE84BD64E2CD4140F877B4 /* Release */,
+				1C31AFAED57D723DEADFB0A2B899601E /* Debug */,
+				66472E0D74AACD772A3CEAAF77A64E3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		10CF0B9621B41C3F82CFF86F /* Build configuration list for PBXNativeTarget "Pods-BizPass-IHKeyboardAvoiding" */ = {
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B2223774B49EF1A284EF2F03 /* Debug */,
-				43A2EC43D37167C0229A160A /* Release */,
+				0C812A8B084AB655D058D5DC45F0D458 /* Debug */,
+				7C84345D7EEBBBB2BFF18E13BB3BA6A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		97A23C9616213A3E2E938AD9 /* Build configuration list for PBXProject "Pods" */ = {
+		36AFC981CC64B257EB8F48B6FAF40595 /* Build configuration list for PBXNativeTarget "Pods-BizPass" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				74496DC36CBF2DF6C23C5FA5 /* Debug */,
-				327A998BB9ED8E44FB7FD6FA /* Release */,
+				03BCB4855E828FA2293918B328CC8C4E /* Debug */,
+				24C0045062877646CCA589589BEAC088 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E567D5F6AFA3C975ECE000D2 /* Build configuration list for PBXNativeTarget "Pods-BizPass-SwiftLoader" */ = {
+		B83BB8D61FB2BF6AD1AB7B1714D0753E /* Build configuration list for PBXNativeTarget "SwiftLoader" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E07AA76AC0B52EB0493E6455 /* Debug */,
-				EB3E8376FDE46F5A0FF96D62 /* Release */,
+				2F034760D43A2D156E1AF8843FE20A34 /* Debug */,
+				BC608A2722F46A8A9CCC8D53C72B67EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2CBE0DBDF0EE5AF438F190E3 /* Project object */;
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 }

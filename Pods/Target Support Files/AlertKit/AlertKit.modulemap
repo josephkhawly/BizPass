@@ -1,5 +1,5 @@
 framework module AlertKit {
-  umbrella header "Pods-BizPass-AlertKit-umbrella.h"
+  umbrella header "AlertKit-umbrella.h"
 
   export *
   module * { export * }
