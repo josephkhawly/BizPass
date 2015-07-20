@@ -46,33 +46,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
-        if textField.returnKeyType == .Next {
-            
-            switch textField {
-            case nameField: titleField.becomeFirstResponder()
-                
-            case titleField: emailField.becomeFirstResponder()
-                
-            case emailField: twitterField.becomeFirstResponder()
-                
-            case twitterField: websiteField.becomeFirstResponder()
-                
-            case websiteField: linkedinField.becomeFirstResponder()
-                
-            case linkedinField: resumeField.becomeFirstResponder()
-                
-            case resumeField: phoneNumberField.becomeFirstResponder()
-                
-            case phoneNumberField: companyField.becomeFirstResponder()
-                
-            default: break
-                
-            }
-            
-        } else {
+        if textField.returnKeyType == .Done {
             textField.resignFirstResponder()
         }
-        
         return true
     }
     
