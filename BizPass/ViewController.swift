@@ -21,9 +21,7 @@ import AlertKit
 
         ---Make sure to get rid of sample data before shipping.---
 
-        Small Stuff That Needs to be Done Before User Testing:
-            make it so that the keyboard hides when the user taps outside of the text field
-            Make the ImageView move up with all the other stuff in the view 
+        Small Stuff That Needs to be Done Before Shipping:
             Have something happen if the user isn't connected to the internet. */
 
 class ViewController: UIViewController, UITextFieldDelegate {
@@ -122,6 +120,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         let dismissGesture = UIGestureRecognizer(target: self, action: Selector("dismissKeyboard:"))
         self.view.addGestureRecognizer(dismissGesture)
+        
+        let fields = [nameField, titleField, emailField, twitterField, websiteField, linkedinField, resumeField, phoneNumberField, companyField]
     }
 
     override func didReceiveMemoryWarning() {
@@ -136,7 +136,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         if PKPassLibrary.isPassLibraryAvailable() {
             
             //These are the minimum requirements for generating a card.
-            if nameField.text != "" && titleField.text != "" && emailField.text != "" && phoneNumberField.text != "" {
+            if nameField.text != "" && titleField.text != "" && emailField.text != "" && phoneNumberField.text != "" && photo != nil {
                 
                 //Store the user values into an array
                 var values = ["Name": "\(nameField.text)", "Title": "\(titleField.text)", "Email": "\(emailField.text)", "Phone": "\(phoneNumberField.text)", "Company": "\(companyField.text)", "Twitter": "\(twitterField.text)","Resume": "\(resumeField.text)", "Linkedin": "\(linkedinField.text)", "Website": "\(websiteField.text)"]
