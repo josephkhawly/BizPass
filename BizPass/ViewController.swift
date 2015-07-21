@@ -60,10 +60,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let imageTapGesture = UIGestureRecognizer(target: self, action: Selector("uploadImage:"))
         imageView.addGestureRecognizer(imageTapGesture)
         
-        let dismissGesture = UIGestureRecognizer(target: self, action: Selector("dismissKeyboard:"))
-        self.view.addGestureRecognizer(dismissGesture)
-        
-        let fields = [nameField, titleField, emailField, twitterField, websiteField, linkedinField, resumeField, phoneNumberField, companyField]
+        //let dismissGesture = UIGestureRecognizer(target: self, action: Selector("dismissKeyboard:"))
+        //self.view.addGestureRecognizer(dismissGesture)
     }
     
     override func didReceiveMemoryWarning() {
@@ -140,7 +138,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             if nameField.text != "" && titleField.text != "" && emailField.text != "" && phoneNumberField.text != "" {
                 
                 //Store the user values into an array
-                var values = ["Name": "\(nameField.text)", "Title": "\(titleField.text)", "Email": "\(emailField.text)", "Phone": "\(phoneNumberField.text)", "Company": "\(companyField.text)", "Twitter": "\(twitterField.text)","Resume": "\(resumeField.text)", "Linkedin": "\(linkedinField.text)", "Website": "\(websiteField.text)"]
+                let values = ["Name": "\(nameField.text)", "Title": "\(titleField.text)", "Email": "\(emailField.text)", "Phone": "\(phoneNumberField.text)", "Company": "\(companyField.text)", "Twitter": "\(twitterField.text)","Resume": "\(resumeField.text)", "Linkedin": "\(linkedinField.text)", "Website": "\(websiteField.text)"]
                 
                 //Start the PassSlot service.
                 PassSlot.start("sVSUwmfkUQdmOsFjZPvFqmeUqQPeLqnhthejrVRVwgBNbWUFLOtfwlFUSWRuvdQQ")
