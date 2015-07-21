@@ -6,17 +6,20 @@
 //  Copyright (c) 2015 Joseph Khawly. All rights reserved.
 //
 
-//Import ALL the things!
 import UIKit
 import PassKit
 import SwiftLoader
 import AlertKit
 
-    /* Feature suggestions: have the user choose whatever info that isn't their name and title to present on the front of the card.
+    /* Feature suggestions: 
+        
+        -have the user choose whatever info that isn't their name and title to present on the front of the card.
 
-        Let the user decide the color of the card.
+        -Let the user decide the color of the card.
+        
+        -Let the user update info on their existing card instead of making a new one.
 
-        Make sure to get rid of sample data before shipping.
+        ---Make sure to get rid of sample data before shipping.---
 
         Small Stuff That Needs to be Done Before User Testing:
             make it so that the keyboard hides when the user taps outside of the text field
@@ -161,7 +164,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             
         } else {
             //If the user doesn't have Passbook, we show them this:
-            showAlert("Well shit, son.", message: "You don't have Passbook on your device, so you can't use this app. Sorry.")
+            showAlert("Bad News", message: "You don't have Passbook on your device, so you can't use this app. Sorry.")
         }
     }
     
