@@ -99,10 +99,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     //Method that dismisses the keyboard.
-    func dismissKeyboard() {
+    @IBAction func dismissKeyboard(sender: UITapGestureRecognizer) {
         view.endEditing(true)
     }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -188,7 +188,11 @@
                         <action selector="uploadImage:" destination="BYZ-38-t0r" id="OOB-Te-zAv"/>
                     </connections>
                 </tapGestureRecognizer>
-                <tapGestureRecognizer id="tLh-MH-Ddt"/>
+                <tapGestureRecognizer id="tLh-MH-Ddt">
+                    <connections>
+                        <action selector="dismissKeyboard:" destination="BYZ-38-t0r" id="gnb-o6-b17"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
         </scene>
     </scenes>
