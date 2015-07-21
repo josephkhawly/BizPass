@@ -42,6 +42,35 @@ class ViewController: UIViewController, UITextFieldDelegate {
     var photoHelper: PhotoHelper?
     var photo: UIImage?
     
+    //MARK: viewDidLoad Method
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.nameField.delegate = self
+        self.titleField.delegate = self
+        self.emailField.delegate = self
+        self.twitterField.delegate = self
+        self.websiteField.delegate = self
+        self.linkedinField.delegate = self
+        self.resumeField.delegate = self
+        self.phoneNumberField.delegate = self
+        self.companyField.delegate = self
+        
+        //Add the tap gesture to the ImageView
+        let imageTapGesture = UIGestureRecognizer(target: self, action: Selector("uploadImage:"))
+        imageView.addGestureRecognizer(imageTapGesture)
+        
+        let dismissGesture = UIGestureRecognizer(target: self, action: Selector("dismissKeyboard:"))
+        self.view.addGestureRecognizer(dismissGesture)
+        
+        let fields = [nameField, titleField, emailField, twitterField, websiteField, linkedinField, resumeField, phoneNumberField, companyField]
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
     //MARK: Keyboard management
     func textFieldDidBeginEditing(textField: UITextField) {
         //Hide the imageView and move all the textFields up so the keyboard doesn't hide them
@@ -101,34 +130,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         view.endEditing(true)
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        self.nameField.delegate = self
-        self.titleField.delegate = self
-        self.emailField.delegate = self
-        self.twitterField.delegate = self
-        self.websiteField.delegate = self
-        self.linkedinField.delegate = self
-        self.resumeField.delegate = self
-        self.phoneNumberField.delegate = self
-        self.companyField.delegate = self
-        
-        //Add the tap gesture to the ImageView
-        let imageTapGesture = UIGestureRecognizer(target: self, action: Selector("uploadImage:"))
-        imageView.addGestureRecognizer(imageTapGesture)
-        
-        let dismissGesture = UIGestureRecognizer(target: self, action: Selector("dismissKeyboard:"))
-        self.view.addGestureRecognizer(dismissGesture)
-        
-        let fields = [nameField, titleField, emailField, twitterField, websiteField, linkedinField, resumeField, phoneNumberField, companyField]
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     //MARK: Button click method
     @IBAction func makeCard(sender: AnyObject) {
         
@@ -136,7 +137,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         if PKPassLibrary.isPassLibraryAvailable() {
             
             //These are the minimum requirements for generating a card.
-            if nameField.text != "" && titleField.text != "" && emailField.text != "" && phoneNumberField.text != "" && photo != nil {
+            if nameField.text != "" && titleField.text != "" && emailField.text != "" && phoneNumberField.text != "" {
                 
                 //Store the user values into an array
                 var values = ["Name": "\(nameField.text)", "Title": "\(titleField.text)", "Email": "\(emailField.text)", "Phone": "\(phoneNumberField.text)", "Company": "\(companyField.text)", "Twitter": "\(twitterField.text)","Resume": "\(resumeField.text)", "Linkedin": "\(linkedinField.text)", "Website": "\(websiteField.text)"]
