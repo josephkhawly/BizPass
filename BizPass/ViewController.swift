@@ -40,7 +40,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     var photoHelper: PhotoHelper?
     var photo: UIImage?
-    //var passHelper: PassHelper?
+    var passHelper: PassHelper?
     
     //MARK: viewDidLoad Method
     override func viewDidLoad() {
@@ -129,18 +129,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             //Store the user values into an array
             var values = ["Name": "\(nameField.text)", "Title": "\(titleField.text)", "Email": "\(emailField.text)", "Phone": "\(phoneNumberField.text)", "Company": "\(companyField.text)", "Twitter": "\(twitterField.text)","Resume": "\(resumeField.text)", "Linkedin": "\(linkedinField.text)", "Website": "\(websiteField.text)"]
             
-            //Start the PassSlot service.
-            PassSlot.start("sVSUwmfkUQdmOsFjZPvFqmeUqQPeLqnhthejrVRVwgBNbWUFLOtfwlFUSWRuvdQQ")
-            
-            //Set the image to be displayed on the card.
-            let image = PSImage(named: "Profile", ofType: .Thumbnail)
-            image.setImage(photo, forResolution: .High)
-            let imageArray = [image]
-            
-            //Create the pass and stop the loading indicator when finished.
-            PassSlot.createPassFromTemplateWithName("Business Card Template", withValues: values, withImages: imageArray, andRequestInstallation: self, completion: nil)
-            
-            //passHelper = PassHelper(values: values, profile: photo!, viewController: self)
+            passHelper = PassHelper(values: values, profile: photo!, viewController: self)
             
         } else {
             //If the requirements are not met, show the user an alert dialog.

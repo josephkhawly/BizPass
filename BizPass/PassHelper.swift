@@ -34,7 +34,16 @@ class PassHelper: NSObject {
             //Show the loading indicator in the middle of the view.
             SwiftLoader.show(title: "Creating your card...", animated: true)
             
+            //Start the PassSlot service.
+            PassSlot.start("sVSUwmfkUQdmOsFjZPvFqmeUqQPeLqnhthejrVRVwgBNbWUFLOtfwlFUSWRuvdQQ")
             
+            //Set the image to be displayed on the card.
+            let image = PSImage(named: "Profile", ofType: .Thumbnail)
+            image.setImage(profile, forResolution: .High)
+            let imageArray = [image]
+            
+            //Create the pass and stop the loading indicator when finished.
+            PassSlot.createPassFromTemplateWithName("Business Card Template", withValues: values, withImages: imageArray, andRequestInstallation: viewController, completion: { SwiftLoader.hide() })
             
         } else {
             //If the user doesn't have Passbook, we show them this:
