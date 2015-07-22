@@ -4,11 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>AFNetworking.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>AlertKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,17 +27,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2FBB1D5559E85F4B102831F4791E28F3</key>
+		<key>65421D25787F432C47FBCBAD2A60E948</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DB3C29329790D6D249587A3D7D0886B3</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>DD0A57BC1458EBF8A05AFD72A9087733</key>
+		<key>FC9804FB133CA866F993A984FAF8616D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

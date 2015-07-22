@@ -8,8 +8,8 @@
 
 import UIKit
 import PassKit
-import SwiftLoader
 import AlertKit
+import SwiftLoader
 
     /* Feature suggestions: 
         
@@ -40,6 +40,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     var photoHelper: PhotoHelper?
     var photo: UIImage?
+    //var passHelper: PassHelper?
     
     //MARK: viewDidLoad Method
     override func viewDidLoad() {
@@ -59,8 +60,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let imageTapGesture = UIGestureRecognizer(target: self, action: Selector("uploadImage:"))
         imageView.addGestureRecognizer(imageTapGesture)
         
-        let dismissGesture = UIGestureRecognizer(target: self, action: Selector("dismissKeyboard:"))
-        self.view.addGestureRecognizer(dismissGesture)
+        //let dismissGesture = UIGestureRecognizer(target: self, action: Selector("dismissKeyboard:"))
+        //self.view.addGestureRecognizer(dismissGesture)
     }
     
     override func didReceiveMemoryWarning() {
@@ -104,7 +105,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
-    func animateViewMoving(up:Bool, moveValue :CGFloat){
+    func animateViewMoving(up:Bool, moveValue :CGFloat) {
         var movementDuration:NSTimeInterval = 0.3
         var movement:CGFloat = ( up ? -moveValue : moveValue)
         UIView.beginAnimations( "animateView", context: nil)
@@ -120,39 +121,33 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     //MARK: Button click method
+
     @IBAction func makeCard(sender: AnyObject) {
-        
-        //Check if the user's device has Passbook.
-        if PKPassLibrary.isPassLibraryAvailable() {
+        //These are the minimum requirements for generating a card.
+        if nameField.text != "" && titleField.text != "" && emailField.text != "" && phoneNumberField.text != "" {
             
-            //These are the minimum requirements for generating a card.
-            if nameField.text != "" && titleField.text != "" && emailField.text != "" && phoneNumberField.text != "" {
-                
-                //Store the user values into an array
-                var values = ["Name": "\(nameField.text)", "Title": "\(titleField.text)", "Email": "\(emailField.text)", "Phone": "\(phoneNumberField.text)", "Company": "\(companyField.text)", "Twitter": "\(twitterField.text)","Resume": "\(resumeField.text)", "Linkedin": "\(linkedinField.text)", "Website": "\(websiteField.text)"]
-                
-                //set the image to be displayed on the card.
-                let image = PSImage(named: "Profile", ofType: .Thumbnail)
-                image.setImage(photo, forResolution: .High)
-                
-                let imageArray = [image]
-                
-                //Show the loading indicator in the middle of the view.
-                SwiftLoader.show(title: "Creating your card...", animated: true)
-                
-                //Create the pass and stop the loading indicator when finished.
-                PassSlot.createPassFromTemplateWithName("Business Card Template", withValues: values, withImages: imageArray, andRequestInstallation: self, completion: { SwiftLoader.hide() })
-                
-            } else {
-                //If the requirements are not met, show the user an alert dialog.
-                showAlert("Hey, not so fast.", message: "You need to at least have your name, company, title, email address, phone number, and a photo in order to generate a card. Everything else is optional.")
-            }
+            //Store the user values into an array
+            var values = ["Name": "\(nameField.text)", "Title": "\(titleField.text)", "Email": "\(emailField.text)", "Phone": "\(phoneNumberField.text)", "Company": "\(companyField.text)", "Twitter": "\(twitterField.text)","Resume": "\(resumeField.text)", "Linkedin": "\(linkedinField.text)", "Website": "\(websiteField.text)"]
+            
+            //Start the PassSlot service.
+            PassSlot.start("sVSUwmfkUQdmOsFjZPvFqmeUqQPeLqnhthejrVRVwgBNbWUFLOtfwlFUSWRuvdQQ")
+            
+            //Set the image to be displayed on the card.
+            let image = PSImage(named: "Profile", ofType: .Thumbnail)
+            image.setImage(photo, forResolution: .High)
+            let imageArray = [image]
+            
+            //Create the pass and stop the loading indicator when finished.
+            PassSlot.createPassFromTemplateWithName("Business Card Template", withValues: values, withImages: imageArray, andRequestInstallation: self, completion: nil)
+            
+            //passHelper = PassHelper(values: values, profile: photo!, viewController: self)
             
         } else {
-            //If the user doesn't have Passbook, we show them this:
-            showAlert("Bad News", message: "You don't have Passbook on your device, so you can't use this app. Sorry.")
+            //If the requirements are not met, show the user an alert dialog.
+            showAlert("Hey, not so fast.", message: "You need to at least have your name, company, title, email address, phone number, and a photo in order to generate a card. Everything else is optional.")
         }
     }
+    
     
     //MARK: Image upload
     @IBAction func uploadImage(sender: UITapGestureRecognizer) {

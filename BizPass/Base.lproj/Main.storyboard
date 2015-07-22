@@ -43,7 +43,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="makeCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PZz-T5-tWA"/>
+                                    <action selector="makeCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZWO-dX-tkJ"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="George Costanza" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K7i-vc-Ssl">
@@ -133,23 +133,23 @@
                         <constraints>
                             <constraint firstItem="wrG-WO-T7B" firstAttribute="top" secondItem="K7i-vc-Ssl" secondAttribute="bottom" constant="34" id="04L-HU-a9k"/>
                             <constraint firstItem="iP0-JQ-Jxv" firstAttribute="trailing" secondItem="oKx-G7-5UD" secondAttribute="trailing" id="0I2-zY-3Fn"/>
-                            <constraint firstItem="qP9-XF-Ts5" firstAttribute="trailing" secondItem="qMJ-P0-zHb" secondAttribute="trailing" id="1so-kD-6mx"/>
                             <constraint firstItem="zqh-mo-HVT" firstAttribute="baseline" secondItem="wrG-WO-T7B" secondAttribute="baseline" id="3q0-fk-ysN"/>
                             <constraint firstItem="qMJ-P0-zHb" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="7s0-PI-nCH"/>
-                            <constraint firstItem="qMJ-P0-zHb" firstAttribute="leading" secondItem="qP9-XF-Ts5" secondAttribute="leading" id="DzB-4A-pbF"/>
                             <constraint firstItem="oKx-G7-5UD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="FJ6-Th-8fa"/>
                             <constraint firstItem="iP0-JQ-Jxv" firstAttribute="leading" secondItem="oKx-G7-5UD" secondAttribute="leading" id="FLg-FL-BdP"/>
                             <constraint firstItem="Jzn-aG-Kt0" firstAttribute="trailing" secondItem="zqh-mo-HVT" secondAttribute="trailing" id="HJh-gJ-qz0"/>
-                            <constraint firstItem="qP9-XF-Ts5" firstAttribute="leading" secondItem="zqh-mo-HVT" secondAttribute="leading" id="IeW-HF-0BI"/>
+                            <constraint firstItem="qP9-XF-Ts5" firstAttribute="trailing" secondItem="qMJ-P0-zHb" secondAttribute="trailing" id="INS-sx-GJD"/>
                             <constraint firstItem="UC5-vL-OTG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="31" id="Jsx-yj-6DN"/>
                             <constraint firstItem="wrG-WO-T7B" firstAttribute="trailing" secondItem="UC5-vL-OTG" secondAttribute="trailing" id="KQQ-dc-GH1"/>
                             <constraint firstItem="oKx-G7-5UD" firstAttribute="top" secondItem="UC5-vL-OTG" secondAttribute="bottom" constant="39" id="PZt-0M-chx"/>
+                            <constraint firstItem="qP9-XF-Ts5" firstAttribute="leading" secondItem="qMJ-P0-zHb" secondAttribute="leading" id="TN1-eb-Cvh"/>
                             <constraint firstItem="wrG-WO-T7B" firstAttribute="trailing" secondItem="K7i-vc-Ssl" secondAttribute="trailing" id="UQQ-fX-YPX"/>
                             <constraint firstItem="UC5-vL-OTG" firstAttribute="top" secondItem="wrG-WO-T7B" secondAttribute="bottom" constant="42" id="Uod-fb-9Lc"/>
+                            <constraint firstItem="qP9-XF-Ts5" firstAttribute="leading" secondItem="zqh-mo-HVT" secondAttribute="leading" id="Uxo-g9-ojU"/>
                             <constraint firstItem="oKx-G7-5UD" firstAttribute="trailing" secondItem="UC5-vL-OTG" secondAttribute="trailing" id="WOA-kO-QCj"/>
-                            <constraint firstItem="zqh-mo-HVT" firstAttribute="trailing" secondItem="qP9-XF-Ts5" secondAttribute="trailing" id="b3b-sh-4W4"/>
+                            <constraint firstItem="qP9-XF-Ts5" firstAttribute="trailing" secondItem="zqh-mo-HVT" secondAttribute="trailing" id="ZSV-C1-sey"/>
+                            <constraint firstItem="qP9-XF-Ts5" firstAttribute="baseline" secondItem="UC5-vL-OTG" secondAttribute="baseline" id="aju-cb-6FR"/>
                             <constraint firstItem="K7i-vc-Ssl" firstAttribute="leading" secondItem="wrG-WO-T7B" secondAttribute="leading" id="cpX-Ke-Nz9"/>
-                            <constraint firstItem="qP9-XF-Ts5" firstAttribute="baseline" secondItem="UC5-vL-OTG" secondAttribute="baseline" id="dq4-08-Mes"/>
                             <constraint firstItem="K7i-vc-Ssl" firstAttribute="baseline" secondItem="Jzn-aG-Kt0" secondAttribute="baseline" id="eQU-Pb-2hn"/>
                             <constraint firstItem="oKx-G7-5UD" firstAttribute="leading" secondItem="UC5-vL-OTG" secondAttribute="leading" id="g0A-Bw-a6i"/>
                             <constraint firstItem="qMJ-P0-zHb" firstAttribute="baseline" secondItem="oKx-G7-5UD" secondAttribute="baseline" id="g3E-Hh-Iek"/>
@@ -165,7 +165,7 @@
                             <outletCollection property="gestureRecognizers" destination="iwg-pm-OcO" appends="YES" id="SnI-m4-EEv"/>
                         </connections>
                     </view>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
