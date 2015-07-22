@@ -477,6 +477,25 @@
 				INFOPLIST_FILE = BizPass/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"AlertKit\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"PassKit\"",
+					"-framework",
+					"\"PassSlot\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SwiftLoader\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"$(OTHER_LDFLAGS)",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "BizPass/BizPass-Bridging-Header.h";
@@ -494,6 +513,25 @@
 				INFOPLIST_FILE = BizPass/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"AlertKit\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"PassKit\"",
+					"-framework",
+					"\"PassSlot\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SwiftLoader\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"$(OTHER_LDFLAGS)",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "BizPass/BizPass-Bridging-Header.h";

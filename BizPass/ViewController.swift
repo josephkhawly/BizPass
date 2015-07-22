@@ -19,10 +19,9 @@ import AlertKit
         
         -Let the user update info on their existing card instead of making a new one.
 
-        ---Make sure to get rid of sample data before shipping.---
-
         Small Stuff That Needs to be Done Before Shipping:
-            Have something happen if the user isn't connected to the internet. */
+            Have something happen if the user isn't connected to the internet.
+            Remove sample data. */
 
 class ViewController: UIViewController, UITextFieldDelegate {
     
@@ -138,10 +137,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             if nameField.text != "" && titleField.text != "" && emailField.text != "" && phoneNumberField.text != "" {
                 
                 //Store the user values into an array
-                let values = ["Name": "\(nameField.text)", "Title": "\(titleField.text)", "Email": "\(emailField.text)", "Phone": "\(phoneNumberField.text)", "Company": "\(companyField.text)", "Twitter": "\(twitterField.text)","Resume": "\(resumeField.text)", "Linkedin": "\(linkedinField.text)", "Website": "\(websiteField.text)"]
-                
-                //Start the PassSlot service.
-                PassSlot.start("sVSUwmfkUQdmOsFjZPvFqmeUqQPeLqnhthejrVRVwgBNbWUFLOtfwlFUSWRuvdQQ")
+                var values = ["Name": "\(nameField.text)", "Title": "\(titleField.text)", "Email": "\(emailField.text)", "Phone": "\(phoneNumberField.text)", "Company": "\(companyField.text)", "Twitter": "\(twitterField.text)","Resume": "\(resumeField.text)", "Linkedin": "\(linkedinField.text)", "Website": "\(websiteField.text)"]
                 
                 //set the image to be displayed on the card.
                 let image = PSImage(named: "Profile", ofType: .Thumbnail)
