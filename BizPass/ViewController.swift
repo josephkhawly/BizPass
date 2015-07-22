@@ -21,7 +21,7 @@ import ReachabilitySwift
         Small Stuff That Needs to be Done Before Shipping:
             Remove sample data. */
 
-class ViewController: UIViewController, UITextFieldDelegate {
+class ViewController: UIViewController, UITextFieldDelegate, UIGestureRecognizerDelegate {
     
     //MARK: IBOutlets and variables
     @IBOutlet var imageView: UIImageView!
@@ -56,9 +56,21 @@ class ViewController: UIViewController, UITextFieldDelegate {
         //Add the tap gestures
         let imageTapGesture = UIGestureRecognizer(target: self, action: Selector("uploadImage:"))
         imageView.addGestureRecognizer(imageTapGesture)
+        imageTapGesture.delegate = self
         
-        //let dismissGesture = UIGestureRecognizer(target: self, action: Selector("dismissKeyboard:"))
-        //self.view.addGestureRecognizer(dismissGesture)
+        let dismissGesture = UIGestureRecognizer(target: self, action: Selector("dismissKeyboard:"))
+        self.view.addGestureRecognizer(dismissGesture)
+        dismissGesture.delegate = self
+    }
+    
+    //Prevent tap gestures from interfering with the button tap.
+    func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldReceiveTouch touch: UITouch) -> Bool {
+        if gestureRecognizer.isMemberOfClass(UITapGestureRecognizer) {
+            if touch.view.isKindOfClass(UIButton) {
+                return true
+            }
+        }
+        return false
     }
     
     override func didReceiveMemoryWarning() {
