@@ -10,23 +10,21 @@ import UIKit
 import PassKit
 import AlertKit
 import SwiftLoader
+import ReachabilitySwift
 
     /* Feature suggestions: 
         
         -have the user choose whatever info that isn't their name and title to present on the front of the card.
-
         -Let the user decide the color of the card.
-        
         -Let the user update info on their existing card instead of making a new one.
 
         Small Stuff That Needs to be Done Before Shipping:
-            Have something happen if the user isn't connected to the internet.
             Remove sample data. */
 
 class ViewController: UIViewController, UITextFieldDelegate {
     
     //MARK: IBOutlets and variables
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet var imageView: UIImageView!
     
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var titleField: UITextField!
@@ -40,7 +38,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     var photoHelper: PhotoHelper?
     var photo: UIImage?
-    var passHelper: PassHelper?
     
     //MARK: viewDidLoad Method
     override func viewDidLoad() {
@@ -99,6 +96,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             default: break
                 
             }
+            
         } else {
             textField.resignFirstResponder()
         }
@@ -107,10 +105,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     func animateViewMoving(up:Bool, moveValue :CGFloat) {
         var movementDuration:NSTimeInterval = 0.3
-        var movement:CGFloat = ( up ? -moveValue : moveValue)
-        UIView.beginAnimations( "animateView", context: nil)
+        var movement:CGFloat = (up ? -moveValue : moveValue)
+        UIView.beginAnimations("animateView", context: nil)
         UIView.setAnimationBeginsFromCurrentState(true)
-        UIView.setAnimationDuration(movementDuration )
+        UIView.setAnimationDuration(movementDuration)
         self.view.frame = CGRectOffset(self.view.frame, 0,  movement)
         UIView.commitAnimations()
     }
@@ -121,22 +119,29 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     //MARK: Button click method
-
     @IBAction func makeCard(sender: AnyObject) {
-        //These are the minimum requirements for generating a card.
-        if nameField.text != "" && titleField.text != "" && emailField.text != "" && phoneNumberField.text != "" && photo != nil {
+        let reachability = Reachability.reachabilityForInternetConnection()
+        
+        //Make sure there is an internet connection before creating the card.
+        if reachability.isReachable() {
             
-            //Store the user values into an array
-            var values = ["Name": "\(nameField.text)", "Title": "\(titleField.text)", "Email": "\(emailField.text)", "Phone": "\(phoneNumberField.text)", "Company": "\(companyField.text)", "Twitter": "\(twitterField.text)","Resume": "\(resumeField.text)", "Linkedin": "\(linkedinField.text)", "Website": "\(websiteField.text)"]
-            
-            passHelper = PassHelper(values: values, profile: photo!, viewController: self)
+            //These are the minimum requirements for generating a card.
+            if nameField.text != "" && titleField.text != "" && emailField.text != "" && phoneNumberField.text != "" && photo != nil {
+                
+                //Store the user values into an array
+                var values = ["Name": "\(nameField.text)", "Title": "\(titleField.text)", "Email": "\(emailField.text)", "Phone": "\(phoneNumberField.text)", "Company": "\(companyField.text)", "Twitter": "\(twitterField.text)","Resume": "\(resumeField.text)", "Linkedin": "\(linkedinField.text)", "Website": "\(websiteField.text)"]
+                
+                PassHelper(values: values, profile: photo!, viewController: self)
+                
+            } else {
+                //If the requirements are not met, show the user an alert dialog.
+                showAlert("Hey, not so fast.", message: "You need to at least have your name, company, title, email address, phone number, and a photo in order to generate a card. Everything else is optional.")
+            }
             
         } else {
-            //If the requirements are not met, show the user an alert dialog.
-            showAlert("Hey, not so fast.", message: "You need to at least have your name, company, title, email address, phone number, and a photo in order to generate a card. Everything else is optional.")
+            showAlert("Error", message: "You must be connected to the internet in order to make your card.")
         }
     }
-    
     
     //MARK: Image upload
     @IBAction func uploadImage(sender: UITapGestureRecognizer) {
