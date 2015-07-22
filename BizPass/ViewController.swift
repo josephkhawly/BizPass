@@ -95,7 +95,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
             case linkedinField: resumeField.becomeFirstResponder()
             case resumeField: phoneNumberField.becomeFirstResponder()
             case phoneNumberField: companyField.becomeFirstResponder()
-                
             default: break
                 
             }
