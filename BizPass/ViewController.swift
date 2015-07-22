@@ -7,9 +7,7 @@
 //
 
 import UIKit
-import PassKit
 import AlertKit
-import SwiftLoader
 import ReachabilitySwift
 
     /* Feature suggestions: 
@@ -61,7 +59,11 @@ class ViewController: UIViewController, UITextFieldDelegate, UIGestureRecognizer
         let dismissGesture = UIGestureRecognizer(target: self, action: Selector("dismissKeyboard:"))
         self.view.addGestureRecognizer(dismissGesture)
         dismissGesture.delegate = self
+        
+        
     }
+    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle { return .LightContent }
     
     //Prevent tap gestures from interfering with the button tap.
     func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldReceiveTouch touch: UITouch) -> Bool {
@@ -83,7 +85,6 @@ class ViewController: UIViewController, UITextFieldDelegate, UIGestureRecognizer
         //Hide the imageView and move all the textFields up so the keyboard doesn't hide them
         imageView.hidden = true
         animateViewMoving(true, moveValue: 120)
-        
     }
     
     func textFieldDidEndEditing(textField: UITextField) {
@@ -112,7 +113,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIGestureRecognizer
         } else {
             textField.resignFirstResponder()
         }
-        return true
+        return false
     }
     
     func animateViewMoving(up:Bool, moveValue :CGFloat) {

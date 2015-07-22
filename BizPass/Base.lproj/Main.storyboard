@@ -165,7 +165,7 @@
                             <outletCollection property="gestureRecognizers" destination="iwg-pm-OcO" appends="YES" id="SnI-m4-EEv"/>
                         </connections>
                     </view>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
