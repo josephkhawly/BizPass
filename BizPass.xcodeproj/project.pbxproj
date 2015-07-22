@@ -116,9 +116,8 @@
 				2446372B1B56EDC200142B3E /* placeholder.png */,
 				243607E71B4F004D00049811 /* AppDelegate.swift */,
 				243607E91B4F004D00049811 /* ViewController.swift */,
-				2426B09F1B5FE8FF0007A14D /* PassHelper.swift */,
-				24781D041B57FC2B002C76E2 /* PhotoHelper.swift */,
 				24F2C5211B543820001F1263 /* BizPass-Bridging-Header.h */,
+				24CA27381B603CC90038FA04 /* Helpers */,
 				243607EB1B4F004D00049811 /* Main.storyboard */,
 				243607EE1B4F004D00049811 /* Images.xcassets */,
 				243607F01B4F004D00049811 /* LaunchScreen.xib */,
@@ -163,6 +162,15 @@
 				243608101B4F524F00049811 /* SF-UI-Text-Regular.otf */,
 			);
 			name = Fonts;
+			sourceTree = "<group>";
+		};
+		24CA27381B603CC90038FA04 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				24781D041B57FC2B002C76E2 /* PhotoHelper.swift */,
+				2426B09F1B5FE8FF0007A14D /* PassHelper.swift */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 		6C91736DA5A625095E15EB29 /* Pods */ = {
