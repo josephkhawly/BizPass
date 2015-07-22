@@ -161,6 +161,9 @@
                             <constraint firstItem="UC5-vL-OTG" firstAttribute="leading" secondItem="wrG-WO-T7B" secondAttribute="leading" id="qck-2U-jzK"/>
                             <constraint firstItem="1Si-6C-cSh" firstAttribute="centerX" secondItem="dXh-eM-hdU" secondAttribute="centerX" id="z6v-oz-X3j"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="iwg-pm-OcO" appends="YES" id="SnI-m4-EEv"/>
+                        </connections>
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <nil key="simulatedTopBarMetrics"/>
@@ -183,6 +186,11 @@
                 <tapGestureRecognizer id="GtP-9t-zBM">
                     <connections>
                         <action selector="uploadImage:" destination="BYZ-38-t0r" id="OOB-Te-zAv"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="iwg-pm-OcO">
+                    <connections>
+                        <action selector="dismissKeyboard:" destination="BYZ-38-t0r" id="u0l-VT-BMo"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
