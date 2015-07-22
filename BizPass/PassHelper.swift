@@ -24,7 +24,6 @@ class PassHelper: NSObject {
         
         super.init()
         makePass()
-        
     }
     
     func makePass() {
@@ -33,9 +32,6 @@ class PassHelper: NSObject {
             
             //Show the loading indicator in the middle of the view.
             SwiftLoader.show(title: "Creating your card...", animated: true)
-            
-            //Start the PassSlot service.
-            PassSlot.start("sVSUwmfkUQdmOsFjZPvFqmeUqQPeLqnhthejrVRVwgBNbWUFLOtfwlFUSWRuvdQQ")
             
             //Set the image to be displayed on the card.
             let image = PSImage(named: "Profile", ofType: .Thumbnail)

@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ReachabilitySwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SwiftLoader.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,12 +32,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>65421D25787F432C47FBCBAD2A60E948</key>
+		<key>5DE37E9EC9D035137341D5CFA5974AD9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FC9804FB133CA866F993A984FAF8616D</key>
+		<key>A570316AAFB914CAD61D8A6B89B521E7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DB3C29329790D6D249587A3D7D0886B3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
