@@ -8,7 +8,6 @@ pod 'PassSlot'
 pod 'SwiftLoader'
 pod 'AlertKit'
 pod 'ReachabilitySwift'
-pod 'RealmSwift'
 
 end
 

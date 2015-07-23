@@ -19,16 +19,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Realm.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>RealmSwift.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>SwiftLoader.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -42,7 +32,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>19320731375A5C60DFDFFC7E6C80FE80</key>
+		<key>55008F7F736A4DAE4C325D412AECE406</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -52,17 +42,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6CF3BF333084E35D2B5A24E40E272EDF</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>8CBF801415CD394145492148B107E0B7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>9613AFA1DE6DB62261589FB2BF6868E6</key>
+		<key>DB3C29329790D6D249587A3D7D0886B3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
