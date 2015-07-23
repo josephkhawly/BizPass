@@ -34,7 +34,7 @@ class PhotoHelper: NSObject {
     func showPhotoSourceSelection() {
         
         //Set up the alert controller
-        let alertController = UIAlertController(title: nil, message: "Upload a picture of yourself.", preferredStyle: .ActionSheet)
+        let alertController = UIAlertController(title: "Upload a Picture of Yourself.", message: "Camera pictures must be taken in landscape mode with the home button on your left, otherwise they will turn out sideways on the card.", preferredStyle: .ActionSheet)
         
         
         let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil) //set up the cancel action.
@@ -42,7 +42,7 @@ class PhotoHelper: NSObject {
         
         
         if (UIImagePickerController.isCameraDeviceAvailable(.Front)) { // Set up and add the camera action, but only if the device has one.
-            let cameraAction = UIAlertAction(title: "Photo from Camera", style: .Default) { (action) in
+            let cameraAction = UIAlertAction(title: "Photo From Camera", style: .Default) { (action) in
                 self.showImagePickerController(.Camera)
             }
             

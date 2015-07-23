@@ -5,19 +5,14 @@
 //  Created by Joseph Khawly on 7/9/15.
 //  Copyright (c) 2015 Joseph Khawly. All rights reserved.
 //
-
 import UIKit
 import AlertKit
 import ReachabilitySwift
 
-    /* Feature suggestions: 
-        
-        -have the user choose whatever info that isn't their name and title to present on the front of the card.
+    /* Feature suggestions:
+        -Let the user choose whatever info that isn't their name and title to present on the front of the card.
         -Let the user decide the color of the card.
-        -Let the user update info on their existing card instead of making a new one.
-
-        Small Stuff That Needs to be Done Before Shipping:
-            Remove sample data. */
+        -Let the user update info on their existing card instead of making a new one. */
 
 class ViewController: UIViewController, UITextFieldDelegate, UIGestureRecognizerDelegate {
     
@@ -60,12 +55,11 @@ class ViewController: UIViewController, UITextFieldDelegate, UIGestureRecognizer
         self.view.addGestureRecognizer(dismissGesture)
         dismissGesture.delegate = self
         
-        
     }
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle { return .LightContent }
     
-    //Prevent tap gestures from interfering with the button tap.
+    //Prevent tap gestures from interfering with the button.
     func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldReceiveTouch touch: UITouch) -> Bool {
         if gestureRecognizer.isMemberOfClass(UITapGestureRecognizer) {
             if touch.view.isKindOfClass(UIButton) {
@@ -142,13 +136,13 @@ class ViewController: UIViewController, UITextFieldDelegate, UIGestureRecognizer
             if nameField.text != "" && titleField.text != "" && emailField.text != "" && phoneNumberField.text != "" && photo != nil {
                 
                 //Store the user values into an array
-                var values = ["Name": "\(nameField.text)", "Title": "\(titleField.text)", "Email": "\(emailField.text)", "Phone": "\(phoneNumberField.text)", "Company": "\(companyField.text)", "Twitter": "\(twitterField.text)","Resume": "\(resumeField.text)", "Linkedin": "\(linkedinField.text)", "Website": "\(websiteField.text)"]
+                var values = ["Name": "\(nameField.text)", "Title": "\(titleField.text)", "Email": "\(emailField.text)", "Phone": "\(phoneNumberField.text)", "Company": "\(companyField.text)", "Twitter": "@\(twitterField.text)","Resume": "\(resumeField.text)", "Linkedin": "\(linkedinField.text)", "Website": "\(websiteField.text)"]
                 
                 PassHelper(values: values, profile: photo!, viewController: self)
                 
             } else {
                 //If the requirements are not met, show the user an alert dialog.
-                showAlert("Hey, not so fast.", message: "You need to at least have your name, company, title, email address, phone number, and a photo in order to generate a card. Everything else is optional.")
+                showAlert("Hey, not so fast there.", message: "You need to at least have your name, email address, title, phone number, and a photo in order to generate a card. Everything else is optional.")
             }
             
         } else {
