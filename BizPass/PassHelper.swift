@@ -18,7 +18,7 @@ class PassHelper: NSObject {
     weak var viewController: UIViewController!
     var pass: PSPass?
     
-    required init(values: [NSObject : AnyObject], profile: UIImage, viewController: UIViewController) {
+    init(values: [NSObject : AnyObject], profile: UIImage, viewController: UIViewController) {
         self.values = values
         self.profile = profile
         self.viewController = viewController

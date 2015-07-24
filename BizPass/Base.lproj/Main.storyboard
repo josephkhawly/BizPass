@@ -32,91 +32,76 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="George Costanza" placeholder="Name*" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K7i-vc-Ssl">
-                                <rect key="frame" x="16" y="206" width="145" height="20"/>
+                                <rect key="frame" x="1" y="80" width="175" height="20"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="145" id="9q5-MN-e8y"/>
+                                    <constraint firstAttribute="width" constant="175" id="M0t-lA-Y7S"/>
                                 </constraints>
                                 <color key="textColor" red="1" green="1" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Vandelay Industries" placeholder="Company*" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wrG-WO-T7B">
-                                <rect key="frame" x="16" y="260" width="145" height="20"/>
+                                <rect key="frame" x="16" y="179" width="145" height="20"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="textColor" red="1" green="1" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next"/>
+                                <textInputTraits key="textInputTraits" spellCheckingType="no" returnKeyType="next"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Twitter" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oKx-G7-5UD">
-                                <rect key="frame" x="16" y="381" width="145" height="20"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Website" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oKx-G7-5UD">
+                                <rect key="frame" x="16" y="294" width="145" height="20"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="URL" returnKeyType="next"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="george@vandelay.io" placeholder="Email*" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zqh-mo-HVT">
+                                <rect key="frame" x="439" y="233" width="145" height="20"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Twitter" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qP9-XF-Ts5">
+                                <rect key="frame" x="439" y="294" width="145" height="20"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="textColor" red="1" green="1" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="twitter" returnKeyType="next"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="george@vandelay.io" placeholder="Email*" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jzn-aG-Kt0">
-                                <rect key="frame" x="439" y="206" width="145" height="20"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="145" id="PBN-NV-tzm"/>
-                                </constraints>
-                                <color key="textColor" red="1" green="1" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" returnKeyType="next"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Latex Salesman" placeholder="Title*" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zqh-mo-HVT">
-                                <rect key="frame" x="439" y="260" width="145" height="20"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="textColor" red="1" green="1" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="yes" spellCheckingType="yes" returnKeyType="next"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Linkedin" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qP9-XF-Ts5">
-                                <rect key="frame" x="439" y="321" width="145" height="20"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="textColor" red="1" green="1" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
-                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Resume Link" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qMJ-P0-zHb">
-                                <rect key="frame" x="439" y="381" width="145" height="20"/>
+                                <rect key="frame" x="439" y="354" width="145" height="20"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="textColor" red="1" green="1" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="URL" returnKeyType="next"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="555-555-5555" placeholder="Phone Number*" textAlignment="center" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="iP0-JQ-Jxv">
-                                <rect key="frame" x="16" y="442" width="145" height="20"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Linkedin" textAlignment="center" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="iP0-JQ-Jxv">
+                                <rect key="frame" x="16" y="354" width="145" height="20"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="textColor" red="1" green="1" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="namePhonePad" returnKeyType="done"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="URL" returnKeyType="done"/>
                             </textField>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder.png" translatesAutoresizingMaskIntoConstraints="NO" id="1Si-6C-cSh">
-                                <rect key="frame" x="240" y="28" width="120" height="120"/>
+                                <rect key="frame" x="466" y="45" width="90" height="90"/>
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="120" id="1n4-va-yR1"/>
-                                    <constraint firstAttribute="width" constant="120" id="hM2-CB-qat"/>
+                                    <constraint firstAttribute="width" constant="90" id="wrP-Vh-rmF"/>
                                 </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="GtP-9t-zBM" appends="YES" id="3Ao-Kz-frC"/>
                                 </connections>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Website" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UC5-vL-OTG">
-                                <rect key="frame" x="16" y="322" width="145" height="20"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="555-555-5555" placeholder="Phone Number*" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UC5-vL-OTG">
+                                <rect key="frame" x="16" y="233" width="145" height="20"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="textColor" red="1" green="1" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="URL" returnKeyType="next"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="namePhonePad" returnKeyType="next"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXh-eM-hdU">
-                                <rect key="frame" x="219" y="550" width="163" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="163" id="6K9-sK-GZF"/>
-                                    <constraint firstAttribute="height" constant="30" id="Owb-2S-PeZ"/>
-                                </constraints>
+                                <rect key="frame" x="229" y="544" width="143" height="36"/>
                                 <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="20"/>
                                 <state key="normal" title="Create Your Card">
                                     <color key="titleColor" red="1" green="1" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -126,40 +111,51 @@
                                     <action selector="makeCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZWO-dX-tkJ"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Latex Salesman" placeholder="Job Title*" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jzn-aG-Kt0">
+                                <rect key="frame" x="439" y="179" width="145" height="20"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="145" id="itu-cl-do1"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="1" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="yes" returnKeyType="next"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.75294117650000003" green="0.22352941179999999" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="wrG-WO-T7B" firstAttribute="top" secondItem="K7i-vc-Ssl" secondAttribute="bottom" constant="34" id="04L-HU-a9k"/>
-                            <constraint firstItem="iP0-JQ-Jxv" firstAttribute="trailing" secondItem="oKx-G7-5UD" secondAttribute="trailing" id="0I2-zY-3Fn"/>
-                            <constraint firstItem="zqh-mo-HVT" firstAttribute="baseline" secondItem="wrG-WO-T7B" secondAttribute="baseline" id="3q0-fk-ysN"/>
-                            <constraint firstItem="qMJ-P0-zHb" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="7s0-PI-nCH"/>
-                            <constraint firstItem="oKx-G7-5UD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="FJ6-Th-8fa"/>
-                            <constraint firstItem="iP0-JQ-Jxv" firstAttribute="leading" secondItem="oKx-G7-5UD" secondAttribute="leading" id="FLg-FL-BdP"/>
-                            <constraint firstItem="Jzn-aG-Kt0" firstAttribute="trailing" secondItem="zqh-mo-HVT" secondAttribute="trailing" id="HJh-gJ-qz0"/>
-                            <constraint firstItem="qP9-XF-Ts5" firstAttribute="trailing" secondItem="qMJ-P0-zHb" secondAttribute="trailing" id="INS-sx-GJD"/>
-                            <constraint firstItem="UC5-vL-OTG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="32" id="Jsx-yj-6DN"/>
-                            <constraint firstItem="wrG-WO-T7B" firstAttribute="trailing" secondItem="UC5-vL-OTG" secondAttribute="trailing" id="KQQ-dc-GH1"/>
-                            <constraint firstItem="oKx-G7-5UD" firstAttribute="top" secondItem="UC5-vL-OTG" secondAttribute="bottom" constant="39" id="PZt-0M-chx"/>
-                            <constraint firstItem="qP9-XF-Ts5" firstAttribute="leading" secondItem="qMJ-P0-zHb" secondAttribute="leading" id="TN1-eb-Cvh"/>
-                            <constraint firstItem="wrG-WO-T7B" firstAttribute="trailing" secondItem="K7i-vc-Ssl" secondAttribute="trailing" id="UQQ-fX-YPX"/>
-                            <constraint firstItem="UC5-vL-OTG" firstAttribute="top" secondItem="wrG-WO-T7B" secondAttribute="bottom" constant="42" id="Uod-fb-9Lc"/>
-                            <constraint firstItem="qP9-XF-Ts5" firstAttribute="leading" secondItem="zqh-mo-HVT" secondAttribute="leading" id="Uxo-g9-ojU"/>
-                            <constraint firstItem="oKx-G7-5UD" firstAttribute="trailing" secondItem="UC5-vL-OTG" secondAttribute="trailing" id="WOA-kO-QCj"/>
-                            <constraint firstItem="qP9-XF-Ts5" firstAttribute="trailing" secondItem="zqh-mo-HVT" secondAttribute="trailing" id="ZSV-C1-sey"/>
-                            <constraint firstItem="qP9-XF-Ts5" firstAttribute="baseline" secondItem="UC5-vL-OTG" secondAttribute="baseline" constant="-1" id="aju-cb-6FR"/>
-                            <constraint firstItem="K7i-vc-Ssl" firstAttribute="leading" secondItem="wrG-WO-T7B" secondAttribute="leading" id="cpX-Ke-Nz9"/>
-                            <constraint firstItem="K7i-vc-Ssl" firstAttribute="baseline" secondItem="Jzn-aG-Kt0" secondAttribute="baseline" id="eQU-Pb-2hn"/>
-                            <constraint firstItem="oKx-G7-5UD" firstAttribute="leading" secondItem="UC5-vL-OTG" secondAttribute="leading" id="g0A-Bw-a6i"/>
-                            <constraint firstItem="qMJ-P0-zHb" firstAttribute="baseline" secondItem="oKx-G7-5UD" secondAttribute="baseline" id="g3E-Hh-Iek"/>
-                            <constraint firstItem="iP0-JQ-Jxv" firstAttribute="top" secondItem="oKx-G7-5UD" secondAttribute="bottom" constant="41" id="gah-vX-hWN"/>
-                            <constraint firstItem="1Si-6C-cSh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jE9-GI-FNY"/>
-                            <constraint firstItem="1Si-6C-cSh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="jfv-a0-BeJ"/>
-                            <constraint firstItem="zqh-mo-HVT" firstAttribute="leading" secondItem="Jzn-aG-Kt0" secondAttribute="leading" id="kbY-vh-Z40"/>
-                            <constraint firstAttribute="bottom" secondItem="dXh-eM-hdU" secondAttribute="bottom" constant="20" symbolic="YES" id="kel-8i-Eoc"/>
-                            <constraint firstItem="UC5-vL-OTG" firstAttribute="leading" secondItem="wrG-WO-T7B" secondAttribute="leading" id="qck-2U-jzK"/>
-                            <constraint firstItem="1Si-6C-cSh" firstAttribute="centerX" secondItem="dXh-eM-hdU" secondAttribute="centerX" id="z6v-oz-X3j"/>
+                            <constraint firstItem="Jzn-aG-Kt0" firstAttribute="leading" secondItem="zqh-mo-HVT" secondAttribute="leading" id="0cz-aS-oYK"/>
+                            <constraint firstAttribute="centerX" secondItem="dXh-eM-hdU" secondAttribute="centerX" id="37V-Ba-anN"/>
+                            <constraint firstItem="wrG-WO-T7B" firstAttribute="leading" secondItem="K7i-vc-Ssl" secondAttribute="leading" constant="15" id="9yN-qL-NID"/>
+                            <constraint firstItem="1Si-6C-cSh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="B3i-ZH-M7m"/>
+                            <constraint firstItem="oKx-G7-5UD" firstAttribute="trailing" secondItem="UC5-vL-OTG" secondAttribute="trailing" id="E3h-12-MQe"/>
+                            <constraint firstItem="wrG-WO-T7B" firstAttribute="leading" secondItem="UC5-vL-OTG" secondAttribute="leading" id="HdV-ts-g5x"/>
+                            <constraint firstItem="iP0-JQ-Jxv" firstAttribute="top" secondItem="oKx-G7-5UD" secondAttribute="bottom" constant="40" id="Hge-Yg-8qL"/>
+                            <constraint firstItem="wrG-WO-T7B" firstAttribute="baseline" secondItem="zqh-mo-HVT" secondAttribute="baseline" constant="-54" id="K4N-aY-wUy"/>
+                            <constraint firstItem="Jzn-aG-Kt0" firstAttribute="trailing" secondItem="1Si-6C-cSh" secondAttribute="trailing" constant="28" id="ORM-wh-bd6"/>
+                            <constraint firstItem="wrG-WO-T7B" firstAttribute="top" secondItem="K7i-vc-Ssl" secondAttribute="bottom" constant="79" id="Oh5-Th-xkK"/>
+                            <constraint firstItem="wrG-WO-T7B" firstAttribute="trailing" secondItem="UC5-vL-OTG" secondAttribute="trailing" id="S4s-c0-jOa"/>
+                            <constraint firstItem="K7i-vc-Ssl" firstAttribute="trailing" secondItem="wrG-WO-T7B" secondAttribute="trailing" constant="15" id="Wyf-qD-zzJ"/>
+                            <constraint firstItem="Jzn-aG-Kt0" firstAttribute="top" secondItem="1Si-6C-cSh" secondAttribute="bottom" constant="44" id="Z17-fk-Q2S"/>
+                            <constraint firstItem="zqh-mo-HVT" firstAttribute="leading" secondItem="qP9-XF-Ts5" secondAttribute="leading" id="aHM-Jy-XoV"/>
+                            <constraint firstItem="qP9-XF-Ts5" firstAttribute="leading" secondItem="qMJ-P0-zHb" secondAttribute="leading" id="b8O-fV-9YD"/>
+                            <constraint firstItem="Jzn-aG-Kt0" firstAttribute="baseline" secondItem="K7i-vc-Ssl" secondAttribute="baseline" constant="99" id="d2r-rI-ap9"/>
+                            <constraint firstItem="qP9-XF-Ts5" firstAttribute="trailing" secondItem="qMJ-P0-zHb" secondAttribute="trailing" id="djn-LH-diD"/>
+                            <constraint firstItem="UC5-vL-OTG" firstAttribute="leading" secondItem="oKx-G7-5UD" secondAttribute="leading" id="gsq-m2-eF9"/>
+                            <constraint firstItem="oKx-G7-5UD" firstAttribute="baseline" secondItem="qMJ-P0-zHb" secondAttribute="baseline" constant="-60" id="k0r-vM-By7"/>
+                            <constraint firstItem="UC5-vL-OTG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="pCV-Q6-vhj"/>
+                            <constraint firstItem="Jzn-aG-Kt0" firstAttribute="trailing" secondItem="zqh-mo-HVT" secondAttribute="trailing" id="qSm-r7-lwz"/>
+                            <constraint firstItem="qP9-XF-Ts5" firstAttribute="trailing" secondItem="zqh-mo-HVT" secondAttribute="trailing" id="utM-Hd-1ey"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dXh-eM-hdU" secondAttribute="bottom" constant="20" id="uzR-ew-M9M"/>
+                            <constraint firstItem="iP0-JQ-Jxv" firstAttribute="leading" secondItem="oKx-G7-5UD" secondAttribute="leading" id="vhg-Be-zNA"/>
+                            <constraint firstItem="iP0-JQ-Jxv" firstAttribute="trailing" secondItem="oKx-G7-5UD" secondAttribute="trailing" id="viU-rS-MQN"/>
+                            <constraint firstItem="qP9-XF-Ts5" firstAttribute="top" secondItem="zqh-mo-HVT" secondAttribute="bottom" constant="41" id="wh5-VL-Osf"/>
+                            <constraint firstItem="qP9-XF-Ts5" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="xBR-Vb-JCg"/>
+                            <constraint firstItem="oKx-G7-5UD" firstAttribute="top" secondItem="UC5-vL-OTG" secondAttribute="bottom" constant="41" id="yeQ-cZ-yyi"/>
+                            <constraint firstItem="qMJ-P0-zHb" firstAttribute="top" secondItem="qP9-XF-Ts5" secondAttribute="bottom" constant="40" id="zfd-Bx-CAk"/>
+                            <constraint firstItem="K7i-vc-Ssl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="zmK-eU-gX9"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="iwg-pm-OcO" appends="YES" id="SnI-m4-EEv"/>
@@ -171,15 +167,15 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
                         <outlet property="companyField" destination="wrG-WO-T7B" id="O8a-On-PMl"/>
-                        <outlet property="emailField" destination="Jzn-aG-Kt0" id="yeI-5x-NcO"/>
+                        <outlet property="emailField" destination="zqh-mo-HVT" id="kIw-US-Wz3"/>
                         <outlet property="imageView" destination="1Si-6C-cSh" id="RnU-Ox-XAX"/>
-                        <outlet property="linkedinField" destination="qP9-XF-Ts5" id="FnL-GE-mz3"/>
+                        <outlet property="linkedinField" destination="iP0-JQ-Jxv" id="Tbf-FJ-MI9"/>
                         <outlet property="nameField" destination="K7i-vc-Ssl" id="yJB-Qk-9Nm"/>
-                        <outlet property="phoneNumberField" destination="iP0-JQ-Jxv" id="grC-lJ-tvT"/>
+                        <outlet property="phoneNumberField" destination="UC5-vL-OTG" id="6WN-8m-ZNG"/>
                         <outlet property="resumeField" destination="qMJ-P0-zHb" id="eJx-mo-6gh"/>
-                        <outlet property="titleField" destination="zqh-mo-HVT" id="rH1-q7-sZA"/>
-                        <outlet property="twitterField" destination="oKx-G7-5UD" id="IFw-B1-haG"/>
-                        <outlet property="websiteField" destination="UC5-vL-OTG" id="phI-EW-FOR"/>
+                        <outlet property="titleField" destination="Jzn-aG-Kt0" id="arN-4o-HCF"/>
+                        <outlet property="twitterField" destination="qP9-XF-Ts5" id="kBV-XH-bHr"/>
+                        <outlet property="websiteField" destination="oKx-G7-5UD" id="3U9-Ok-5ve"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

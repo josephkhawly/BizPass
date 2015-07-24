@@ -9,15 +9,10 @@ import UIKit
 import AlertKit
 import ReachabilitySwift
 
-    /* Feature suggestions:
-        -Let the user choose whatever info that isn't their name and title to present on the front of the card.
-        -Let the user decide the color of the card.
-        -Let the user update info on their existing card instead of making a new one. */
-
 class ViewController: UIViewController, UITextFieldDelegate, UIGestureRecognizerDelegate {
     
     //MARK: IBOutlets and variables
-    @IBOutlet var imageView: UIImageView!
+    @IBOutlet weak var imageView: UIImageView!
     
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var titleField: UITextField!
@@ -57,6 +52,11 @@ class ViewController: UIViewController, UITextFieldDelegate, UIGestureRecognizer
         
     }
     
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
     override func preferredStatusBarStyle() -> UIStatusBarStyle { return .LightContent }
     
     //Prevent tap gestures from interfering with the button.
@@ -67,11 +67,6 @@ class ViewController: UIViewController, UITextFieldDelegate, UIGestureRecognizer
             }
         }
         return false
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     //MARK: Keyboard management
