@@ -71,15 +71,19 @@ class ViewController: UIViewController, UITextFieldDelegate, UIGestureRecognizer
     
     //MARK: Keyboard management
     /*func textFieldDidBeginEditing(textField: UITextField) {
-        //Hide the imageView and move all the textFields up so the keyboard doesn't hide them
-        imageView.hidden = true
-        animateViewMoving(true, moveValue: 120)
+        //Hide the imageView and move textFields up so the keyboard doesn't hide them
+        if textField == linkedinField || textField == resumeField {
+            //imageView.hidden = true
+            animateViewMoving(true, moveValue: 160)
+        }
     }
     
     func textFieldDidEndEditing(textField: UITextField) {
         //Do the opposite when done editing.
-        imageView.hidden = false
-        animateViewMoving(false, moveValue: 120)
+        if textField == linkedinField || textField == resumeField {
+            //imageView.hidden = false
+            animateViewMoving(false, moveValue: 160)
+        }
     }*/
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
@@ -105,7 +109,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIGestureRecognizer
         return false
     }
     
-    func animateViewMoving(up:Bool, moveValue :CGFloat) {
+    /*func animateViewMoving(up:Bool, moveValue :CGFloat) {
         var movementDuration:NSTimeInterval = 0.3
         var movement:CGFloat = (up ? -moveValue : moveValue)
         UIView.beginAnimations("animateView", context: nil)
@@ -113,7 +117,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIGestureRecognizer
         UIView.setAnimationDuration(movementDuration)
         self.view.frame = CGRectOffset(self.view.frame, 0,  movement)
         UIView.commitAnimations()
-    }
+    }*/
     
     //Method that dismisses the keyboard.
     @IBAction func dismissKeyboard(sender: UITapGestureRecognizer) {
