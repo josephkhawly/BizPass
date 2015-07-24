@@ -131,7 +131,13 @@ class ViewController: UIViewController, UITextFieldDelegate, UIGestureRecognizer
             if nameField.text != "" && titleField.text != "" && emailField.text != "" && phoneNumberField.text != "" && photo != nil {
                 
                 //Store the user values into an array
-                var values = ["Name": "\(nameField.text)", "Title": "\(titleField.text)", "Email": "\(emailField.text)", "Phone": "\(phoneNumberField.text)", "Company": "\(companyField.text)", "Twitter": "@\(twitterField.text)","Resume": "\(resumeField.text)", "Linkedin": "\(linkedinField.text)", "Website": "\(websiteField.text)"]
+                var values = ["Name": "\(nameField.text)", "Title": "\(titleField.text)", "Email": "\(emailField.text)", "Phone": "\(phoneNumberField.text)", "Company": "\(companyField.text)", "Twitter": "\(twitterField.text)","Resume": "\(resumeField.text)", "Linkedin": "\(linkedinField.text)", "Website": "\(websiteField.text)"]
+                
+                for (field, content) in values {
+                    if values[field] == "" {
+                        values.updateValue("N/A", forKey: field)
+                    }
+                }
                 
                 PassHelper(values: values, profile: photo!, viewController: self)
                 
