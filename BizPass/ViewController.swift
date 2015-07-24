@@ -70,7 +70,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIGestureRecognizer
     }
     
     //MARK: Keyboard management
-    func textFieldDidBeginEditing(textField: UITextField) {
+    /*func textFieldDidBeginEditing(textField: UITextField) {
         //Hide the imageView and move all the textFields up so the keyboard doesn't hide them
         imageView.hidden = true
         animateViewMoving(true, moveValue: 120)
@@ -80,21 +80,21 @@ class ViewController: UIViewController, UITextFieldDelegate, UIGestureRecognizer
         //Do the opposite when done editing.
         imageView.hidden = false
         animateViewMoving(false, moveValue: 120)
-    }
+    }*/
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         if textField.returnKeyType == .Next {
             
             switch textField {
                 
-            case nameField: titleField.becomeFirstResponder()
-            case titleField: emailField.becomeFirstResponder()
-            case emailField: twitterField.becomeFirstResponder()
-            case twitterField: websiteField.becomeFirstResponder()
-            case websiteField: linkedinField.becomeFirstResponder()
+            case nameField: companyField.becomeFirstResponder()
+            case companyField: titleField.becomeFirstResponder()
+            case titleField: phoneNumberField.becomeFirstResponder()
+            case phoneNumberField: emailField.becomeFirstResponder()
+            case emailField: websiteField.becomeFirstResponder()
+            case websiteField: twitterField.becomeFirstResponder()
+            case twitterField: linkedinField.becomeFirstResponder()
             case linkedinField: resumeField.becomeFirstResponder()
-            case resumeField: phoneNumberField.becomeFirstResponder()
-            case phoneNumberField: companyField.becomeFirstResponder()
             default: break
                 
             }
@@ -134,11 +134,10 @@ class ViewController: UIViewController, UITextFieldDelegate, UIGestureRecognizer
                 var values = ["Name": "\(nameField.text)", "Title": "\(titleField.text)", "Email": "\(emailField.text)", "Phone": "\(phoneNumberField.text)", "Company": "\(companyField.text)", "Twitter": "\(twitterField.text)","Resume": "\(resumeField.text)", "Linkedin": "\(linkedinField.text)", "Website": "\(websiteField.text)"]
                 
                 for (field, content) in values {
-                    if values[field] == "" {
-                        values.updateValue("N/A", forKey: field)
-                    }
+                    if values[field] == "" { values.updateValue("N/A", forKey: field) }
                 }
                 
+                //Make the card.
                 PassHelper(values: values, profile: photo!, viewController: self)
                 
             } else {
