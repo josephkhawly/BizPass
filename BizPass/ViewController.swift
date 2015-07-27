@@ -8,10 +8,11 @@
 import UIKit
 import AlertKit
 import ReachabilitySwift
+import ALCameraViewController
 
 class ViewController: UIViewController, UITextFieldDelegate, UIGestureRecognizerDelegate {
     
-    //MARK: IBOutlets and variables
+    //MARK: - IBOutlets and variables
     @IBOutlet weak var imageView: UIImageView!
     
     @IBOutlet weak var nameField: UITextField!
@@ -24,10 +25,10 @@ class ViewController: UIViewController, UITextFieldDelegate, UIGestureRecognizer
     @IBOutlet weak var phoneNumberField: UITextField!
     @IBOutlet weak var companyField: UITextField!
     
-    var photoHelper: PhotoHelper?
+    //FIXME: Think about making this a weak reference.
     var photo: UIImage?
     
-    //MARK: viewDidLoad Method
+    //MARK: - viewDidLoad Method
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -55,6 +56,8 @@ class ViewController: UIViewController, UITextFieldDelegate, UIGestureRecognizer
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        //photoHelper = nil
+        //photo = nil
     }
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle { return .LightContent }
@@ -69,7 +72,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIGestureRecognizer
         return false
     }
     
-    //MARK: Keyboard management
+    //MARK: - Keyboard management
     /*func textFieldDidBeginEditing(textField: UITextField) {
         //Hide the imageView and move textFields up so the keyboard doesn't hide them
         if textField == linkedinField || textField == resumeField {
@@ -124,7 +127,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIGestureRecognizer
         view.endEditing(true)
     }
     
-    //MARK: Button click method
+    //MARK: - Button click method
     @IBAction func makeCard(sender: AnyObject) {
         let reachability = Reachability.reachabilityForInternetConnection()
         
@@ -154,11 +157,14 @@ class ViewController: UIViewController, UITextFieldDelegate, UIGestureRecognizer
         }
     }
     
-    //MARK: Image upload
+    //MARK: - Image upload
     @IBAction func uploadImage(sender: UITapGestureRecognizer) {
-        photoHelper = PhotoHelper(viewController: self) { (image: UIImage?) in
+        
+        let cameraViewController = ALCameraViewController(croppingEnabled: true) { image in
             self.imageView.image = image
             self.photo = image
+            self.dismissViewControllerAnimated(true, completion: nil)
         }
+        presentViewController(cameraViewController, animated: true, completion: nil)
     }
 }

@@ -23,7 +23,6 @@
 		243608151B4F524F00049811 /* SF-UI-Text-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2436080F1B4F524F00049811 /* SF-UI-Text-Light.otf */; };
 		243608161B4F524F00049811 /* SF-UI-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 243608101B4F524F00049811 /* SF-UI-Text-Regular.otf */; };
 		2446372C1B56EDC200142B3E /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 2446372B1B56EDC200142B3E /* placeholder.png */; };
-		24781D051B57FC2B002C76E2 /* PhotoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24781D041B57FC2B002C76E2 /* PhotoHelper.swift */; };
 		24B94A9F1B605EF2004B2BE7 /* largeicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 24B94A9E1B605EF2004B2BE7 /* largeicon.png */; };
 		BAFFDB044F388A0B2764E959 /* Pods_BizPass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38DCAABCD513FA3A2BD1B974 /* Pods_BizPass.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
@@ -61,7 +60,6 @@
 		2436080F1B4F524F00049811 /* SF-UI-Text-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-Light.otf"; path = "../../../../Downloads/SF-UI/SF-UI-Text-Light.otf"; sourceTree = "<group>"; };
 		243608101B4F524F00049811 /* SF-UI-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-Regular.otf"; path = "../../../../Downloads/SF-UI/SF-UI-Text-Regular.otf"; sourceTree = "<group>"; };
 		2446372B1B56EDC200142B3E /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = SOURCE_ROOT; };
-		24781D041B57FC2B002C76E2 /* PhotoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoHelper.swift; sourceTree = "<group>"; };
 		24B94A9E1B605EF2004B2BE7 /* largeicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = largeicon.png; path = ../../../../Downloads/largeicon.png; sourceTree = "<group>"; };
 		24F2C5211B543820001F1263 /* BizPass-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BizPass-Bridging-Header.h"; sourceTree = "<group>"; };
 		2F1C4E5046A45AA5AF366D69 /* Pods-BizPass.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BizPass.release.xcconfig"; path = "Pods/Target Support Files/Pods-BizPass/Pods-BizPass.release.xcconfig"; sourceTree = "<group>"; };
@@ -170,7 +168,6 @@
 		24CA27381B603CC90038FA04 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				24781D041B57FC2B002C76E2 /* PhotoHelper.swift */,
 				2426B09F1B5FE8FF0007A14D /* PassHelper.swift */,
 			);
 			name = Helpers;
@@ -362,7 +359,6 @@
 				243607EA1B4F004D00049811 /* ViewController.swift in Sources */,
 				243607E81B4F004D00049811 /* AppDelegate.swift in Sources */,
 				2426B0A01B5FE8FF0007A14D /* PassHelper.swift in Sources */,
-				24781D051B57FC2B002C76E2 /* PhotoHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

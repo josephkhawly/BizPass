@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>ALCameraViewController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>AlertKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,12 +37,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>116AB5FB0EA00D63BA4D77F0AE4C4E27</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>55008F7F736A4DAE4C325D412AECE406</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>5DE37E9EC9D035137341D5CFA5974AD9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BEEBB44826052828F9F82E57D5CCCE06</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DAF7B6A0E1BA931A32232BE5DD1E60E4</key>
 		<dict>
 			<key>primary</key>
 			<true/>

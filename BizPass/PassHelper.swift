@@ -27,6 +27,7 @@ class PassHelper: NSObject {
         makePass()
     }
     
+    //FIXME: The image shows up sideways on the card when taken with the camera
     func makePass() {
         
         //Check if the user's device has Passbook, just in case.
@@ -42,7 +43,7 @@ class PassHelper: NSObject {
             
             //Create the card, store it in realm, add it to Passbook and stop loading indicator when finished.
             PassSlot.passFromTemplateWithName("Business Card Template", withValues: values, withImages: imageArray, pass: {
-                (PSPass) in
+                PSPass in
                 
                 self.pass = PSPass
                 

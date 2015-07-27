@@ -8,6 +8,7 @@ pod 'PassSlot'
 pod 'SwiftLoader'
 pod 'AlertKit'
 pod 'ReachabilitySwift'
+pod 'ALCameraViewController'
 
 end
 
