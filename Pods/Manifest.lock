@@ -3,6 +3,7 @@ PODS:
   - AlertKit (0.1.2)
   - PassSlot (0.7)
   - ReachabilitySwift (1.1)
+  - RGBColorSlider (0.1.2)
   - SwiftLoader (0.2.2)
 
 DEPENDENCIES:
@@ -10,6 +11,7 @@ DEPENDENCIES:
   - AlertKit
   - PassSlot
   - ReachabilitySwift
+  - RGBColorSlider
   - SwiftLoader
 
 SPEC CHECKSUMS:
@@ -17,6 +19,7 @@ SPEC CHECKSUMS:
   AlertKit: 3826f4d257492f539213d46880bb220e91559817
   PassSlot: b28b719efa4ba418ca757d2b3006dc789410d492
   ReachabilitySwift: 1e53abddb01111deac0d229dabdb8bb043567b18
+  RGBColorSlider: 425099dc03ea753cd8b84977047fe1db01537616
   SwiftLoader: 9c5e547ae8e00b1c1079139492d6a273c7f73171
 
-COCOAPODS: 0.38.0
+COCOAPODS: 0.38.2

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "44C3E211BEA2601726E9F64B"
+               BlueprintIdentifier = "220FF6D2417C1A7B733AB333"
                BuildableName = "AlertKit.framework"
                BlueprintName = "AlertKit"
                ReferencedContainer = "container:Pods.xcodeproj">

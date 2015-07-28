@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		241AC2751B67F11000613B7F /* ChooseColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241AC2741B67F11000613B7F /* ChooseColorViewController.swift */; };
 		2426B09E1B5FE55C0007A14D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2426B09D1B5FE55C0007A14D /* SystemConfiguration.framework */; };
 		2426B0A01B5FE8FF0007A14D /* PassHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2426B09F1B5FE8FF0007A14D /* PassHelper.swift */; };
 		243607E81B4F004D00049811 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243607E71B4F004D00049811 /* AppDelegate.swift */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		08EED40B9CC363A8C96ED233 /* Pods-BizPass.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BizPass.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BizPass/Pods-BizPass.debug.xcconfig"; sourceTree = "<group>"; };
+		241AC2741B67F11000613B7F /* ChooseColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseColorViewController.swift; sourceTree = "<group>"; };
 		2426B09D1B5FE55C0007A14D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		2426B09F1B5FE8FF0007A14D /* PassHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassHelper.swift; sourceTree = "<group>"; };
 		243607E21B4F004D00049811 /* BizPass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BizPass.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,6 +119,7 @@
 				24B94A9E1B605EF2004B2BE7 /* largeicon.png */,
 				243607E71B4F004D00049811 /* AppDelegate.swift */,
 				243607E91B4F004D00049811 /* ViewController.swift */,
+				241AC2741B67F11000613B7F /* ChooseColorViewController.swift */,
 				24F2C5211B543820001F1263 /* BizPass-Bridging-Header.h */,
 				24CA27381B603CC90038FA04 /* Helpers */,
 				243607EB1B4F004D00049811 /* Main.storyboard */,
@@ -357,6 +360,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				243607EA1B4F004D00049811 /* ViewController.swift in Sources */,
+				241AC2751B67F11000613B7F /* ChooseColorViewController.swift in Sources */,
 				243607E81B4F004D00049811 /* AppDelegate.swift in Sources */,
 				2426B0A01B5FE8FF0007A14D /* PassHelper.swift in Sources */,
 			);

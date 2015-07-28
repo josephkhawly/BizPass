@@ -56,7 +56,6 @@ class ViewController: UIViewController, UITextFieldDelegate, UIGestureRecognizer
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-        //photoHelper = nil
         //photo = nil
     }
     
@@ -112,7 +111,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIGestureRecognizer
         return false
     }
     
-    /*func animateViewMoving(up:Bool, moveValue :CGFloat) {
+    /*func animateViewMoving(up: Bool, moveValue: CGFloat) {
         var movementDuration:NSTimeInterval = 0.3
         var movement:CGFloat = (up ? -moveValue : moveValue)
         UIView.beginAnimations("animateView", context: nil)
@@ -149,7 +148,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIGestureRecognizer
                 
             } else {
                 //If the requirements are not met, show the user an alert dialog.
-                showAlert("Hey, not so fast there.", message: "You need to at least have your name, email address, title, phone number, and a photo in order to generate a card. Everything else is optional.")
+                showAlert("Hey, not so fast there.", message: "You need to at least have your name, email address, title, company name, phone number, and a photo in order to generate a card. Everything else is optional.")
             }
             
         } else {
@@ -159,7 +158,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIGestureRecognizer
     
     //MARK: - Image upload
     @IBAction func uploadImage(sender: UITapGestureRecognizer) {
-        
+        //Open the image selector and cropper, set the images, and close when done.
         let cameraViewController = ALCameraViewController(croppingEnabled: true) { image in
             self.imageView.image = image
             self.photo = image
@@ -167,4 +166,5 @@ class ViewController: UIViewController, UITextFieldDelegate, UIGestureRecognizer
         }
         presentViewController(cameraViewController, animated: true, completion: nil)
     }
+    
 }

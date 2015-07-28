@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9F2621E399125B418F2286D2"
+               BlueprintIdentifier = "B30AEEE8B6DB6625F18F25D2"
                BuildableName = "Pods_BizPass.framework"
                BlueprintName = "Pods-BizPass"
                ReferencedContainer = "container:Pods.xcodeproj">

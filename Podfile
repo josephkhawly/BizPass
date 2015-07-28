@@ -9,6 +9,7 @@ pod 'SwiftLoader'
 pod 'AlertKit'
 pod 'ReachabilitySwift'
 pod 'ALCameraViewController'
+pod 'RGBColorSlider'
 
 end
 

@@ -16,6 +16,7 @@
             <string>SFUIDisplay-Light</string>
             <string>SFUIDisplay-Light</string>
             <string>SFUIDisplay-Light</string>
+            <string>SFUIDisplay-Light</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -121,6 +122,17 @@
                                     <outletCollection property="gestureRecognizers" destination="GtP-9t-zBM" appends="YES" id="3Ao-Kz-frC"/>
                                 </connections>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXZ-ah-Gk1">
+                                <rect key="frame" x="229" y="412" width="143" height="36"/>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="20"/>
+                                <state key="normal" title="Choose Color">
+                                    <color key="titleColor" red="1" green="1" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="kNc-Hh-QrC" kind="presentation" identifier="showColorPicker" modalTransitionStyle="flipHorizontal" id="yis-z1-8my"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.75294117650000003" green="0.22352941179999999" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -131,6 +143,8 @@
                             <constraint firstItem="wrG-WO-T7B" firstAttribute="leading" secondItem="K7i-vc-Ssl" secondAttribute="leading" constant="15" id="9yN-qL-NID"/>
                             <constraint firstItem="1Si-6C-cSh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="B3i-ZH-M7m"/>
                             <constraint firstItem="oKx-G7-5UD" firstAttribute="trailing" secondItem="UC5-vL-OTG" secondAttribute="trailing" id="E3h-12-MQe"/>
+                            <constraint firstItem="IXZ-ah-Gk1" firstAttribute="leading" secondItem="dXh-eM-hdU" secondAttribute="leading" id="EFv-s3-BOa"/>
+                            <constraint firstItem="IXZ-ah-Gk1" firstAttribute="trailing" secondItem="dXh-eM-hdU" secondAttribute="trailing" id="FO2-JL-bvw"/>
                             <constraint firstItem="wrG-WO-T7B" firstAttribute="leading" secondItem="UC5-vL-OTG" secondAttribute="leading" id="HdV-ts-g5x"/>
                             <constraint firstItem="iP0-JQ-Jxv" firstAttribute="top" secondItem="oKx-G7-5UD" secondAttribute="bottom" constant="40" id="Hge-Yg-8qL"/>
                             <constraint firstItem="wrG-WO-T7B" firstAttribute="baseline" secondItem="zqh-mo-HVT" secondAttribute="baseline" constant="-54" id="K4N-aY-wUy"/>
@@ -145,6 +159,7 @@
                             <constraint firstItem="qP9-XF-Ts5" firstAttribute="trailing" secondItem="qMJ-P0-zHb" secondAttribute="trailing" id="djn-LH-diD"/>
                             <constraint firstItem="UC5-vL-OTG" firstAttribute="leading" secondItem="oKx-G7-5UD" secondAttribute="leading" id="gsq-m2-eF9"/>
                             <constraint firstItem="oKx-G7-5UD" firstAttribute="baseline" secondItem="qMJ-P0-zHb" secondAttribute="baseline" constant="-60" id="k0r-vM-By7"/>
+                            <constraint firstItem="dXh-eM-hdU" firstAttribute="top" secondItem="IXZ-ah-Gk1" secondAttribute="bottom" constant="96" id="lia-hs-pcE"/>
                             <constraint firstItem="UC5-vL-OTG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="pCV-Q6-vhj"/>
                             <constraint firstItem="Jzn-aG-Kt0" firstAttribute="trailing" secondItem="zqh-mo-HVT" secondAttribute="trailing" id="qSm-r7-lwz"/>
                             <constraint firstItem="qP9-XF-Ts5" firstAttribute="trailing" secondItem="zqh-mo-HVT" secondAttribute="trailing" id="utM-Hd-1ey"/>
@@ -190,6 +205,42 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
+        </scene>
+        <!--Choose Color-->
+        <scene sceneID="kg2-HA-7XD">
+            <objects>
+                <viewController title="Choose Color" id="kNc-Hh-QrC" customClass="ChooseColorViewController" customModule="BizPass" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="t2f-Q1-yKx"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tyo-Pa-eX3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PN5-u9-yyH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cR8-oe-II9">
+                                <rect key="frame" x="277" y="460" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="nvc-wl-haN"/>
+                                </constraints>
+                                <state key="normal" title="OK">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="back" modalTransitionStyle="flipHorizontal" id="3FD-l3-S81"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Tyo-Pa-eX3" firstAttribute="top" secondItem="cR8-oe-II9" secondAttribute="bottom" constant="110" id="3ya-2e-hhZ"/>
+                            <constraint firstItem="cR8-oe-II9" firstAttribute="centerX" secondItem="PN5-u9-yyH" secondAttribute="centerX" id="cxC-a3-Nsp"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="liN-iN-pgZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1327" y="307"/>
         </scene>
     </scenes>
     <resources>
