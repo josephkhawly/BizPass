@@ -167,4 +167,11 @@ class ViewController: UIViewController, UITextFieldDelegate, UIGestureRecognizer
         presentViewController(cameraViewController, animated: true, completion: nil)
     }
     
+    //MARK: - Navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showColorPicker" {
+            var viewController = segue.destinationViewController as! ChooseColorViewController
+            viewController.view.backgroundColor = self.view.backgroundColor
+        }
+    }
 }

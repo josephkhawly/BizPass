@@ -43,21 +43,21 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Company*" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wrG-WO-T7B">
-                                <rect key="frame" x="16" y="149" width="145" height="20"/>
+                                <rect key="frame" x="16" y="143" width="145" height="20"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="textColor" red="1" green="1" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" spellCheckingType="no" returnKeyType="next"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Website" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oKx-G7-5UD">
-                                <rect key="frame" x="16" y="264" width="145" height="20"/>
+                                <rect key="frame" x="16" y="263" width="145" height="20"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="textColor" red="1" green="1" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="URL" returnKeyType="next"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Job Title*" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jzn-aG-Kt0">
-                                <rect key="frame" x="439" y="149" width="145" height="20"/>
+                                <rect key="frame" x="439" y="143" width="145" height="20"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="145" id="itu-cl-do1"/>
@@ -74,21 +74,21 @@
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Twitter" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qP9-XF-Ts5">
-                                <rect key="frame" x="439" y="264" width="145" height="20"/>
+                                <rect key="frame" x="439" y="263" width="145" height="20"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="textColor" red="1" green="1" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Resume Link" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qMJ-P0-zHb">
-                                <rect key="frame" x="439" y="324" width="145" height="20"/>
+                                <rect key="frame" x="439" y="323" width="145" height="20"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="textColor" red="1" green="1" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="URL" returnKeyType="done"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Linkedin" textAlignment="center" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="iP0-JQ-Jxv">
-                                <rect key="frame" x="16" y="324" width="145" height="20"/>
+                                <rect key="frame" x="16" y="323" width="145" height="20"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="textColor" red="1" green="1" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="16"/>
@@ -112,6 +112,17 @@
                                     <action selector="makeCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZWO-dX-tkJ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXZ-ah-Gk1">
+                                <rect key="frame" x="229" y="432" width="143" height="36"/>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="20"/>
+                                <state key="normal" title="Choose Color">
+                                    <color key="titleColor" red="1" green="1" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="kNc-Hh-QrC" kind="presentation" identifier="showColorPicker" modalTransitionStyle="crossDissolve" id="yis-z1-8my"/>
+                                </connections>
+                            </button>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder.png" translatesAutoresizingMaskIntoConstraints="NO" id="1Si-6C-cSh">
                                 <rect key="frame" x="466" y="28" width="90" height="90"/>
                                 <gestureRecognizers/>
@@ -122,17 +133,6 @@
                                     <outletCollection property="gestureRecognizers" destination="GtP-9t-zBM" appends="YES" id="3Ao-Kz-frC"/>
                                 </connections>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXZ-ah-Gk1">
-                                <rect key="frame" x="229" y="412" width="143" height="36"/>
-                                <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="20"/>
-                                <state key="normal" title="Choose Color">
-                                    <color key="titleColor" red="1" green="1" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="kNc-Hh-QrC" kind="presentation" identifier="showColorPicker" modalTransitionStyle="flipHorizontal" id="yis-z1-8my"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.75294117650000003" green="0.22352941179999999" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -147,28 +147,28 @@
                             <constraint firstItem="IXZ-ah-Gk1" firstAttribute="trailing" secondItem="dXh-eM-hdU" secondAttribute="trailing" id="FO2-JL-bvw"/>
                             <constraint firstItem="wrG-WO-T7B" firstAttribute="leading" secondItem="UC5-vL-OTG" secondAttribute="leading" id="HdV-ts-g5x"/>
                             <constraint firstItem="iP0-JQ-Jxv" firstAttribute="top" secondItem="oKx-G7-5UD" secondAttribute="bottom" constant="40" id="Hge-Yg-8qL"/>
-                            <constraint firstItem="wrG-WO-T7B" firstAttribute="baseline" secondItem="zqh-mo-HVT" secondAttribute="baseline" constant="-54" id="K4N-aY-wUy"/>
+                            <constraint firstItem="wrG-WO-T7B" firstAttribute="baseline" secondItem="zqh-mo-HVT" secondAttribute="baseline" constant="-60" id="K4N-aY-wUy"/>
                             <constraint firstItem="Jzn-aG-Kt0" firstAttribute="trailing" secondItem="1Si-6C-cSh" secondAttribute="trailing" constant="28" id="ORM-wh-bd6"/>
-                            <constraint firstItem="wrG-WO-T7B" firstAttribute="top" secondItem="K7i-vc-Ssl" secondAttribute="bottom" constant="66" id="Oh5-Th-xkK"/>
+                            <constraint firstItem="wrG-WO-T7B" firstAttribute="top" secondItem="K7i-vc-Ssl" secondAttribute="bottom" constant="60" id="Oh5-Th-xkK"/>
                             <constraint firstItem="wrG-WO-T7B" firstAttribute="trailing" secondItem="UC5-vL-OTG" secondAttribute="trailing" id="S4s-c0-jOa"/>
                             <constraint firstItem="K7i-vc-Ssl" firstAttribute="trailing" secondItem="wrG-WO-T7B" secondAttribute="trailing" constant="15" id="Wyf-qD-zzJ"/>
-                            <constraint firstItem="Jzn-aG-Kt0" firstAttribute="top" secondItem="1Si-6C-cSh" secondAttribute="bottom" constant="31" id="Z17-fk-Q2S"/>
+                            <constraint firstItem="Jzn-aG-Kt0" firstAttribute="top" secondItem="1Si-6C-cSh" secondAttribute="bottom" constant="25" id="Z17-fk-Q2S"/>
                             <constraint firstItem="zqh-mo-HVT" firstAttribute="leading" secondItem="qP9-XF-Ts5" secondAttribute="leading" id="aHM-Jy-XoV"/>
                             <constraint firstItem="qP9-XF-Ts5" firstAttribute="leading" secondItem="qMJ-P0-zHb" secondAttribute="leading" id="b8O-fV-9YD"/>
-                            <constraint firstItem="Jzn-aG-Kt0" firstAttribute="baseline" secondItem="K7i-vc-Ssl" secondAttribute="baseline" constant="86" id="d2r-rI-ap9"/>
+                            <constraint firstItem="Jzn-aG-Kt0" firstAttribute="baseline" secondItem="K7i-vc-Ssl" secondAttribute="baseline" constant="80" id="d2r-rI-ap9"/>
                             <constraint firstItem="qP9-XF-Ts5" firstAttribute="trailing" secondItem="qMJ-P0-zHb" secondAttribute="trailing" id="djn-LH-diD"/>
                             <constraint firstItem="UC5-vL-OTG" firstAttribute="leading" secondItem="oKx-G7-5UD" secondAttribute="leading" id="gsq-m2-eF9"/>
                             <constraint firstItem="oKx-G7-5UD" firstAttribute="baseline" secondItem="qMJ-P0-zHb" secondAttribute="baseline" constant="-60" id="k0r-vM-By7"/>
-                            <constraint firstItem="dXh-eM-hdU" firstAttribute="top" secondItem="IXZ-ah-Gk1" secondAttribute="bottom" constant="96" id="lia-hs-pcE"/>
+                            <constraint firstItem="dXh-eM-hdU" firstAttribute="top" secondItem="IXZ-ah-Gk1" secondAttribute="bottom" constant="76" id="lia-hs-pcE"/>
                             <constraint firstItem="UC5-vL-OTG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="pCV-Q6-vhj"/>
                             <constraint firstItem="Jzn-aG-Kt0" firstAttribute="trailing" secondItem="zqh-mo-HVT" secondAttribute="trailing" id="qSm-r7-lwz"/>
                             <constraint firstItem="qP9-XF-Ts5" firstAttribute="trailing" secondItem="zqh-mo-HVT" secondAttribute="trailing" id="utM-Hd-1ey"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dXh-eM-hdU" secondAttribute="bottom" constant="20" id="uzR-ew-M9M"/>
                             <constraint firstItem="iP0-JQ-Jxv" firstAttribute="leading" secondItem="oKx-G7-5UD" secondAttribute="leading" id="vhg-Be-zNA"/>
                             <constraint firstItem="iP0-JQ-Jxv" firstAttribute="trailing" secondItem="oKx-G7-5UD" secondAttribute="trailing" id="viU-rS-MQN"/>
-                            <constraint firstItem="qP9-XF-Ts5" firstAttribute="top" secondItem="zqh-mo-HVT" secondAttribute="bottom" constant="41" id="wh5-VL-Osf"/>
+                            <constraint firstItem="qP9-XF-Ts5" firstAttribute="top" secondItem="zqh-mo-HVT" secondAttribute="bottom" constant="40" id="wh5-VL-Osf"/>
                             <constraint firstItem="qP9-XF-Ts5" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="xBR-Vb-JCg"/>
-                            <constraint firstItem="oKx-G7-5UD" firstAttribute="top" secondItem="UC5-vL-OTG" secondAttribute="bottom" constant="41" id="yeQ-cZ-yyi"/>
+                            <constraint firstItem="oKx-G7-5UD" firstAttribute="top" secondItem="UC5-vL-OTG" secondAttribute="bottom" constant="40" id="yeQ-cZ-yyi"/>
                             <constraint firstItem="qMJ-P0-zHb" firstAttribute="top" secondItem="qP9-XF-Ts5" secondAttribute="bottom" constant="40" id="zfd-Bx-CAk"/>
                             <constraint firstItem="K7i-vc-Ssl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="43" id="zmK-eU-gX9"/>
                         </constraints>
@@ -219,28 +219,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cR8-oe-II9">
-                                <rect key="frame" x="277" y="460" width="46" height="30"/>
+                                <rect key="frame" x="218" y="485" width="165" height="30"/>
+                                <color key="backgroundColor" red="0.20392156859999999" green="0.28627450980000002" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="46" id="nvc-wl-haN"/>
+                                    <constraint firstAttribute="width" constant="165" id="nvc-wl-haN"/>
                                 </constraints>
-                                <state key="normal" title="OK">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="OK"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="back" modalTransitionStyle="flipHorizontal" id="3FD-l3-S81"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="back" modalTransitionStyle="crossDissolve" id="3FD-l3-S81"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Tyo-Pa-eX3" firstAttribute="top" secondItem="cR8-oe-II9" secondAttribute="bottom" constant="110" id="3ya-2e-hhZ"/>
+                            <constraint firstItem="Tyo-Pa-eX3" firstAttribute="top" secondItem="cR8-oe-II9" secondAttribute="bottom" constant="85" id="3ya-2e-hhZ"/>
                             <constraint firstItem="cR8-oe-II9" firstAttribute="centerX" secondItem="PN5-u9-yyH" secondAttribute="centerX" id="cxC-a3-Nsp"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="okButton" destination="cR8-oe-II9" id="eJB-Dw-qNf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="liN-iN-pgZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1327" y="307"/>
+            <point key="canvasLocation" x="1995" y="308"/>
         </scene>
     </scenes>
     <resources>
