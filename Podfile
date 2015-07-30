@@ -9,7 +9,8 @@ pod 'SwiftLoader'
 pod 'AlertKit'
 pod 'ReachabilitySwift'
 pod 'ALCameraViewController'
-pod 'RGBColorSlider'
+pod 'AKPickerView-Swift'
+pod 'Keyboardy', '~> 0.1'
 
 end
 

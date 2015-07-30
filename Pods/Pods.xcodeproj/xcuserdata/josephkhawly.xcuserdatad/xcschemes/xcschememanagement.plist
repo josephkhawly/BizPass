@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AKPickerView-Swift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>ALCameraViewController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -14,12 +19,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-BizPass.xcscheme</key>
+		<key>Keyboardy.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>RGBColorSlider.xcscheme</key>
+		<key>Pods-BizPass.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -47,22 +52,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>33675C241DE2258076D6C74B63911E38</key>
+		<key>3251551E0EDC7D851B54498346B66948</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B51AD59F9C3B9599D775B216DE9C70F5</key>
+		<key>69D50DE1B366888137E6465EEF0CEFC4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F3E0DE706AEC8139F09C51DB78AC70A8</key>
+		<key>6A3F243C25F087A73F7A38AE356210D0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FA4BEAABA9A914C6A0DF6FDD92113B6D</key>
+		<key>974706FAD61CD49188CDC708777EBF7C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AECC165690AE6CA9E2FA353EE239011E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
