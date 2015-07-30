@@ -13,7 +13,5 @@
 #import <PassSlot/PSPassTemplate.h>
 #import <PassSlot/PSImage.h>
 #import <PassSlot/PSPass.h>
-#import <RGBColorSlider/RGBColorSlider.h>
-#import <RGBColorSlider/RGBColorSliderDelegate.h>
 
 #endif

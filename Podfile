@@ -10,7 +10,6 @@ pod 'AlertKit'
 pod 'ReachabilitySwift'
 pod 'ALCameraViewController'
 pod 'AKPickerView-Swift'
-pod 'Keyboardy', '~> 0.1'
 
 end
 
