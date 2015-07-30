@@ -96,15 +96,8 @@
                                     <outletCollection property="gestureRecognizers" destination="GtP-9t-zBM" appends="YES" id="3Ao-Kz-frC"/>
                                 </connections>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iJ4-KN-4cX" customClass="AKPickerView" customModule="AKPickerView_Swift">
-                                <rect key="frame" x="16" y="434" width="568" height="49"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="iJ4-KN-4cX" secondAttribute="height" multiplier="568:49" id="vTy-3K-jBs"/>
-                                </constraints>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DP1-WI-Vsd">
-                                <rect key="frame" x="229" y="500" width="143" height="36"/>
+                                <rect key="frame" x="229" y="458" width="143" height="36"/>
                                 <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="20"/>
                                 <state key="normal" title="More Fields">
                                     <color key="titleColor" red="1" green="1" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -115,6 +108,13 @@
                                     <segue destination="ump-3k-4LO" kind="presentation" modalTransitionStyle="flipHorizontal" id="Hi5-O9-HG9"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iJ4-KN-4cX" customClass="AKPickerView" customModule="AKPickerView_Swift">
+                                <rect key="frame" x="16" y="355" width="568" height="49"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="iJ4-KN-4cX" secondAttribute="height" multiplier="568:49" id="vTy-3K-jBs"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.75294117650000003" green="0.22352941179999999" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -134,7 +134,7 @@
                             <constraint firstItem="Jzn-aG-Kt0" firstAttribute="top" secondItem="1Si-6C-cSh" secondAttribute="bottom" constant="25" id="Z17-fk-Q2S"/>
                             <constraint firstItem="Jzn-aG-Kt0" firstAttribute="baseline" secondItem="K7i-vc-Ssl" secondAttribute="baseline" constant="80" id="d2r-rI-ap9"/>
                             <constraint firstItem="zqh-mo-HVT" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="dh2-d6-08a"/>
-                            <constraint firstItem="dXh-eM-hdU" firstAttribute="top" secondItem="iJ4-KN-4cX" secondAttribute="bottom" constant="61" id="kJq-Ks-rC1"/>
+                            <constraint firstItem="dXh-eM-hdU" firstAttribute="top" secondItem="iJ4-KN-4cX" secondAttribute="bottom" constant="140" id="kJq-Ks-rC1"/>
                             <constraint firstItem="zqh-mo-HVT" firstAttribute="baseline" secondItem="UC5-vL-OTG" secondAttribute="baseline" id="l6K-Oe-3z9"/>
                             <constraint firstItem="UC5-vL-OTG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="pCV-Q6-vhj"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dXh-eM-hdU" secondAttribute="bottom" constant="20" id="uzR-ew-M9M"/>

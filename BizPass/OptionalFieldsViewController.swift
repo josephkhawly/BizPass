@@ -37,6 +37,15 @@ class OptionalFieldsViewController: UIViewController {
         
         // Add the text in the fields to the values dictionary.
         let dest = segue.destinationViewController as! ViewController
-        dest.values["Website"] = "\(websiteField.text)"
+        if websiteField.text != "" && twitterField.text != "" && linkedinField.text != "" && resumeField.text != "" {
+            dest.values["Website"] = "\(websiteField.text)"
+            dest.values["Twitter"] = "\(twitterField.text)"
+            dest.values["Linkedin"] = "\(linkedinField.text)"
+            dest.values["Resume"] = "\(resumeField.text)"
+        }
+        
+        
     }
 }
+
+

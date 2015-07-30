@@ -96,7 +96,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, AKPickerVie
             if nameField.text != "" && companyField.text != "" && titleField.text != "" && emailField.text != "" && phoneNumberField.text != "" && photo != nil {
                 
                 //Store the user values into an array
-                values = ["Name": "\(nameField.text)", "Title": "\(titleField.text)", "Email": "\(emailField.text)", "Phone": "\(phoneNumberField.text)", "Company": "\(companyField.text)"]
+                values = ["Name": "\(nameField.text)", "Title": "\(titleField.text)", "Email": "\(emailField.text)", "Phone": "\(phoneNumberField.text)", "Company": "\(companyField.text)", "Website": "N/A", "Twitter": "N/A", "Linkedin": "N/A", "Resume": "N/A"]
                 
                 //Make the card.
                 PassHelper(values: values, profile: photo!, viewController: self)
@@ -141,10 +141,10 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, AKPickerVie
     
     // MARK: - Navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
         let dest = segue.destinationViewController as! OptionalFieldsViewController
         dest.view.backgroundColor = self.view.backgroundColor
-        
     }
     
 }
