@@ -19,11 +19,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Keyboardy.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-BizPass.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -42,6 +37,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0C035E041AEC5FC95A892EAF013CC7F5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>0C66C30381F86C3D642FC983CCADEBB6</key>
 		<dict>
 			<key>primary</key>
@@ -52,27 +52,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3251551E0EDC7D851B54498346B66948</key>
+		<key>62E41B4F043882846F1530A81242DDB4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>69D50DE1B366888137E6465EEF0CEFC4</key>
+		<key>7596900158FD57AB25C87E5FFD03ACF6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6A3F243C25F087A73F7A38AE356210D0</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>974706FAD61CD49188CDC708777EBF7C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>AECC165690AE6CA9E2FA353EE239011E</key>
+		<key>F8765F108C81F5FC929FE84854021EAC</key>
 		<dict>
 			<key>primary</key>
 			<true/>

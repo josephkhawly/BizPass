@@ -55,7 +55,6 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'Pods-BizPass/AKPickerView_Swift.framework'
   install_framework 'Pods-BizPass/ALCameraViewController.framework'
   install_framework 'Pods-BizPass/AlertKit.framework'
-  install_framework 'Pods-BizPass/Keyboardy.framework'
   install_framework 'Pods-BizPass/ReachabilitySwift.framework'
   install_framework 'Pods-BizPass/SwiftLoader.framework'
 fi
@@ -63,7 +62,6 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'Pods-BizPass/AKPickerView_Swift.framework'
   install_framework 'Pods-BizPass/ALCameraViewController.framework'
   install_framework 'Pods-BizPass/AlertKit.framework'
-  install_framework 'Pods-BizPass/Keyboardy.framework'
   install_framework 'Pods-BizPass/ReachabilitySwift.framework'
   install_framework 'Pods-BizPass/SwiftLoader.framework'
 fi

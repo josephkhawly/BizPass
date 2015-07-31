@@ -2,7 +2,6 @@ PODS:
   - AKPickerView-Swift (0.2.1)
   - ALCameraViewController (1.0.4)
   - AlertKit (0.1.2)
-  - Keyboardy (0.1.0)
   - PassSlot (0.7)
   - ReachabilitySwift (1.1)
   - SwiftLoader (0.2.2)
@@ -11,7 +10,6 @@ DEPENDENCIES:
   - AKPickerView-Swift
   - ALCameraViewController
   - AlertKit
-  - Keyboardy (~> 0.1)
   - PassSlot
   - ReachabilitySwift
   - SwiftLoader
@@ -20,7 +18,6 @@ SPEC CHECKSUMS:
   AKPickerView-Swift: 7989ebd544dc2adcbb56ffd48bbb8d3c3ea2d71d
   ALCameraViewController: 0d8977c42ea79054ed3e344ae94699df12392565
   AlertKit: 3826f4d257492f539213d46880bb220e91559817
-  Keyboardy: b56dee7d2cd6b1b779bd3acb8aa460655c56f628
   PassSlot: b28b719efa4ba418ca757d2b3006dc789410d492
   ReachabilitySwift: 1e53abddb01111deac0d229dabdb8bb043567b18
   SwiftLoader: 9c5e547ae8e00b1c1079139492d6a273c7f73171
