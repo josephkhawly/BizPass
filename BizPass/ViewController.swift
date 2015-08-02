@@ -30,79 +30,73 @@ class ViewController: UIViewController, AKPickerViewDelegate, AKPickerViewDataSo
     @IBOutlet weak var row2Height: NSLayoutConstraint!
     @IBOutlet weak var row3Height: NSLayoutConstraint!
     @IBOutlet weak var row4Height: NSLayoutConstraint!
+    @IBOutlet weak var pickerHeight: NSLayoutConstraint!
     
     @IBOutlet weak var picker: AKPickerView!
     
     var photo: UIImage?
-    var deviceModel = UIDevice.currentDevice().model
-    let colors = ["Green", "Orange", "Blue", "Red", "Purple", "Brown"]
+    var screenHeight = UIScreen.mainScreen().bounds.size.height
+    let colors = ["Red", "Green", "Pink", "Orange", "Blue", "Purple", "Gray", "Brown"]
     
-    //MARK: - view settings
+    //MARK: - View settings
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.setNeedsUpdateConstraints()
-        
-        self.nameField.delegate = self
-        self.companyField.delegate = self
-        self.titleField.delegate = self
-        self.emailField.delegate = self
-        self.phoneNumberField.delegate = self
-        self.websiteField.delegate = self
-        self.twitterField.delegate = self
-        self.linkedinField.delegate = self
-        self.resumeField.delegate = self
-        
-        //Add the tap gestures
-        let imageTapGesture = UIGestureRecognizer(target: self, action: Selector("uploadImage:"))
-        imageView.addGestureRecognizer(imageTapGesture)
-        imageTapGesture.delegate = self
-        
-        let dismissGesture = UIGestureRecognizer(target: self, action: Selector("dismissKeyboard:"))
-        self.view.addGestureRecognizer(dismissGesture)
-        dismissGesture.delegate = self
+        view.setNeedsUpdateConstraints()
         
         //Configure picker view
-        self.picker.delegate = self
-        self.picker.dataSource = self
-        self.picker.font = UIFont(name: "SFUIDisplay-Light", size: 20)!
-        self.picker.highlightedFont = UIFont(name: "SFUIDisplay-Regular", size: 20)!
-        self.picker.interitemSpacing = 20.0
-        self.picker.textColor = UIColor.whiteColor()
+        picker.delegate = self
+        picker.dataSource = self
+        picker.font = UIFont(name: "SFUIDisplay-Light", size: 20)!
+        picker.highlightedFont = UIFont(name: "SFUIDisplay-Light", size: 20)!
+        picker.interitemSpacing = 25.0
+        picker.textColor = UIColor.whiteColor()
+        picker.pickerViewStyle = .Wheel
+        picker.reloadData()
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-        //photo = nil
     }
     
+    //Update contraints based on screen height
     override func updateViewConstraints() {
         super.updateViewConstraints()
-        if UIScreen.mainScreen().bounds.size.height == 480.0 {
-            self.row2Height.constant = 12
-            self.row3Height.constant = 12
-            self.row4Height.constant = 12
-        } else if UIScreen.mainScreen().bounds.size.height == 568.0 {
-            self.row2Height.constant = 35
-            self.row3Height.constant = 35
-            self.row4Height.constant = 35
-        } else if UIScreen.mainScreen().bounds.size.height == 667.0 || UIScreen.mainScreen().bounds.size.height == 736.0 {
-            self.row2Height.constant = 55
-            self.row3Height.constant = 55
-            self.row4Height.constant = 55
+        
+        if screenHeight == 480.0 {
+
+            row2Height.constant = 12
+            row3Height.constant = 12
+            row4Height.constant = 12
+            pickerHeight.constant = 39
+            
+        } else if screenHeight == 568.0 {
+            
+            row2Height.constant = 35
+            row3Height.constant = 35
+            row4Height.constant = 35
+            pickerHeight.constant = 83
+            
+        } else if screenHeight == 667.0 || screenHeight == 736.0 {
+
+            row2Height.constant = 55
+            row3Height.constant = 55
+            row4Height.constant = 55
+            pickerHeight.constant = 55
+            
         }
+        
     }
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle { return .LightContent }
     
-    @IBAction func dismissKeyboard(sender: UITapGestureRecognizer) { view.endEditing(true) }
-    
     //MARK: - Button click method
     @IBAction func makeCard(sender: AnyObject) {
+        
         let reachability = Reachability.reachabilityForInternetConnection()
         
-        //Make sure there is an internet connection before creating the card.
+        //Make sure there is an internet connection before creating the card to prevent the app from crashing.
         if reachability.isReachable() {
             
             //These requirements must be met in order to generate a card.
@@ -111,6 +105,7 @@ class ViewController: UIViewController, AKPickerViewDelegate, AKPickerViewDataSo
                 //Store the user values into an array
                 var values = ["Name": "\(nameField.text)", "Title": "\(titleField.text)", "Email": "\(emailField.text)", "Phone": "\(phoneNumberField.text)", "Company": "\(companyField.text)", "Website": "\(websiteField.text)", "Twitter": "\(twitterField.text)", "Linkedin": "\(linkedinField.text)", "Resume": "\(resumeField.text)", "backgroundColor": "rgb(22,179,85)"]
                 
+                //Put "N/A" in the optional fields if they're not filled in.
                 for (field, input) in values {
                     if values[field] == "" { values[field] == "N/A" }
                 }
@@ -119,7 +114,7 @@ class ViewController: UIViewController, AKPickerViewDelegate, AKPickerViewDataSo
                 PassHelper(values: values, profile: photo!, viewController: self)
                 
             } else {
-                showAlert("Hey, not so fast there.", message: "You must have all fields with a * filled in as well as a photo. Everything else is optional.")
+                showAlert("Hey, not so fast there.", message: "All fields with a * must be filled in and you must upload a photo. Everything else is optional.")
             }
             
         } else {
@@ -148,10 +143,20 @@ class ViewController: UIViewController, AKPickerViewDelegate, AKPickerViewDataSo
     func pickerView(pickerView: AKPickerView, titleForItem item: Int) -> String { return self.colors[item] }
     
     func pickerView(pickerView: AKPickerView, didSelectItem item: Int) {
+        
         switch item {
-            case 0: self.view.backgroundColor = UIColor(red: 22/255, green: 179/255, blue: 85/255, alpha: 1.0)
+         
+        case 0: view.backgroundColor = UIColor(red: 192/255, green: 57/255, blue: 43/255, alpha: 1.0)
+        case 1: view.backgroundColor = UIColor(red: 22/255, green: 179/255, blue: 85/255, alpha: 1.0)
+        case 2: view.backgroundColor = UIColor(red: 215.3/255, green: 125.9/255, blue: 169.3/255, alpha: 1.0)
+        case 3: view.backgroundColor = UIColor(red: 255.0/255, green: 124.0/255, blue: 0.0/255, alpha: 1.0)
+        case 4: view.backgroundColor = UIColor(red: 61.4/255, green: 171.8/255, blue: 255.0/255, alpha: 1.0)
+        case 5: view.backgroundColor = UIColor(red: 123.0/255, green: 44.3/255, blue: 213.8/255, alpha: 1.0)
+        case 6: view.backgroundColor = UIColor(red: 121.3/255, green: 121.3/255, blue: 121.3/255, alpha: 1.0)
+        case 7: view.backgroundColor = UIColor(red: 122.3/255, green: 67.0/255, blue: 0.0/255, alpha: 1.0)
             
-            default: break
+        default: break
+            
         }
     }
 }
@@ -164,35 +169,25 @@ extension ViewController: UITextFieldDelegate {
         if textField.returnKeyType == .Next {
             
             switch textField {
-                case nameField: companyField.becomeFirstResponder()
-                case companyField: titleField.becomeFirstResponder()
-                case titleField: emailField.becomeFirstResponder()
-                case emailField: phoneNumberField.becomeFirstResponder()
-                case phoneNumberField: websiteField.becomeFirstResponder()
-                case websiteField: twitterField.becomeFirstResponder()
-                case twitterField: linkedinField.becomeFirstResponder()
-                case linkedinField: resumeField.becomeFirstResponder()
-                default: break
+                
+            case nameField: companyField.becomeFirstResponder()
+            case companyField: titleField.becomeFirstResponder()
+            case titleField: emailField.becomeFirstResponder()
+            case emailField: phoneNumberField.becomeFirstResponder()
+            case phoneNumberField: websiteField.becomeFirstResponder()
+            case websiteField: twitterField.becomeFirstResponder()
+            case twitterField: linkedinField.becomeFirstResponder()
+            case linkedinField: resumeField.becomeFirstResponder()
+            default: break
+                
             }
             
         } else {
             textField.resignFirstResponder()
         }
-        
-        return false
+        return true
     }
-}
-
-//MARK: - Gesture methods
-extension ViewController: UIGestureRecognizerDelegate {
     
-    func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldReceiveTouch touch: UITouch) -> Bool {
-        
-        if gestureRecognizer.isMemberOfClass(UITapGestureRecognizer) {
-            
-            if touch.view.isKindOfClass(UIButton) { return true }
-            
-        }
-        return false
-    }
+    @IBAction func dismissKeyboard(sender: UITapGestureRecognizer) { view.endEditing(true) }
+    
 }
