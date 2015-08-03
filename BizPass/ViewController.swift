@@ -37,6 +37,7 @@ class ViewController: UIViewController, AKPickerViewDelegate, AKPickerViewDataSo
     var photo: UIImage?
     var screenHeight = UIScreen.mainScreen().bounds.size.height
     let colors = ["Red", "Green", "Pink", "Orange", "Blue", "Purple", "Gray", "Brown"]
+    var colorString: String = ""
     
     //MARK: - View settings
     override func viewDidLoad() {
@@ -67,7 +68,7 @@ class ViewController: UIViewController, AKPickerViewDelegate, AKPickerViewDataSo
             row2Height.constant = 12
             row3Height.constant = 12
             row4Height.constant = 12
-            pickerHeight.constant = 39
+            pickerHeight.constant = 59
             
         } else if screenHeight == 568.0 {
             
@@ -81,13 +82,52 @@ class ViewController: UIViewController, AKPickerViewDelegate, AKPickerViewDataSo
             row2Height.constant = 55
             row3Height.constant = 55
             row4Height.constant = 55
-            pickerHeight.constant = 55
+            pickerHeight.constant = 100
             
         }
         
     }
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle { return .LightContent }
+    
+    //MARK: - Picker methods
+    func numberOfItemsInPickerView(pickerView: AKPickerView) -> Int { return self.colors.count }
+    
+    func pickerView(pickerView: AKPickerView, titleForItem item: Int) -> String { return self.colors[item] }
+    
+    func pickerView(pickerView: AKPickerView, didSelectItem item: Int) {
+        
+        switch item {
+            
+        case 0:
+            view.backgroundColor = UIColor(red: 192/255, green: 57/255, blue: 43/255, alpha: 1.0)
+            colorString = colors[0]
+        case 1:
+            view.backgroundColor = UIColor(red: 22/255, green: 179/255, blue: 85/255, alpha: 1.0)
+            colorString = colors[1]
+        case 2:
+            view.backgroundColor = UIColor(red: 215/255, green: 125/255, blue: 169/255, alpha: 1.0)
+            colorString = colors[2]
+        case 3:
+            view.backgroundColor = UIColor(red: 255/255, green: 124/255, blue: 0/255, alpha: 1.0)
+            colorString = colors[3]
+        case 4:
+            view.backgroundColor = UIColor(red: 61/255, green: 171/255, blue: 255/255, alpha: 1.0)
+            colorString = colors[4]
+        case 5:
+            view.backgroundColor = UIColor(red: 123/255, green: 44/255, blue: 213/255, alpha: 1.0)
+            colorString = colors[5]
+        case 6:
+            view.backgroundColor = UIColor(red: 121/255, green: 121/255, blue: 121/255, alpha: 1.0)
+            colorString = colors[6]
+        case 7:
+            view.backgroundColor = UIColor(red: 122/255, green: 67/255, blue: 0/255, alpha: 1.0)
+            colorString = colors[7]
+            
+        default: break
+            
+        }
+    }
     
     //MARK: - Button click method
     @IBAction func makeCard(sender: AnyObject) {
@@ -101,15 +141,15 @@ class ViewController: UIViewController, AKPickerViewDelegate, AKPickerViewDataSo
             if nameField.text != "" && companyField.text != "" && titleField.text != "" && emailField.text != "" && phoneNumberField.text != "" && photo != nil {
                 
                 //Store the user values into an array
-                var values = ["Name": "\(nameField.text)", "Title": "\(titleField.text)", "Email": "\(emailField.text)", "Phone": "\(phoneNumberField.text)", "Company": "\(companyField.text)", "Website": "\(websiteField.text)", "Twitter": "\(twitterField.text)", "Linkedin": "\(linkedinField.text)", "Resume": "\(resumeField.text)", "backgroundColor": "rgb(22,179,85)"]
+                var values = ["Name": "\(nameField.text)", "Title": "\(titleField.text)", "Email": "\(emailField.text)", "Phone": "\(phoneNumberField.text)", "Company": "\(companyField.text)", "Website": "\(websiteField.text)", "Twitter": "\(twitterField.text)", "Linkedin": "\(linkedinField.text)", "Resume": "\(resumeField.text)"]
                 
                 //Put "N/A" in the optional fields if they're not filled in.
                 for (field, input) in values {
-                    if values[field] == "" { values[field] == "N/A" }
+                    if values[field] == "" { values[field] = "N/A" }
                 }
                 
                 //Make the card.
-                PassHelper(values: values, profile: photo!, viewController: self)
+                PassHelper(values: values, picture: photo!, color: colorString, viewController: self)
                 
             } else {
                 showAlert("Hey, not so fast there.", message: "All fields with a * must be filled in and you must upload a photo. Everything else is optional.")
@@ -133,29 +173,6 @@ class ViewController: UIViewController, AKPickerViewDelegate, AKPickerViewDataSo
             self.dismissViewControllerAnimated(true, completion: nil)
         }
         presentViewController(cameraViewController, animated: true, completion: nil)
-    }
-    
-    //MARK: - Picker methods
-    func numberOfItemsInPickerView(pickerView: AKPickerView) -> Int { return self.colors.count }
-    
-    func pickerView(pickerView: AKPickerView, titleForItem item: Int) -> String { return self.colors[item] }
-    
-    func pickerView(pickerView: AKPickerView, didSelectItem item: Int) {
-        
-        switch item {
-         
-        case 0: view.backgroundColor = UIColor(red: 192/255, green: 57/255, blue: 43/255, alpha: 1.0)
-        case 1: view.backgroundColor = UIColor(red: 22/255, green: 179/255, blue: 85/255, alpha: 1.0)
-        case 2: view.backgroundColor = UIColor(red: 215.3/255, green: 125.9/255, blue: 169.3/255, alpha: 1.0)
-        case 3: view.backgroundColor = UIColor(red: 255.0/255, green: 124.0/255, blue: 0.0/255, alpha: 1.0)
-        case 4: view.backgroundColor = UIColor(red: 61.4/255, green: 171.8/255, blue: 255.0/255, alpha: 1.0)
-        case 5: view.backgroundColor = UIColor(red: 123.0/255, green: 44.3/255, blue: 213.8/255, alpha: 1.0)
-        case 6: view.backgroundColor = UIColor(red: 121.3/255, green: 121.3/255, blue: 121.3/255, alpha: 1.0)
-        case 7: view.backgroundColor = UIColor(red: 122.3/255, green: 67.0/255, blue: 0.0/255, alpha: 1.0)
-            
-        default: break
-            
-        }
     }
 }
 

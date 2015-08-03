@@ -14,14 +14,16 @@ import AlertKit
 class PassHelper: NSObject {
     
     var values: [NSObject: AnyObject]
-    var profile: UIImage
+    var picture: UIImage
     weak var viewController: UIViewController!
     var pass: PSPass?
+    var color: String
     
-    init(values: [NSObject : AnyObject], profile: UIImage, viewController: UIViewController) {
+    init(values: [NSObject : AnyObject], picture: UIImage, color: String, viewController: UIViewController) {
         self.values = values
-        self.profile = profile
+        self.picture = picture
         self.viewController = viewController
+        self.color = color
         
         super.init()
         makePass()
@@ -35,22 +37,45 @@ class PassHelper: NSObject {
             
             //Set the image to be displayed on the card.
             let image = PSImage(named: "Profile", ofType: .Thumbnail)
-            image.setImage(profile, forResolution: .High)
+            image.setImage(picture, forResolution: .High)
             let imageArray = [image]
             
-            //Create the card, store it in realm, add it to Passbook and stop loading indicator when finished.
+            //self.values["Color"] = "rgb(255,124,0)"
+            colorSelection()
+            
+            //Create the card, add it to Passbook, and stop loading indicator when finished.
             PassSlot.passFromTemplateWithName("Business Card Template", withValues: values, withImages: imageArray, pass: {
                 PSPass in
-                
+                        
                 self.pass = PSPass
-                
+
                 PassSlot.requestPassInstallation(self.pass, inViewController: self.viewController, completion: {
                     SwiftLoader.hide()
                 })
+                
             })
             
         } else {
             viewController.showAlert("Bad News", message: "You don't have Passbook on your device, so you can't use this app. Sorry.")
+        }
+    }
+    
+    //Set the color of the card based on user's selection
+    func colorSelection() {
+        
+        switch (self.color) {
+            
+        case "Red": values["Color"] = "rgb(192,57,43)"
+        case "Green": values["Color"] = "rgb(22,179,85)"
+        case "Pink": values["Color"] = "rgb(215,125,169)"
+        case "Orange": values["Color"] = "rgb(255,124,0)"
+        case "Blue": values["Color"] = "rgb(61,171,255)"
+        case "Purple": values["Color"] = "rgb(123,44,213)"
+        case "Gray": values["Color"] = "rgb(121,121,121)"
+        case "Brown": values["Color"] = "rgb(122,67,0)"
+            
+        default: values["Color"] = "rgb(192,57,43)"
+            
         }
     }
 }
