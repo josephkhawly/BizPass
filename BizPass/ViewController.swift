@@ -49,8 +49,6 @@ class ViewController: UIViewController, AKPickerViewDelegate, AKPickerViewDataSo
         picker.dataSource = self
         picker.font = UIFont(name: "SFUIDisplay-Light", size: 20)!
         picker.highlightedFont = UIFont(name: "SFUIDisplay-Light", size: 20)!
-        picker.interitemSpacing = 25.0
-        picker.textColor = UIColor.whiteColor()
         picker.pickerViewStyle = .Wheel
         picker.reloadData()
     }
