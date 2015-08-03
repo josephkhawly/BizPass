@@ -26,7 +26,7 @@ class ViewController: UIViewController, AKPickerViewDelegate, AKPickerViewDataSo
     @IBOutlet weak var twitterField: UITextField!
     @IBOutlet weak var linkedinField: UITextField!
     @IBOutlet weak var resumeField: UITextField!
-    
+
     @IBOutlet weak var row2Height: NSLayoutConstraint!
     @IBOutlet weak var row3Height: NSLayoutConstraint!
     @IBOutlet weak var row4Height: NSLayoutConstraint!
@@ -34,7 +34,7 @@ class ViewController: UIViewController, AKPickerViewDelegate, AKPickerViewDataSo
     
     @IBOutlet weak var picker: AKPickerView!
     
-    var photo: UIImage?
+    weak var photo: UIImage?
     var screenHeight = UIScreen.mainScreen().bounds.size.height
     let colors = ["Red", "Green", "Pink", "Orange", "Blue", "Purple", "Gray", "Brown"]
     var colorString: String = ""
@@ -43,6 +43,7 @@ class ViewController: UIViewController, AKPickerViewDelegate, AKPickerViewDataSo
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Configure constraints
         view.setNeedsUpdateConstraints()
         
         //Configure picker view
@@ -97,6 +98,7 @@ class ViewController: UIViewController, AKPickerViewDelegate, AKPickerViewDataSo
     
     func pickerView(pickerView: AKPickerView, didSelectItem item: Int) {
         
+        //Color selction
         switch item {
             
         case 0:

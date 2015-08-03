@@ -33,6 +33,7 @@ class PassHelper: NSObject {
         
         if PKPassLibrary.isPassLibraryAvailable() {
             
+            //Start the loading indicator.
             SwiftLoader.show(title: "Creating your card...", animated: true)
             
             //Set the image to be displayed on the card.
@@ -40,7 +41,6 @@ class PassHelper: NSObject {
             image.setImage(picture, forResolution: .High)
             let imageArray = [image]
             
-            //self.values["Color"] = "rgb(255,124,0)"
             colorSelection()
             
             //Create the card, add it to Passbook, and stop loading indicator when finished.
