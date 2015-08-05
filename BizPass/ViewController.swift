@@ -114,7 +114,7 @@ class ViewController: UIViewController, AKPickerViewDelegate, AKPickerViewDataSo
             view.backgroundColor = UIColor(red: 255/255, green: 124/255, blue: 0/255, alpha: 1.0)
             colorString = colors[3]
         case 4:
-            view.backgroundColor = UIColor(red: 61/255, green: 171/255, blue: 255/255, alpha: 1.0)
+            view.backgroundColor = UIColor(red: 61.4/255, green: 171.8/255, blue: 255.0/255, alpha: 1.0)
             colorString = colors[4]
         case 5:
             view.backgroundColor = UIColor(red: 123/255, green: 44/255, blue: 213/255, alpha: 1.0)

@@ -115,26 +115,25 @@
       "scale" : "2x"
     },
     {
-      "size" : "120x120",
       "idiom" : "car",
-      "filename" : "Icon-120.0@1x.png",
+      "size" : "120x120",
       "scale" : "1x"
     },
     {
       "size" : "24x24",
       "idiom" : "watch",
-      "subtype" : "38mm",
+      "scale" : "2x",
       "filename" : "Icon-24.0@2x.png",
       "role" : "notificationCenter",
-      "scale" : "2x"
+      "subtype" : "38mm"
     },
     {
       "size" : "27.5x27.5",
       "idiom" : "watch",
-      "subtype" : "42mm",
+      "scale" : "2x",
       "filename" : "Icon-27.5@2x.png",
       "role" : "notificationCenter",
-      "scale" : "2x"
+      "subtype" : "42mm"
     },
     {
       "size" : "29x29",
@@ -153,34 +152,34 @@
     {
       "size" : "40x40",
       "idiom" : "watch",
-      "subtype" : "38mm",
+      "scale" : "2x",
       "filename" : "Icon-40.0@2x.png",
       "role" : "appLauncher",
-      "scale" : "2x"
+      "subtype" : "38mm"
     },
     {
       "size" : "44x44",
       "idiom" : "watch",
-      "subtype" : "42mm",
+      "scale" : "2x",
       "filename" : "Icon-44.0@2x.png",
       "role" : "longLook",
-      "scale" : "2x"
+      "subtype" : "42mm"
     },
     {
       "size" : "86x86",
       "idiom" : "watch",
-      "subtype" : "38mm",
+      "scale" : "2x",
       "filename" : "Icon-86.0@2x.png",
       "role" : "quickLook",
-      "scale" : "2x"
+      "subtype" : "38mm"
     },
     {
       "size" : "98x98",
       "idiom" : "watch",
-      "subtype" : "42mm",
+      "scale" : "2x",
       "filename" : "Icon-98.0@2x.png",
       "role" : "quickLook",
-      "scale" : "2x"
+      "subtype" : "42mm"
     }
   ],
   "info" : {
