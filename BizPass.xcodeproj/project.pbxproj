@@ -14,6 +14,11 @@
 		24C0046C1BF03034008E0F7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24C0046A1BF03034008E0F7A /* LaunchScreen.storyboard */; };
 		24C004771BF03034008E0F7A /* BizPassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C004761BF03034008E0F7A /* BizPassTests.swift */; };
 		24C004821BF03034008E0F7A /* BizPassUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C004811BF03034008E0F7A /* BizPassUITests.swift */; };
+		24C004911BF03223008E0F7A /* PassHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C004901BF03223008E0F7A /* PassHelper.swift */; };
+		24C004931BF03484008E0F7A /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24C004921BF03484008E0F7A /* PassKit.framework */; };
+		24C004981BF035E5008E0F7A /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 24C004971BF035E5008E0F7A /* placeholder.png */; };
+		24C0049C1BF0447D008E0F7A /* largericon.png in Resources */ = {isa = PBXBuildFile; fileRef = 24C0049B1BF0447D008E0F7A /* largericon.png */; };
+		D07933EB45058FF88A743E96 /* Pods_BizPass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 443F50374CFE8F55DEFCA54A /* Pods_BizPass.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,15 @@
 		24C0047D1BF03034008E0F7A /* BizPassUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BizPassUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		24C004811BF03034008E0F7A /* BizPassUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BizPassUITests.swift; sourceTree = "<group>"; };
 		24C004831BF03034008E0F7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24C004901BF03223008E0F7A /* PassHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassHelper.swift; sourceTree = "<group>"; };
+		24C004921BF03484008E0F7A /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
+		24C004941BF03484008E0F7A /* BizPass.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = BizPass.entitlements; sourceTree = "<group>"; };
+		24C004961BF03569008E0F7A /* BizPass-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BizPass-Bridging-Header.h"; sourceTree = "<group>"; };
+		24C004971BF035E5008E0F7A /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = SOURCE_ROOT; };
+		24C0049B1BF0447D008E0F7A /* largericon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = largericon.png; sourceTree = SOURCE_ROOT; };
+		41F118B8832F839F2CBBD830 /* Pods-BizPass.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BizPass.release.xcconfig"; path = "Pods/Target Support Files/Pods-BizPass/Pods-BizPass.release.xcconfig"; sourceTree = "<group>"; };
+		443F50374CFE8F55DEFCA54A /* Pods_BizPass.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BizPass.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9EB68E910FC7FF0F109CBBC /* Pods-BizPass.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BizPass.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BizPass/Pods-BizPass.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24C004931BF03484008E0F7A /* PassKit.framework in Frameworks */,
+				D07933EB45058FF88A743E96 /* Pods_BizPass.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +97,8 @@
 				24C004751BF03034008E0F7A /* BizPassTests */,
 				24C004801BF03034008E0F7A /* BizPassUITests */,
 				24C0045F1BF03034008E0F7A /* Products */,
+				41590A8D4B36DAB0F3DDFC61 /* Pods */,
+				79807EDA27ED9648F41CD76B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +115,17 @@
 		24C004601BF03034008E0F7A /* BizPass */ = {
 			isa = PBXGroup;
 			children = (
+				24C004941BF03484008E0F7A /* BizPass.entitlements */,
+				24C0049B1BF0447D008E0F7A /* largericon.png */,
 				24C004611BF03034008E0F7A /* AppDelegate.swift */,
+				24C004961BF03569008E0F7A /* BizPass-Bridging-Header.h */,
 				24C004631BF03034008E0F7A /* ViewController.swift */,
+				24C0048F1BF0320E008E0F7A /* Helpers */,
 				24C004651BF03034008E0F7A /* Main.storyboard */,
 				24C004681BF03034008E0F7A /* Assets.xcassets */,
 				24C0046A1BF03034008E0F7A /* LaunchScreen.storyboard */,
 				24C0046D1BF03034008E0F7A /* Info.plist */,
+				24C004971BF035E5008E0F7A /* placeholder.png */,
 			);
 			path = BizPass;
 			sourceTree = "<group>";
@@ -125,6 +148,32 @@
 			path = BizPassUITests;
 			sourceTree = "<group>";
 		};
+		24C0048F1BF0320E008E0F7A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				24C004901BF03223008E0F7A /* PassHelper.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		41590A8D4B36DAB0F3DDFC61 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F9EB68E910FC7FF0F109CBBC /* Pods-BizPass.debug.xcconfig */,
+				41F118B8832F839F2CBBD830 /* Pods-BizPass.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		79807EDA27ED9648F41CD76B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24C004921BF03484008E0F7A /* PassKit.framework */,
+				443F50374CFE8F55DEFCA54A /* Pods_BizPass.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +181,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 24C004861BF03034008E0F7A /* Build configuration list for PBXNativeTarget "BizPass" */;
 			buildPhases = (
+				DB6A1D68DB7B23BB9DA4CAB7 /* Check Pods Manifest.lock */,
 				24C0045A1BF03034008E0F7A /* Sources */,
 				24C0045B1BF03034008E0F7A /* Frameworks */,
 				24C0045C1BF03034008E0F7A /* Resources */,
+				30B2942C2599BB4EE89576AB /* Embed Pods Frameworks */,
+				1383C884F739A2EA59ECBA87 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +245,12 @@
 				TargetAttributes = {
 					24C0045D1BF03034008E0F7A = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 9E3D2F34QQ;
+						SystemCapabilities = {
+							com.apple.Wallet = {
+								enabled = 1;
+							};
+						};
 					};
 					24C004711BF03034008E0F7A = {
 						CreatedOnToolsVersion = 7.1;
@@ -229,7 +287,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24C0049C1BF0447D008E0F7A /* largericon.png in Resources */,
 				24C0046C1BF03034008E0F7A /* LaunchScreen.storyboard in Resources */,
+				24C004981BF035E5008E0F7A /* placeholder.png in Resources */,
 				24C004691BF03034008E0F7A /* Assets.xcassets in Resources */,
 				24C004671BF03034008E0F7A /* Main.storyboard in Resources */,
 			);
@@ -251,6 +311,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1383C884F739A2EA59ECBA87 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BizPass/Pods-BizPass-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		30B2942C2599BB4EE89576AB /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BizPass/Pods-BizPass-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB6A1D68DB7B23BB9DA4CAB7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		24C0045A1BF03034008E0F7A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -258,6 +366,7 @@
 			files = (
 				24C004641BF03034008E0F7A /* ViewController.swift in Sources */,
 				24C004621BF03034008E0F7A /* AppDelegate.swift in Sources */,
+				24C004911BF03223008E0F7A /* PassHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,7 +457,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -386,7 +495,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -395,23 +504,29 @@
 		};
 		24C004871BF03034008E0F7A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9EB68E910FC7FF0F109CBBC /* Pods-BizPass.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = BizPass/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = josephkhawly.BizPass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BizPass/BizPass-Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		24C004881BF03034008E0F7A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41F118B8832F839F2CBBD830 /* Pods-BizPass.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = BizPass/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = josephkhawly.BizPass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BizPass/BizPass-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -482,6 +597,7 @@
 				24C004881BF03034008E0F7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		24C004891BF03034008E0F7A /* Build configuration list for PBXNativeTarget "BizPassTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +606,7 @@
 				24C0048B1BF03034008E0F7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		24C0048C1BF03034008E0F7A /* Build configuration list for PBXNativeTarget "BizPassUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +615,7 @@
 				24C0048E1BF03034008E0F7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

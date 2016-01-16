@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BizPass" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +18,284 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Company*" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wrG-WO-T7B">
+                                <rect key="frame" x="20" y="142" width="145" height="19"/>
+                                <animations/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" spellCheckingType="no" returnKeyType="next"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="20" y="142" width="145" height="19"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="VF1-no-C0x"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Job Title*" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jzn-aG-Kt0">
+                                <rect key="frame" x="435" y="143" width="145" height="19"/>
+                                <animations/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="145" id="itu-cl-do1"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="yes" returnKeyType="next"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="235" y="143" width="145" height="19"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="97h-Ea-f7f"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone Number*" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zqh-mo-HVT">
+                                <rect key="frame" x="435" y="170" width="145" height="19"/>
+                                <animations/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="namePhonePad" returnKeyType="next"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="235" y="192" width="145" height="19"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="eLL-h9-Ve3"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXh-eM-hdU">
+                                <rect key="frame" x="224" y="544" width="154" height="36"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Create Your Card">
+                                    <color key="titleColor" red="1" green="1" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="123" y="744" width="154" height="36"/>
+                                </variation>
+                                <connections>
+                                    <action selector="makeCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZWO-dX-tkJ"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder.png" translatesAutoresizingMaskIntoConstraints="NO" id="1Si-6C-cSh">
+                                <rect key="frame" x="462" y="28" width="90" height="90"/>
+                                <animations/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="wrP-Vh-rmF"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="GtP-9t-zBM" appends="YES" id="3Ao-Kz-frC"/>
+                                </connections>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Twitter" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A88-YO-ibz">
+                                <rect key="frame" x="435" y="197" width="145" height="19"/>
+                                <animations/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="twitter" returnKeyType="next"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="235" y="241" width="145" height="19"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="RD0-RW-AVQ"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Website" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bEN-34-2pb">
+                                <rect key="frame" x="20" y="197" width="145" height="19"/>
+                                <animations/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="URL" returnKeyType="next"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="20" y="241" width="145" height="19"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="dWR-GC-bwG"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Linkedin" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6La-uA-cmv">
+                                <rect key="frame" x="20" y="224" width="145" height="19"/>
+                                <animations/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="URL" returnKeyType="next"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="20" y="290" width="145" height="19"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="SgT-TW-Udn"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Resume Link" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xgn-eB-aXZ">
+                                <rect key="frame" x="435" y="224" width="145" height="19"/>
+                                <animations/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="URL" returnKeyType="done"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="235" y="290" width="145" height="19"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="LSN-GZ-4MM"/>
+                                </connections>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iJ4-KN-4cX" customClass="AKPickerView" customModule="AKPickerView_Swift">
+                                <rect key="frame" x="20" y="423" width="560" height="48"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="iJ4-KN-4cX" secondAttribute="height" multiplier="568:49" id="vTy-3K-jBs">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="-2.9387755102040956"/>
+                                    </constraint>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="interitemSpacing">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="viewDepth">
+                                        <real key="value" value="1000"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name*" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K7i-vc-Ssl">
+                                <rect key="frame" x="5" y="63" width="175" height="19"/>
+                                <animations/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="175" id="M0t-lA-Y7S"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="5" y="63" width="175" height="19"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="LRr-Nh-LVP"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email*" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UC5-vL-OTG">
+                                <rect key="frame" x="20" y="170" width="145" height="19"/>
+                                <animations/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="20" y="192" width="145" height="19"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Chc-cS-TtZ"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.75294117650000003" green="0.22352941179999999" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="dXh-eM-hdU" secondAttribute="centerX" id="37V-Ba-anN"/>
+                            <constraint firstItem="xgn-eB-aXZ" firstAttribute="top" secondItem="A88-YO-ibz" secondAttribute="bottom" constant="8" symbolic="YES" id="5kJ-da-yol">
+                                <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                            </constraint>
+                            <constraint firstItem="6La-uA-cmv" firstAttribute="leading" secondItem="bEN-34-2pb" secondAttribute="leading" id="62J-eg-PTO"/>
+                            <constraint firstItem="zqh-mo-HVT" firstAttribute="leading" secondItem="Jzn-aG-Kt0" secondAttribute="leading" id="7Yn-4x-JEc"/>
+                            <constraint firstItem="wrG-WO-T7B" firstAttribute="leading" secondItem="K7i-vc-Ssl" secondAttribute="leading" constant="15" id="9yN-qL-NID"/>
+                            <constraint firstItem="1Si-6C-cSh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="B3i-ZH-M7m"/>
+                            <constraint firstItem="wrG-WO-T7B" firstAttribute="leading" secondItem="UC5-vL-OTG" secondAttribute="leading" id="HdV-ts-g5x"/>
+                            <constraint firstItem="Jzn-aG-Kt0" firstAttribute="trailing" secondItem="1Si-6C-cSh" secondAttribute="trailing" constant="28" id="ORM-wh-bd6"/>
+                            <constraint firstItem="wrG-WO-T7B" firstAttribute="top" secondItem="K7i-vc-Ssl" secondAttribute="bottom" constant="60" id="Oh5-Th-xkK">
+                                <variation key="heightClass=regular-widthClass=compact" constant="60"/>
+                            </constraint>
+                            <constraint firstItem="zqh-mo-HVT" firstAttribute="trailing" secondItem="iJ4-KN-4cX" secondAttribute="trailing" id="Q8T-Oi-bm6"/>
+                            <constraint firstItem="zqh-mo-HVT" firstAttribute="trailing" secondItem="Jzn-aG-Kt0" secondAttribute="trailing" id="R9c-Nu-clO"/>
+                            <constraint firstItem="wrG-WO-T7B" firstAttribute="trailing" secondItem="UC5-vL-OTG" secondAttribute="trailing" id="S4s-c0-jOa"/>
+                            <constraint firstItem="6La-uA-cmv" firstAttribute="trailing" secondItem="bEN-34-2pb" secondAttribute="trailing" id="Tx0-oK-00m"/>
+                            <constraint firstItem="K7i-vc-Ssl" firstAttribute="trailing" secondItem="wrG-WO-T7B" secondAttribute="trailing" constant="15" id="Wyf-qD-zzJ"/>
+                            <constraint firstItem="Jzn-aG-Kt0" firstAttribute="top" secondItem="1Si-6C-cSh" secondAttribute="bottom" constant="25" id="Z17-fk-Q2S">
+                                <variation key="heightClass=regular-widthClass=compact" constant="25"/>
+                            </constraint>
+                            <constraint firstItem="A88-YO-ibz" firstAttribute="trailing" secondItem="zqh-mo-HVT" secondAttribute="trailing" id="ZEJ-Sq-Loj"/>
+                            <constraint firstItem="bEN-34-2pb" firstAttribute="trailing" secondItem="UC5-vL-OTG" secondAttribute="trailing" id="bTQ-Ks-7L9"/>
+                            <constraint firstItem="Jzn-aG-Kt0" firstAttribute="baseline" secondItem="K7i-vc-Ssl" secondAttribute="baseline" constant="80" id="d2r-rI-ap9">
+                                <variation key="heightClass=regular-widthClass=compact" constant="80"/>
+                            </constraint>
+                            <constraint firstItem="zqh-mo-HVT" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="dh2-d6-08a"/>
+                            <constraint firstItem="bEN-34-2pb" firstAttribute="leading" secondItem="UC5-vL-OTG" secondAttribute="leading" id="flL-eJ-idd"/>
+                            <constraint firstItem="xgn-eB-aXZ" firstAttribute="trailing" secondItem="A88-YO-ibz" secondAttribute="trailing" id="hQv-Qz-x83"/>
+                            <constraint firstItem="A88-YO-ibz" firstAttribute="leading" secondItem="zqh-mo-HVT" secondAttribute="leading" id="hil-Pf-DOI"/>
+                            <constraint firstItem="dXh-eM-hdU" firstAttribute="top" secondItem="iJ4-KN-4cX" secondAttribute="bottom" constant="73" id="kJq-Ks-rC1">
+                                <variation key="heightClass=regular-widthClass=compact" constant="94"/>
+                            </constraint>
+                            <constraint firstItem="zqh-mo-HVT" firstAttribute="baseline" secondItem="UC5-vL-OTG" secondAttribute="baseline" id="l6K-Oe-3z9"/>
+                            <constraint firstItem="6La-uA-cmv" firstAttribute="baseline" secondItem="xgn-eB-aXZ" secondAttribute="baseline" id="lNP-fa-4EE"/>
+                            <constraint firstItem="bEN-34-2pb" firstAttribute="top" secondItem="UC5-vL-OTG" secondAttribute="bottom" constant="8" id="oXT-Jz-uph">
+                                <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                            </constraint>
+                            <constraint firstItem="UC5-vL-OTG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="pCV-Q6-vhj"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dXh-eM-hdU" secondAttribute="bottom" constant="20" id="uzR-ew-M9M"/>
+                            <constraint firstItem="bEN-34-2pb" firstAttribute="baseline" secondItem="A88-YO-ibz" secondAttribute="baseline" id="wwe-Ef-I1d"/>
+                            <constraint firstItem="zqh-mo-HVT" firstAttribute="top" secondItem="Jzn-aG-Kt0" secondAttribute="bottom" constant="8" id="xJn-V5-T7q">
+                                <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                            </constraint>
+                            <constraint firstAttribute="centerX" secondItem="iJ4-KN-4cX" secondAttribute="centerX" id="xjq-e4-eyU"/>
+                            <constraint firstItem="xgn-eB-aXZ" firstAttribute="leading" secondItem="A88-YO-ibz" secondAttribute="leading" id="z5I-ei-tog"/>
+                            <constraint firstItem="K7i-vc-Ssl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="43" id="zmK-eU-gX9"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="iwg-pm-OcO" appends="YES" id="SnI-m4-EEv"/>
+                        </connections>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="companyField" destination="wrG-WO-T7B" id="O8a-On-PMl"/>
+                        <outlet property="emailField" destination="UC5-vL-OTG" id="pp4-Dz-ubP"/>
+                        <outlet property="imageView" destination="1Si-6C-cSh" id="RnU-Ox-XAX"/>
+                        <outlet property="linkedinField" destination="6La-uA-cmv" id="R6o-Rm-L96"/>
+                        <outlet property="nameField" destination="K7i-vc-Ssl" id="yJB-Qk-9Nm"/>
+                        <outlet property="phoneNumberField" destination="zqh-mo-HVT" id="M3i-pd-btl"/>
+                        <outlet property="picker" destination="iJ4-KN-4cX" id="9Ka-ID-cys"/>
+                        <outlet property="pickerHeight" destination="kJq-Ks-rC1" id="qYe-BW-29E"/>
+                        <outlet property="resumeField" destination="xgn-eB-aXZ" id="sfv-ge-iW7"/>
+                        <outlet property="row2Height" destination="xJn-V5-T7q" id="ddW-fW-3jc"/>
+                        <outlet property="row3Height" destination="oXT-Jz-uph" id="yKT-AA-jYA"/>
+                        <outlet property="row4Height" destination="5kJ-da-yol" id="Ywh-pu-NHP"/>
+                        <outlet property="titleField" destination="Jzn-aG-Kt0" id="arN-4o-HCF"/>
+                        <outlet property="twitterField" destination="A88-YO-ibz" id="Mex-i7-lpD"/>
+                        <outlet property="websiteField" destination="bEN-34-2pb" id="Ns6-dJ-yMf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="GtP-9t-zBM">
+                    <connections>
+                        <action selector="uploadImage:" destination="BYZ-38-t0r" id="OOB-Te-zAv"/>
+                        <outlet property="delegate" destination="1Si-6C-cSh" id="L50-ej-9UP"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="iwg-pm-OcO">
+                    <connections>
+                        <action selector="dismissKeyboard:" destination="BYZ-38-t0r" id="u0l-VT-BMo"/>
+                        <outlet property="delegate" destination="8bC-Xf-vdC" id="XMF-r4-Bz1"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="319.5" y="337.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="placeholder.png" width="520" height="245"/>
+    </resources>
 </document>
