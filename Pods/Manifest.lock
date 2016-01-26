@@ -1,6 +1,6 @@
 PODS:
   - AKPickerView-Swift (1.0.1)
-  - ALCameraViewController (1.1.2)
+  - ALCameraViewController (1.1.3)
   - AlertKit (0.1.2)
   - PassSlot (0.7)
   - ReachabilitySwift (2.3.3)
@@ -16,7 +16,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AKPickerView-Swift: 8509d472bb257649383c276506334a7373d3cb33
-  ALCameraViewController: 3439c8bb72f766c0225305e6dbfdc1d1aaa22d96
+  ALCameraViewController: 93159d8f6d49a31e045d052a2b81f830dd1e5ef5
   AlertKit: 3826f4d257492f539213d46880bb220e91559817
   PassSlot: b28b719efa4ba418ca757d2b3006dc789410d492
   ReachabilitySwift: e0f6b6f280effb47731acfaaa2d5ffe223703793

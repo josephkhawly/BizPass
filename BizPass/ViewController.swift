@@ -138,7 +138,7 @@ class ViewController: UIViewController, AKPickerViewDelegate, AKPickerViewDataSo
             if nameField.text != "" && companyField.text != "" && titleField.text != "" && emailField.text != "" && phoneNumberField.text != "" && photo != nil {
                 
                 //Store the user values into an array
-                var values = ["Name": "\(nameField.text)", "Title": "\(titleField.text)", "Email": "\(emailField.text)", "Phone": "\(phoneNumberField.text)", "Company": "\(companyField.text)", "Website": "\(websiteField.text)", "Twitter": "\(twitterField.text)", "Linkedin": "\(linkedinField.text)", "Resume": "\(resumeField.text)"]
+                var values = ["Name": "\(nameField.text!)", "Title": "\(titleField.text!)", "Email": "\(emailField.text!)", "Phone": "\(phoneNumberField.text!)", "Company": "\(companyField.text!)", "Website": "\(websiteField.text!)", "Twitter": "\(twitterField.text!)", "Linkedin": "\(linkedinField.text!)", "Resume": "\(resumeField.text!)"]
                 
                 //Put "N/A" in the optional fields if they're not filled in.
                 for (field, _) in values {
@@ -156,13 +156,6 @@ class ViewController: UIViewController, AKPickerViewDelegate, AKPickerViewDataSo
             return
         }
         
-        
-        //Make sure there is an internet connection before creating the card to prevent the app from crashing.
-        /*if reachability.isReachable() {
-        
-        
-        
-        }*/
     }
     
     //MARK: - Image upload
