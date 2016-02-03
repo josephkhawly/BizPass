@@ -9,4 +9,5 @@ An iOS app that lets you generate business cards as Apple Wallet passes
 - 8 pass colors to choose from
 - Scannable barcode that lets you share your pass with others
 
+# Sample Passes
 ![](sample_pass.png) ![](sample_pass2.png)
